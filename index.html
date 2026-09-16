@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dalawai Hospital | Obstetrics, Gynecology, Ayurveda & Critical Care</title>
+
+  <!-- Modern Aesthetic Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=40" />
+</head>
+<body>
+
+  <!-- ======================================================
+       HEADER / NAVIGATION BAR
+   ======================================================= -->
+  <header class="site-navbar">
+    <div class="navbar-container">
+      
+      <!-- Brand Logo Section -->
+      <div class="brand-container">
+        <a href="#home" class="brand-logo-link">
+          <img src="assets/images/logo_transparent.png" alt="Dalawai Hospital Logo" class="brand-logo-img">
+          <img src="assets/images/line_transparent.png" alt="Dalawai Maternity Hospital" class="brand-line-img">
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="navbar-menu">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+
+        <li class="nav-item"><a href="#services" class="nav-link">Specialities</a></li>
+        <li class="nav-item"><a href="#facilities" class="nav-link">Facilities</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Right Action & Mobile Toggle -->
+      <div class="navbar-actions">
+        <a href="#appointment" class="btn-appointment">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Book Now</span>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer Dropdown -->
+    <div class="mobile-nav-drawer">
+      <a href="#home" class="nav-link active">Home</a>
+
+      <a href="#services" class="nav-link">Specialities</a>
+      <a href="#facilities" class="nav-link">Facilities</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#appointment" class="btn-hero-primary mobile-drawer-btn" style="margin-top: 10px;">Book Now</a>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       HERO SECTION
+   ======================================================= -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Hero Text Column -->
+        <div class="hero-text-col">
+          <div class="hero-eyebrow">
+            <span>SAFE MOTHERHOOD BRIGHTER TOMORROWS</span>
+            <span class="eyebrow-line"></span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-serif-dark">Compassionate</span><br>
+            <span class="hero-title-line2"><span class="title-serif-dark">Care </span><span class="title-serif-pink">for Every</span></span><br>
+            <span class="title-serif-pink">New Beginning</span>
+          </h1>
+
+          <p class="hero-description">
+            Expert care for mothers and babies, with a personal touch. At Dalwai Maternity Hospital, we are with you at every step of your journey.
+          </p>
+
+          <div class="hero-cta-buttons">
+            <a href="#appointment" class="btn-hero-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>Book Now</span>
+              <svg class="btn-arrow-right" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Column -->
+        <div class="hero-visual-col">
+          <!-- Overlapping Light Pink Arches Background (matching doctor card reference) -->
+          <div class="hero-pink-arches-bg">
+            <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="pinkGlowGrad" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 250) rotate(90) scale(250)">
+                  <stop offset="0%" stop-color="#fbcfe8" stop-opacity="0.85"/>
+                  <stop offset="60%" stop-color="#fde8ef" stop-opacity="0.5"/>
+                  <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <!-- Base Radial Glow -->
+              <circle cx="260" cy="240" r="230" fill="url(#pinkGlowGrad)" />
+              
+              <!-- Outer Circle Arch with Thin White Outline -->
+              <circle cx="280" cy="270" r="230" fill="rgba(253, 242, 248, 0.65)" stroke="#ffffff" stroke-width="3.5"/>
+              
+              <!-- Middle Circle Arch with Thin White Outline -->
+              <circle cx="250" cy="310" r="175" fill="rgba(251, 207, 232, 0.75)" stroke="#ffffff" stroke-width="3.5"/>
+              
+              <!-- Inner Circle Arch with Thin White Outline -->
+              <circle cx="210" cy="340" r="125" fill="rgba(244, 114, 182, 0.3)" stroke="#ffffff" stroke-width="3.5"/>
+            </svg>
+          </div>
+
+          <!-- Hand drawn floating pink heart outline -->
+          <div class="floating-pink-heart">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+            </svg>
+          </div>
+
+          <!-- Mother & Baby Frame -->
+          <div class="hero-mother-frame">
+            <img src="assets/images/hero background.png" alt="Mother with Baby" class="hero-mother-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       QUICK SERVICES FEATURE BAR (4 Pills Bar)
+   ======================================================= -->
+  <div class="quick-services-bar">
+    <div class="container">
+      <div class="qs-container">
+        
+        <!-- 1. Antenatal Care -->
+        <div class="qs-item">
+          <div class="qs-icon-circle qs-icon-teal">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="7" r="4"/>
+              <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>
+            </svg>
+          </div>
+          <span class="qs-title">Antenatal<br>Care</span>
+        </div>
+
+        <!-- 2. Safe Delivery -->
+        <div class="qs-item">
+          <div class="qs-icon-circle qs-icon-pink">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e04878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M9 10h.01M15 10h.01"/>
+              <path d="M9.5 15a3.5 3.5 0 0 0 5 0"/>
+            </svg>
+          </div>
+          <span class="qs-title">Safe<br>Delivery</span>
+        </div>
+
+        <!-- 3. Postnatal Care -->
+        <div class="qs-item">
+          <div class="qs-icon-circle qs-icon-teal">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+            </svg>
+          </div>
+          <span class="qs-title">Postnatal<br>Care</span>
+        </div>
+
+        <!-- 4. Women's Health -->
+        <div class="qs-item">
+          <div class="qs-icon-circle qs-icon-pink">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e04878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C9 7 4 9 4 14a8 8 0 0 0 16 0c0-5-5-7-8-12z"/>
+              <path d="M12 12c-2 2-3 4-3 6a3 3 0 0 0 6 0c0-2-1-4-3-6z"/>
+            </svg>
+          </div>
+          <span class="qs-title">Women’s<br>Health</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       EXPERIENCED DOCTORS HERO CAROUSEL CARD
+   ======================================================= -->
+  <div class="hero-doctors-card-wrap">
+    <div class="container">
+      <div class="hero-doctors-card">
+        
+        <!-- Left: Doctors Cutout Image -->
+        <div class="h-doc-image-col">
+          <div class="h-doc-blob-bg"></div>
+          <img src="assets/images/hero section doctor.png" alt="Experienced Doctors" class="h-doc-img">
+        </div>
+
+        <!-- Right: Doctors Info -->
+        <div class="h-doc-info-col">
+          <div class="h-doc-eyebrow-line"></div>
+          <h2 class="h-doc-title">Experienced Doctors</h2>
+          <p class="h-doc-subtitle">Caring for you at every stage</p>
+          <a href="#doctors" class="btn-meet-doctors">
+            <span>Meet Our Doctors</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================
+       SPECIALITIES & DEPARTMENTS SECTION
+   ======================================================= -->
+  <section class="services-section" id="services">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-eyebrow-wrap">
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-line"></span>
+          <span>OUR SERVICES</span>
+        </div>
+        <a href="#appointment" class="section-link-all">
+          <span>View All</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <h2 class="section-title">Complete Care for Mother & Baby</h2>
+      <p class="section-subtitle">Comprehensive clinical departments equipped with advanced infrastructure and round-the-clock specialists.</p>
+
+      <div class="services-grid">
+               <!-- 1. Obstetrics & Gynecology -->
+        <div class="service-card">
+          <div class="service-icon-box s-icon-pink">
+            <svg class="gyno-icon" width="44" height="44" viewBox="20 10 56 84" fill="#f472b6">
+              <path d="m68.441 29.09c0.019532 0.44922-0.23828 0.87109-0.64844 1.0703l-2.2617 1.0586-2.2891 3.8008c-0.51953 0.85938-1.4492 1.3711-2.4297 1.3711-0.19141 0-0.37891-0.019531-0.55859-0.058594-0.44922-0.089843-0.96875-0.23047-1.5312-0.42188-0.35938 1.5781-0.53125 3.2305-0.58984 4.0586l9.9297 8.4102c2.0781-3.9102 1.9883-7.1094 1.8984-10.48-0.050782-1.6484-0.089844-3.3516 0.10156-5.1914 0.30078-2.7891 0.98047-4.6602 1.5703-6.3203 0.67969-1.8906 1.2695-3.5195 1.1484-6.1914-0.10156-2.1211-0.69141-4.0781-1.7617-5.8516 0.14062 0.98828 0.14844 1.6406 0.14844 1.6992 0 0.17969-0.050781 0.37109-0.12891 0.53125-0.25 0.46875-0.60937 0.89844-1.0703 1.2812-0.42969 3.5195-1.2891 5.3203-1.75 6.0703l0.21875 5.1602z"/>
+              <path d="m38.352 84.961-1.6992 9.0391h14.441c-0.62891-0.32031-1.2305-0.67969-1.8008-1.1016l-10.93-7.9414z"/>
+              <path d="m36.148 38.172c3.2617-1.5195 6.3281-2.0586 6.6484-2.1094 3.9414-1.5195 5.1992-4.0312 5.5586-5.8789 0.33984-1.75 1.0391-3.4219 2.0898-4.9492l3.1602-4.6406c1.0508-1.5508 2.8008-2.4805 4.6719-2.4883 4.6992-0.03125 8.2891-0.67969 9.9414-1.7383 0.039062-0.03125 0.089844-0.058594 0.12891-0.089844 0.23828-1.7188 0.42969-3.3984 0.57031-0.51953-0.039063-0.73047-0.25-2.6797-1.1484-4.6289-1.4609-3.1406-4.0312-4.8516-7.6602-5.0781-2.9688-0.17969-5.5391 0.17188-7.6211 1.0508-1.7188 0.73047-3.1602 1.8398-4.2812 3.3086-2.1602 2.8398-2.7383 6.4492-3.0508 8.3906-0.51953 3.2305-1.9297 5.8906-4.3086 8.1406-2.0312 1.9219-4.4219 3.2305-6.7305 4.5117-1.2305 0.67969-2.3906 1.3086-3.4102 2-2.6484 1.7812-7.0703 7.0312-7.6602 13.531-0.41016 4.5391 1.0898 8.8594 4.4609 12.871 0.078126-4.8203 0.28906-9.6016 0.73828-12.641 0.55078-3.7383 3.2891-6.8594 7.9102-9.0195z"/>
+              <path d="m75.531 71.828c-0.82812-2.0117-2-3.9102-3.4688-5.6484-2.5391-3-5.1406-4.5117-5.1719-4.5195-0.28906-0.17188-0.5-0.46094-0.55078-0.80078-0.050782-0.33984 0.050781-0.67969 0.26953-0.92969l1.2383-1.3789c1.1484-1.2812 1.7109-2.6914 1.6094-4.0781-0.10156-1.3984-0.87109-2.7305-2.2188-3.8398h-0.011719l-11-9.3086c-0.26953-0.23047-0.41016-0.55859-0.39844-0.91016 0-0.12891 0.14844-2.9609 0.80859-5.5312-1.0898-0.75-2.0586-1.8281-2.5312-3.4102-0.17969-0.58984 0.16016-1.2188 0.75-1.3984 0.58984-0.17969 1.2188 0.16016 1.3984 0.75 0.67188 2.2305 3.0586 3.0312 4.4219 3.3086 0.25 0.050782 0.5-0.058593 0.62109-0.26953l2.4688-4.1016c0.10938-0.19141 0.28125-0.33984 0.48828-0.44141l1.8906-0.89062-0.21094-4.7891c-0.011719-0.30078 0.058594-0.55078 0.26172-0.76953 0.30859-0.39844 0.87109-1.6094 1.2812-3.7188-0.67969 0.23047-1.4414 0.42969-2.3008 0.60156-2.4102 0.46875-5.0898 0.57812-6.9102 0.60156-1.1289 0-2.1914 0.57031-2.8281 1.5117l-3.1602 4.6406c-0.87109 1.2812-1.4609 2.6602-1.7383 4.1211-0.28125 1.4609-0.89844 2.7891-1.8398 3.9688-1.2617 1.5781-3.0508 2.8086-5.3203 3.6484-0.12891 0.050781-2.6172 0.070312-0.37891 0.070312-1.3789 0.26172-11.559 2.4102-12.559 9.2188-0.92969 6.3203-0.78906 20.531-0.69141 26.352 0.019531 1.3281 0.67969 2.5781 1.75 3.3594l19.078 13.84c1.2109 0.87891 2.5586 1.4883 4.0195 1.8086 3.0117 0.67188 5.7109 1.0391 7.9805 1.1094h1.6406c2.3789-0.089844 4.1211-0.57031 5.0312-1.4492 1.4102-1.3516 2.5586-2.8906 3.4414-4.5703 0.17188-0.32812 0-0.57812-0.078125-0.67188-0.078125-0.089844-0.30859-0.30078-0.66016-0.17188-2.9609 1.0703-5.1797 2.2812-6.4297 3.4883-0.39063 0.37891-0.98828 0.42969-1.4297 0.10938-0.44141-0.30859-0.60156-0.89844-0.37109-1.3906l0.44141-0.94141c0.16016-0.32812 0.03125-0.60938-0.039062-0.71875-0.058594-0.10938-0.25-0.35156-0.60938-0.37891l-1.3594-0.089844c-1.0312-0.070312-2.0391 0.26953-2.8281 0.92969l-1.6406 1.3906c-0.46875 0.39844-1.1719 0.33984-1.5781-0.12109-0.03125-0.03125-2.9102-3.3516-6.5117-6.8398-5.8984-5.7383-9.1289-7.5508-10.789-8.0703-0.5-0.16016-0.82812-0.64062-0.78906-1.1719l1.5117-18.57c0.050781-0.62109 0.58984-1.0781 1.2109-1.0312 0.62109 0.050781 1.0781 0.58984 1.0312 1.2109l-1.4492 17.719c5.6719 2.3906 14.191 11.578 16.738 14.441l0.80078-0.67969c1.2383-1.0508 2.8086-1.5703 4.4219-1.4609l1.3594 0.089844c1 0.058593 1.8906 0.60937 2.3984 1.4688 0.12891 0.21875 0.23047 0.44922 0.30078 0.69141 1.3086-0.78125 2.9297-1.5195 4.8398-2.2109 1.1094-0.39844 2.3398-0.089844 3.1211 0.80078 0.28125 0.30859 0.46875 0.67969 0.58984 1.0586 1.3789-2.2305 2.1016-4.6094 2.1289-7.1094 0.03125-2.7812-0.46875-5.4492-1.5-7.9492z"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Obstetrics &<br>Gynecology</h3>
+          <p class="service-card-desc">Complete women's<br>healthcare</p>
+        </div>
+
+        <!-- 2. Surgical ICU (SICU) -->
+        <div class="service-card">
+          <div class="service-icon-box s-icon-teal">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="12" rx="2"/>
+              <path d="M6 10h2l1.5-3 2.5 6 2-4 1.5 1h2.5"/>
+              <path d="M6 20h12"/>
+              <path d="M9 16v4"/>
+              <path d="M15 16v4"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Surgical ICU<br>(SICU)</h3>
+          <p class="service-card-desc">Advanced critical<br>care support</p>
+        </div>
+
+        <!-- 3. Ayurvedic & Women's Care -->
+        <div class="service-card">
+          <div class="service-icon-box s-icon-teal">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 0 1 10 10H2A10 10 0 0 1 12 2z"/>
+              <path d="M12 2v4"/>
+              <path d="M8 17a4 4 0 0 0 8 0"/>
+              <path d="M16 6c0-2-2-4-4-4s-4 2-4 4"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Ayurvedic &<br>Women’s Care</h3>
+          <p class="service-card-desc">Holistic healing<br>for a healthier you</p>
+        </div>
+
+        <!-- 4. Inpatient Wards (IPD) -->
+        <div class="service-card">
+          <div class="service-icon-box s-icon-teal">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 4v16"/>
+              <path d="M2 12h20"/>
+              <path d="M22 8v12"/>
+              <path d="M6 12V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Inpatient Wards<br>(IPD)</h3>
+          <p class="service-card-desc">Comfortable and<br>safe stay</p>
+        </div>
+
+        <!-- 5. Anesthesia Department -->
+        <div class="service-card">
+          <div class="service-icon-box s-icon-pink">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e04878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m18 2 4 4"/>
+              <path d="m17 7 3 3"/>
+              <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-1.6-1.6c-1-1-1-2.5 0-3.4L14 4"/>
+              <path d="m9 11 4 4"/>
+              <path d="m5 19-3 3"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Anesthesia<br>Department</h3>
+          <p class="service-card-desc">Safe procedures<br>with expert care</p>
+        </div>
+
+        <!-- 6. Outpatient Consultations -->
+        <div class="service-card">
+          <div class="service-icon-box s-icon-teal">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 2a2 2 0 0 0-2 2v2H7a2 2 0 0 0-2 2v2a8 8 0 0 0 14 0V8a2 2 0 0 0-2-2h-2V4a2 2 0 0 0-2-2z"/>
+              <path d="M12 14v4a3 3 0 0 0 6 0v-2"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">Outpatient<br>Consultations</h3>
+          <p class="service-card-desc">Expert advice<br>for every stage</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       HOSPITAL FACILITIES SECTION
+   ======================================================= -->
+  <section class="facilities-section" id="facilities">
+    <!-- Leaf Background Ornament -->
+    <div class="facilities-bg-leaf">
+      <svg width="220" height="220" viewBox="-5.0 -10.0 110.0 135.0" fill="#a7f3d0">
+        <path d="m56.18 65.664c-0.15625-0.066406-0.1875-0.23437-0.082032-0.4375 0.082032-0.15234 0.42578-0.49609 0.80859-0.80859 0.38281-0.30859 0.42969-0.35547 0.70703-0.65234 0.80078-0.87109 1.6836-1.9922 2.8594-3.6406 0.34766-0.49219 0.75-1.0508 0.89062-1.2422 1.3711-1.9023 2.2734-2.9727 3.418-4.0547 0.98047-0.92188 1.875-1.6719 3.2422-2.7031 0.49219-0.37109 0.66016-0.50391 0.59375-0.46875-0.011719 0.007812-0.32031 0.13672-0.68359 0.29297-4.1836 1.7734-7.9258 2.875-11.457 3.3789-2.1055 0.30078-4.375 0.44531-7.5234 0.47656l-1.3711 0.015624v0.0625c0 0.035157-0.027343 0.11328-0.058593 0.17578s-0.070313 0.15234-0.085938 0.19922c-0.015625 0.046876-0.074219 0.13672-0.12891 0.19922-0.054688 0.0625-0.16406 0.19922-0.25 0.30469-0.25 0.31641-0.94141 1.0859-1.3477 1.5039-1.2695 1.2969-2.6133 2.2305-4.1484 2.8906-2.1211 0.91016-4.7383 1.3203-7.6641 1.1953-0.52344-0.019531-1.3789-0.078124-1.5312-0.097656-0.042969-0.007812-0.4375-0.039062-0.87891-0.078125-2.0195-0.16797-2.8086-0.28906-3.0547-0.47656-0.12891-0.097657-0.11719-0.29297 0.023437-0.38281 0.039063-0.023437 0.29297-0.13281 0.5625-0.24219 0.97656-0.39062 1.5898-0.69531 2.9727-1.4844 1.4688-0.83594 2.0703-1.1641 2.8516-1.5547 2.2148-1.1094 4.125-1.7578 6.1328-2.082 0.64844-0.10547 1.3359-0.17188 2.2344-0.21484 0.26562-0.011719 0.48828-0.027343 0.48828-0.03125 0.003906-0.003906-0.21094-0.011719-0.47266-0.019531-0.26172-0.007812-1.4414-0.054688-2.6133-0.10156-5.7266-0.23438-8.0078-0.26563-10.949-0.16406l-0.40625 0.015625-0.10547 0.09375c-0.27344 0.24219-0.69531 0.45703-2.2109 1.1289-3.4062 1.5117-5.8242 2.0703-8.7734 2.0195-1.4961-0.027344-2.7969-0.19922-4.293-0.57813-1.6211-0.39844-2.9531-0.91016-4.9336-1.8906-0.77734-0.38672-1.1445-0.60547-1.2383-0.74609-0.089844-0.13281-0.054687-0.30078 0.085937-0.40625 0.14063-0.10547 1.1211-0.39453 2.6406-0.77344 1.6133-0.40234 2.2773-0.58984 3.832-1.0664 2.9453-0.90625 4.1914-1.2305 5.5977-1.4531 0.94531-0.15234 1.6875-0.20703 2.5312-0.19141 0.86328 0.015625 1.3828 0.082031 2.0664 0.25781 0.69531 0.17969 1.4102 0.48828 1.918 0.82812 0.33594 0.22656 1.25 1.0078 2.2227 1.8984l0.48438 0.44531 0.29688-0.011718c1.0781-0.042969 2.2539-0.058594 3.7227-0.054688l1.6875 0.007812-0.64062-0.21094c-1.0938-0.36719-1.9688-0.72656-3.082-1.2773-2.332-1.1523-4.1602-2.5703-5.7617-4.4688-1.1445-1.3594-2.0078-2.7266-3.1055-4.9219-0.17578-0.35156-0.44531-0.88281-0.60156-1.1758-0.52734-1.0078-0.67188-1.2969-0.67188-1.3398 0-0.14453 0.10156-0.24609 0.25-0.24609 0.066407 0 0.13672 0.046874 0.46875 0.30469 0.78516 0.60938 1.4844 1.043 3.0898 1.918 2.2422 1.2227 3.5391 2.0234 4.832 2.9922 2.0039 1.4961 3.6641 3.25 5.2656 5.5703 0.41016 0.59375 0.57422 0.875 1.2734 2.1445 0.17969 0.32812 0.34766 0.62891 0.37891 0.67188l0.050781 0.078125 1.0938 0.039063c0.60156 0.019531 1.9297 0.074218 2.9492 0.11328 4.3164 0.17578 6.0977 0.21875 8.4258 0.20312 3.6133-0.027344 6.2812-0.23438 8.707-0.67578 0.54297-0.097656 1.2422-0.24219 1.2617-0.26172 0.007813-0.007813-0.16016-0.03125-0.375-0.054688-2.1094-0.21094-4.1836-0.72266-5.9805-1.4727-1.418-0.59375-2.793-1.4102-4.0625-2.4141-1.1289-0.89063-2.3516-2.1133-3.3359-3.3242-1.1758-1.4492-2.2891-3.1875-3.1914-4.9766-0.37109-0.73438-0.55469-1.168-0.625-1.4648-0.046875-0.19922 0.058594-0.35937 0.23828-0.35937 0.082031 0 0.14453 0.03125 0.60547 0.29687 1.0469 0.60547 2.0742 1.0508 4.4453 1.9336 2.0391 0.75781 2.9531 1.1328 4.0938 1.6875 2.0391 0.98438 3.5938 2.2031 5.3086 4.1523 0.58203 0.66406 1.3555 1.6367 3.5977 4.5352 0.44141 0.57031 0.8125 1.0469 0.82812 1.0664 0.03125 0.035157 0.10156 0.019532 0.94531-0.22266 3.3281-0.94922 6.8086-2.3516 11.215-4.5234 1.8359-0.90625 5.5312-2.832 6.9609-3.6289 0.75781-0.42187 2.8828-1.6445 2.875-1.6484-0.003906-0.003906-0.19531 0.019531-0.42188 0.046875-1.1172 0.13672-2.7617 0.25-3.582 0.25-0.61719 0-1.6328-0.12891-2.5938-0.32812-3.1172-0.65234-5.9844-2.0352-8.4219-4.0625-0.41016-0.33984-1.0859-0.95703-1.3672-1.2461-0.70703-0.72656-1.5156-1.6719-2.3984-2.8047-0.60156-0.76953-0.75391-0.99609-0.80469-1.1797-0.023437-0.085937-0.023437-0.10938 0.015625-0.1875 0.11328-0.23047 0.42578-0.22266 1.2969 0.035156 0.73828 0.21484 2.3867 0.40625 5.0078 0.58594 2.1914 0.14844 3.0508 0.23438 4.1719 0.42188 2.7031 0.44922 5.2109 1.4922 7.6914 3.207 0.60938 0.42188 1.2148 0.87891 1.3594 1.0312 0.375 0.39453 1.0039 1.4023 1.7383 2.7969l0.19141 0.36719 0.45312-0.25391c2.3438-1.3086 4.1758-2.1797 5.9141-2.8203 0.69141-0.25391 1.1953-0.34375 1.4023-0.25 0.11328 0.050781 0.17969 0.13281 0.17578 0.22656-0.003906 0.10547-0.023438 0.14844-0.10156 0.19531-0.085938 0.054687-0.13281 0.054687-0.21875 0.011719-0.054688-0.027344-0.085938-0.027344-0.25391 0-0.28906 0.050781-0.47656 0.10547-0.98438 0.29688-1.082 0.40234-1.9805 0.80078-3.293 1.457-1.3906 0.69531-2.9062 1.5195-3.0742 1.6758-0.078125 0.074219-0.38672 0.23828-0.44531 0.23828-0.011718 0-0.33984 0.18359-0.73438 0.41016-2.9414 1.6914-3.543 2.0312-4.3555 2.4688-1.0781 0.57812-4.3555 2.2891-4.8711 2.5391-0.13281 0.066407-0.14844 0.078125-0.14844 0.13672 0 0.32812-0.49609 1.9688-1.2539 4.1445-0.33594 0.96094-0.41797 1.1758-0.62891 1.6523-1.5039 3.3516-4.0508 6.1523-7.293 8.0273-2.1484 1.2422-4.4453 2.0312-7.3125 2.5156-0.72656 0.125-1.0625 0.14844-1.1992 0.089844z"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-line"></span>
+        <span>FACILITIES</span>
+      </div>
+      <h2 class="section-title">Modern Facilities for Safer Care</h2>
+      <p class="section-subtitle">Equipped with modern technology and compassionate support, ensuring the best care for you and your loved ones.</p>
+
+      <div class="facilities-grid">
+        
+        <!-- 1. Operation Theatre -->
+        <div class="facility-card">
+          <div class="facility-icon-box f-icon-teal">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v4M8 6h8M4 17h16M6 17v4M18 17v4"/>
+              <rect x="4" y="13" width="16" height="4" rx="1"/>
+              <path d="M10 13v-3a2 2 0 0 1 4 0v3"/>
+            </svg>
+          </div>
+          <h3 class="facility-title">Operation Theatre</h3>
+          <p class="facility-desc">Modern OT with advanced equipment for safe surgeries.</p>
+        </div>
+
+        <!-- 2. Labour Suites -->
+        <div class="facility-card">
+          <div class="facility-icon-box f-icon-pink">
+            <svg class="gyno-icon" width="36" height="36" viewBox="20 10 56 84" fill="#f472b6">
+              <path d="m68.441 29.09c0.019532 0.44922-0.23828 0.87109-0.64844 1.0703l-2.2617 1.0586-2.2891 3.8008c-0.51953 0.85938-1.4492 1.3711-2.4297 1.3711-0.19141 0-0.37891-0.019531-0.55859-0.058594-0.44922-0.089843-0.96875-0.23047-1.5312-0.42188-0.35938 1.5781-0.53125 3.2305-0.58984 4.0586l9.9297 8.4102c2.0781-3.9102 1.9883-7.1094 1.8984-10.48-0.050782-1.6484-0.089844-3.3516 0.10156-5.1914 0.30078-2.7891 0.98047-4.6602 1.5703-6.3203 0.67969-1.8906 1.2695-3.5195 1.1484-6.1914-0.10156-2.1211-0.69141-4.0781-1.7617-5.8516 0.14062 0.98828 0.14844 1.6406 0.14844 1.6992 0 0.17969-0.050781 0.37109-0.12891 0.53125-0.25 0.46875-0.60937 0.89844-1.0703 1.2812-0.42969 3.5195-1.2891 5.3203-1.75 6.0703l0.21875 5.1602z"/>
+              <path d="m38.352 84.961-1.6992 9.0391h14.441c-0.62891-0.32031-1.2305-0.67969-1.8008-1.1016l-10.93-7.9414z"/>
+              <path d="m36.148 38.172c3.2617-1.5195 6.3281-2.0586 6.6484-2.1094 3.9414-1.5195 5.1992-4.0312 5.5586-5.8789 0.33984-1.75 1.0391-3.4219 2.0898-4.9492l3.1602-4.6406c1.0508-1.5508 2.8008-2.4805 4.6719-2.4883 4.6992-0.03125 8.2891-0.67969 9.9414-1.7383 0.039062-0.03125 0.089844-0.058594 0.12891-0.089844 0.23828-1.7188 0.42969-3.3984 0.57031-0.51953-0.039063-0.73047-0.25-2.6797-1.1484-4.6289-1.4609-3.1406-4.0312-4.8516-7.6602-5.0781-2.9688-0.17969-5.5391 0.17188-7.6211 1.0508-1.7188 0.73047-3.1602 1.8398-4.2812 3.3086-2.1602 2.8398-2.7383 6.4492-3.0508 8.3906-0.51953 3.2305-1.9297 5.8906-4.3086 8.1406-2.0312 1.9219-4.4219 3.2305-6.7305 4.5117-1.2305 0.67969-2.3906 1.3086-3.4102 2-2.6484 1.7812-7.0703 7.0312-7.6602 13.531-0.41016 4.5391 1.0898 8.8594 4.4609 12.871 0.078126-4.8203 0.28906-9.6016 0.73828-12.641 0.55078-3.7383 3.2891-6.8594 7.9102-9.0195z"/>
+              <path d="m75.531 71.828c-0.82812-2.0117-2-3.9102-3.4688-5.6484-2.5391-3-5.1406-4.5117-5.1719-4.5195-0.28906-0.17188-0.5-0.46094-0.55078-0.80078-0.050782-0.33984 0.050781-0.67969 0.26953-0.92969l1.2383-1.3789c1.1484-1.2812 1.7109-2.6914 1.6094-4.0781-0.10156-1.3984-0.87109-2.7305-2.2188-3.8398h-0.011719l-11-9.3086c-0.26953-0.23047-0.41016-0.55859-0.39844-0.91016 0-0.12891 0.14844-2.9609 0.80859-5.5312-1.0898-0.75-2.0586-1.8281-2.5312-3.4102-0.17969-0.58984 0.16016-1.2188 0.75-1.3984 0.58984-0.17969 1.2188 0.16016 1.3984 0.75 0.67188 2.2305 3.0586 3.0312 4.4219 3.3086 0.25 0.050782 0.5-0.058593 0.62109-0.26953l2.4688-4.1016c0.10938-0.19141 0.28125-0.33984 0.48828-0.44141l1.8906-0.89062-0.21094-4.7891c-0.011719-0.30078 0.058594-0.55078 0.26172-0.76953 0.30859-0.39844 0.87109-1.6094 1.2812-3.7188-0.67969 0.23047-1.4414 0.42969-2.3008 0.60156-2.4102 0.46875-5.0898 0.57812-6.9102 0.60156-1.1289 0-2.1914 0.57031-2.8281 1.5117l-3.1602 4.6406c-0.87109 1.2812-1.4609 2.6602-1.7383 4.1211-0.28125 1.4609-0.89844 2.7891-1.8398 3.9688-1.2617 1.5781-3.0508 2.8086-5.3203 3.6484-0.12891 0.050781-2.6172 0.070312-0.37891 0.070312-1.3789 0.26172-11.559 2.4102-12.559 9.2188-0.92969 6.3203-0.78906 20.531-0.69141 26.352 0.019531 1.3281 0.67969 2.5781 1.75 3.3594l19.078 13.84c1.2109 0.87891 2.5586 1.4883 4.0195 1.8086 3.0117 0.67188 5.7109 1.0391 7.9805 1.1094h1.6406c2.3789-0.089844 4.1211-0.57031 5.0312-1.4492 1.4102-1.3516 2.5586-2.8906 3.4414-4.5703 0.17188-0.32812 0-0.57812-0.078125-0.67188-0.078125-0.089844-0.30859-0.30078-0.66016-0.17188-2.9609 1.0703-5.1797 2.2812-6.4297 3.4883-0.39063 0.37891-0.98828 0.42969-1.4297 0.10938-0.44141-0.30859-0.60156-0.89844-0.37109-1.3906l0.44141-0.94141c0.16016-0.32812 0.03125-0.60938-0.039062-0.71875-0.058594-0.10938-0.25-0.35156-0.60938-0.37891l-1.3594-0.089844c-1.0312-0.070312-2.0391 0.26953-2.8281 0.92969l-1.6406 1.3906c-0.46875 0.39844-1.1719 0.33984-1.5781-0.12109-0.03125-0.03125-2.9102-3.3516-6.5117-6.8398-5.8984-5.7383-9.1289-7.5508-10.789-8.0703-0.5-0.16016-0.82812-0.64062-0.78906-1.1719l1.5117-18.57c0.050781-0.62109 0.58984-1.0781 1.2109-1.0312 0.62109 0.050781 1.0781 0.58984 1.0312 1.2109l-1.4492 17.719c5.6719 2.3906 14.191 11.578 16.738 14.441l0.80078-0.67969c1.2383-1.0508 2.8086-1.5703 4.4219-1.4609l1.3594 0.089844c1 0.058593 1.8906 0.60937 2.3984 1.4688 0.12891 0.21875 0.23047 0.44922 0.30078 0.69141 1.3086-0.78125 2.9297-1.5195 4.8398-2.2109 1.1094-0.39844 2.3398-0.089844 3.1211 0.80078 0.28125 0.30859 0.46875 0.67969 0.58984 1.0586 1.3789-2.2305 2.1016-4.6094 2.1289-7.1094 0.03125-2.7812-0.46875-5.4492-1.5-7.9492z"/>
+            </svg>
+          </div>
+          <h3 class="facility-title">Labour Suites</h3>
+          <p class="facility-desc">Comfortable and private labour rooms for a safe delivery experience.</p>
+        </div>
+
+        <!-- 3. Post-Op Recovery Ward -->
+        <div class="facility-card">
+          <div class="facility-icon-box f-icon-teal">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 10h18M3 14h18M5 10v7M19 10v7M12 4v4M10 6h4"/>
+              <rect x="3" y="10" width="18" height="4" rx="1"/>
+            </svg>
+          </div>
+          <h3 class="facility-title">Post-Op Recovery Ward</h3>
+          <p class="facility-desc">Dedicated recovery care for a smooth and safe healing process.</p>
+        </div>
+
+        <!-- 4. In-House Laboratory -->
+        <div class="facility-card">
+          <div class="facility-icon-box f-icon-pink">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 18h12M12 18v-4M9 14a3 3 0 0 1 6 0M12 2v6M9 5h6"/>
+              <circle cx="12" cy="11" r="1.5" fill="#f472b6"/>
+            </svg>
+          </div>
+          <h3 class="facility-title">In-House Laboratory</h3>
+          <p class="facility-desc">Quick and accurate diagnostic services within the hospital.</p>
+        </div>
+
+        <!-- 5. 24/7 Pharmacy -->
+        <div class="facility-card">
+          <div class="facility-icon-box f-icon-teal">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m10.5 20.5 9-9a4.95 4.95 0 1 0-7-7l-8.5 8.5a4.95 4.95 0 1 0 7 7Z"/>
+              <path d="m8.5 8.5 7 7"/>
+            </svg>
+          </div>
+          <h3 class="facility-title">24/7 Pharmacy</h3>
+          <p class="facility-desc">On-site pharmacy for your immediate needs.</p>
+        </div>
+
+        <!-- 6. 24-hr Emergency ER -->
+        <div class="facility-card">
+          <div class="facility-icon-box f-icon-pink">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0-6 6v4h12V9a6 6 0 0 0-6-6Z"/>
+              <path d="M4 13h16v3H4z"/>
+              <path d="M12 19v3M7 19l-1 2M17 19l1 2"/>
+            </svg>
+          </div>
+          <h3 class="facility-title">24-hr Emergency ER</h3>
+          <p class="facility-desc">Round-the-clock emergency care for you and your loved ones.</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Banner Card -->
+      <div class="facility-banner-card">
+        <div class="banner-icon-box">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#f472b6"/>
+            <path d="M18 11c0 3.5-3 6.5-6 8.5-3-2-6-5-6-8.5" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="banner-text-content">
+          <span class="banner-tagline">ALWAYS HERE FOR YOU</span>
+          <h4 class="banner-title">Your Health, Our Priority</h4>
+          <p class="banner-desc">Compassionate care, every step of the way.</p>
+        </div>
+        <a href="#appointment" class="banner-arrow-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ======================================================
+       APPOINTMENT & EMERGENCY BOOKING SECTION
+   ======================================================= -->
+  <section class="appointment-section" id="appointment">
+    <div class="container">
+      <div class="appointment-container">
+        
+        <!-- Left Content -->
+        <div class="appointment-content">
+          <div class="emergency-chip">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>24/7 Emergency & Maternity Assistance</span>
+          </div>
+
+          <h2>Schedule Your Consultation Today</h2>
+          <p>Book an appointment with Dr. Sathish Dalawai or Dr. Jyothi Dalawai. We ensure minimal waiting times, personalized guidance, and warm patient care.</p>
+        </div>
+
+        <!-- Right Booking Form Card -->
+        <div class="booking-form-card">
+          <h3>Book an Appointment</h3>
+          
+          <form id="appointmentForm">
+            <div class="form-group">
+              <label class="form-label" for="fullName">Full Name</label>
+              <input type="text" id="fullName" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" placeholder="Enter phone number" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="prefDate">Preferred Date</label>
+                <input type="date" id="prefDate" class="form-control" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="doctorSelect">Select Doctor / Department</label>
+              <select id="doctorSelect" class="form-control" required>
+                <option value="">Choose Specialist</option>
+                <option value="dr-sathish">Dr. Sathish Dalawai (Obstetrics & Gynecology)</option>
+                <option value="dr-jyothi">Dr. Jyothi Dalawai (Ayurvedic & Women's Care)</option>
+                <option value="general">General Outpatient (OPD)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-submit-form">Confirm Appointment Booking</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER & CONTACT SECTION
+   ======================================================= -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <img src="assets/images/logo_transparent.png" alt="Dalawai Hospital Logo">
+          <p>Dalawai Maternity Hospital provides expert Obstetrics, Gynecology, Ayurvedic Women's Healthcare, and round-the-clock Emergency & Critical Care.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#services">Specialities</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#appointment">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Specialities</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Obstetrics & Maternity</a></li>
+            <li><a href="#services">Surgical ICU (SICU)</a></li>
+            <li><a href="#services">Ayurvedic Wellness</a></li>
+            <li><a href="#services">Inpatient & Outpatient</a></li>
+            <li><a href="#services">Operating Suites</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li><strong>Dalawai Hospital</strong></li>
+            <li>Obstetrics, Gynecology & Critical Care</li>
+            <li>📞 Emergency & Appointments: 24/7 Available</li>
+            <li>📍 Local City Center Campus</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dalawai Hospital. All rights reserved.</p>
+        <p>Designed with care for mother & child.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
