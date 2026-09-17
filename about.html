@@ -2,411 +2,514 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us | Dalawai Maternity Hospital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>About Us | Dalawai Hospital Jamkhandi</title>
 
-  <!-- Modern Aesthetic Fonts -->
+  <!-- High-Contrast Luxury Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=41" />
+  <link rel="stylesheet" href="style.css?v=50" />
 </head>
-<body>
+<body class="mobile-website-body">
 
-  <!-- ======================================================
-       HEADER / NAVIGATION BAR
-   ======================================================= -->
-  <header class="site-navbar">
-    <div class="navbar-container">
-      
-      <!-- Brand Logo Section -->
-      <div class="brand-container">
-        <a href="index.html#home" class="brand-logo-link">
+  <!-- Mobile Screen Wrapper Container -->
+  <div class="mobile-phone-frame">
+    
+    <!-- Floating Compact Mobile Header -->
+    <header class="mobile-site-header">
+      <div class="header-inner">
+        <!-- Dalawai Hospital Logo on Left -->
+        <a href="index.html" class="mobile-brand-logo">
           <img src="assets/images/logo_transparent.png" alt="Dalawai Hospital Logo" class="brand-logo-img">
-          <img src="assets/images/line_transparent.png" alt="Dalawai Maternity Hospital" class="brand-line-img">
+          <div class="brand-text-block">
+            <span class="brand-name">DALAWAI</span>
+            <span class="brand-sub">HOSPITAL</span>
+          </div>
         </a>
+
+        <!-- Right Header Action Group (Call Now + Menu Bar) -->
+        <div class="header-right-actions">
+          <a href="tel:+919876543210" class="call-now-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>Call Now</span>
+          </a>
+
+          <button class="menu-icon-btn mobile-menu-btn" aria-label="Open Navigation Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F382C" stroke-width="2.2" stroke-linecap="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
       </div>
+    </header>
 
-      <!-- Desktop Navigation Menu -->
-      <ul class="navbar-menu">
-        <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link active">About Us</a></li>
-        <li class="nav-item"><a href="specialities.html" class="nav-link">Specialities</a></li>
-        <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
-        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
-      </ul>
-
-      <!-- Right Action & Mobile Toggle -->
-      <div class="navbar-actions">
-        <a href="index.html#appointment" class="btn-appointment">
-          <span>Book Now</span>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
-
-        <button class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    <!-- Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+      <div class="drawer-header">
+        <span class="drawer-title">DALAWAI HOSPITAL</span>
+        <button class="close-drawer-btn mobile-menu-btn" aria-label="Close Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F382C" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
       </div>
-
+      <nav class="drawer-links">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link active">About Us</a>
+        <a href="specialities.html" class="drawer-link">Specialities</a>
+        <a href="facilities.html" class="drawer-link">Facilities</a>
+        <a href="index.html#contact" class="drawer-link">Contact</a>
+        <a href="index.html#appointment" class="drawer-cta-btn">Book Appointment</a>
+      </nav>
     </div>
 
-    <!-- Mobile Navigation Drawer Dropdown -->
-    <div class="mobile-nav-drawer">
-      <a href="index.html#home" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link active">About Us</a>
-      <a href="specialities.html" class="nav-link">Specialities</a>
-      <a href="facilities.html" class="nav-link">Facilities</a>
-      <a href="index.html#contact" class="nav-link">Contact</a>
-      <a href="index.html#appointment" class="btn-hero-primary mobile-drawer-btn" style="margin-top: 10px;">
-        <span>Book Now</span>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </a>
-    </div>
-  </header>
+    <!-- MAIN SCROLLABLE CONTENT -->
+    <main class="mobile-main-content">
 
-  <!-- ======================================================
-       ABOUT HERO PAGE HEADER
-   ======================================================= -->
-  <section class="about-hero-section">
-    <div class="container">
-      <div class="about-hero-content">
-        <div class="hero-eyebrow">
-          <span>SAFE MOTHERHOOD & COMPASSIONATE CARE</span>
-          <span class="eyebrow-line"></span>
-        </div>
-        <h1 class="about-page-title">
-          <span class="title-serif-dark">Empowering</span> <span class="title-serif-pink">Mothers,</span><br>
-          <span class="title-serif-dark">Protecting</span> <span class="title-serif-pink">Families</span>
-        </h1>
-        <p class="about-hero-desc">
-          Dalawai Maternity Hospital is dedicated to delivering safe motherhood, advanced obstetrics, gynecological care, and holistic wellness for women at every stage of life.
-        </p>
-
-        <div class="breadcrumbs">
-          <a href="index.html#home">Home</a>
-          <span class="bc-separator">/</span>
-          <span class="bc-current">About Us</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================================
-       STATS COUNTER BAR (Mobile Optimized)
-   ======================================================= -->
-  <section class="stats-bar-section">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-number">15+</div>
-          <div class="stat-label">Years of Clinical Excellence</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">5,000+</div>
-          <div class="stat-label">Safe & Happy Deliveries</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">24/7</div>
-          <div class="stat-label">Emergency & ICU Support</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">100%</div>
-          <div class="stat-label">Dedicated Patient Care</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================================
-       OUR STORY & LEGACY SECTION
-   ======================================================= -->
-  <section class="about-story-section">
-    <div class="container">
-      <div class="story-grid">
+      <!-- ======================================================
+           1. HERO SECTION
+       ======================================================= -->
+      <section class="hero-organic-section">
         
-        <!-- Story Text -->
-        <div class="story-text-col">
-          <div class="section-eyebrow">
-            <span class="section-eyebrow-line"></span>
-            <span>OUR LEGACY</span>
-          </div>
-          <h2 class="section-title">A Legacy of Trust, Warmth & Healing</h2>
-          <p class="story-paragraph">
-            Founded with a vision to provide specialized, compassionate, and affordable healthcare for women and mothers, <strong>Dalawai Maternity Hospital</strong> has grown into a premiere center for obstetrics, gynecology, and surgical critical care.
-          </p>
-          <p class="story-paragraph">
-            We combine high-end medical technology with a personalized human connection. From antenatal monitoring and pain-free labor suites to specialized post-op recovery and integrative Ayurvedic care, our clinical teams prioritize patient comfort and safety above all else.
-          </p>
-
-          <div class="story-highlights">
-            <div class="story-check-item">
-              <div class="check-icon">✓</div>
-              <span>Round-the-clock Obstetrics & Newborn Emergency Care</span>
-            </div>
-            <div class="story-check-item">
-              <div class="check-icon">✓</div>
-              <span>State-of-the-art Surgical ICU (SICU) & Modular OTs</span>
-            </div>
-            <div class="story-check-item">
-              <div class="check-icon">✓</div>
-              <span>Integrative Women's Health & Postnatal Ayurvedic Healing</span>
-            </div>
-          </div>
+        <!-- Botanical Leaves Background Accents -->
+        <div class="botanical-leaf leaf-top-left">
+          <svg width="90" height="90" viewBox="0 0 100 100" fill="none">
+            <path d="M10,90 Q40,10 90,10 Q60,60 10,90 Z" fill="#E8F5F1" opacity="0.7"/>
+            <path d="M10,90 Q50,50 90,10" stroke="#0D7A5F" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="botanical-leaf leaf-mid-right">
+          <svg width="70" height="70" viewBox="0 0 100 100" fill="none">
+            <path d="M90,90 Q60,10 10,10 Q40,60 90,90 Z" fill="#E3EBE6" opacity="0.6"/>
+            <path d="M90,90 Q50,50 10,10" stroke="#0D7A5F" stroke-width="1.5" opacity="0.3"/>
+          </svg>
         </div>
 
-        <!-- Story Visual Mobile Frame -->
-        <div class="story-visual-col">
-          <div class="story-image-card">
-            <img src="assets/images/hero background.png" alt="Dalawai Hospital Mother Care" class="story-img">
-            <div class="story-badge">
-              <div class="badge-icon">❤️</div>
-              <div class="badge-text">
-                <strong>Patient-First</strong>
-                <span>Compassionate Care</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================================
-       MISSION, VISION & CORE VALUES
-   ======================================================= -->
-  <section class="mvv-section">
-    <div class="container">
-      
-      <div class="section-eyebrow-wrap" style="justify-content: center; text-align: center;">
-        <div class="section-eyebrow">
-          <span class="section-eyebrow-line"></span>
-          <span>OUR GUIDING PRINCIPLES</span>
-          <span class="section-eyebrow-line"></span>
-        </div>
-      </div>
-      <h2 class="section-title" style="text-align: center;">Mission, Vision & Core Values</h2>
-
-      <div class="mvv-grid">
-        
-        <!-- Mission Card -->
-        <div class="mvv-card">
-          <div class="mvv-icon-box m-icon-teal">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="m16 12-4-4-4 4"/>
-              <path d="M12 16V8"/>
-            </svg>
-          </div>
-          <h3 class="mvv-title">Our Mission</h3>
-          <p class="mvv-desc">To deliver clinical excellence, safe childbirth, and accessible healthcare tailored to every woman’s unique wellness journey.</p>
-        </div>
-
-        <!-- Vision Card -->
-        <div class="mvv-card">
-          <div class="mvv-icon-box m-icon-pink">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
-              <circle cx="12" cy="12" r="3"/>
-            </svg>
-          </div>
-          <h3 class="mvv-title">Our Vision</h3>
-          <p class="mvv-desc">To be the most trusted maternity & women's specialty hospital recognized for patient safety, innovation, and holistic healing.</p>
-        </div>
-
-        <!-- Core Values Card -->
-        <div class="mvv-card">
-          <div class="mvv-icon-box m-icon-teal">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-            </svg>
-          </div>
-          <h3 class="mvv-title">Core Values</h3>
-          <p class="mvv-desc">Empathy, clinical transparency, continuous medical advancement, and deep respect for every mother and child.</p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ======================================================
-       MEET OUR FOUNDERS & LEADERSHIP
-   ======================================================= -->
-  <section class="doctors-about-section">
-    <div class="container">
-      
-      <div class="section-eyebrow">
-        <span class="section-eyebrow-line"></span>
-        <span>MEDICAL LEADERSHIP</span>
-      </div>
-      <h2 class="section-title">Meet Our Leading Specialists</h2>
-      <p class="section-subtitle">Guiding Dalawai Maternity Hospital with decades of clinical expertise, compassion, and innovation.</p>
-
-      <div class="doctors-grid">
-        
-        <!-- Doctor 1: Dr. Sathish Dalawai -->
-        <div class="doctor-card">
-          <div class="doc-img-wrap">
-            <img src="assets/images/hero section doctor.png" alt="Dr. Sathish Dalawai" class="doc-img">
-            <span class="doc-tag-pill">Obstetrics & Surgery</span>
-          </div>
-          <div class="doc-info">
-            <h3 class="doc-name">Dr. Sathish Dalawai</h3>
-            <span class="doc-designation">Senior Obstetrician & Laparoscopic Surgeon</span>
-            <p class="doc-bio">
-              Expert in high-risk pregnancy management, painless deliveries, and advanced laparoscopic gynecological procedures with a patient-centered approach.
-            </p>
-            <div class="doc-specialties">
-              <span class="spec-pill">High-Risk Pregnancy</span>
-              <span class="spec-pill">Safe Deliveries</span>
-              <span class="spec-pill">SICU Care</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Doctor 2: Dr. Jyothi Dalawai -->
-        <div class="doctor-card">
-          <div class="doc-img-wrap">
-            <img src="assets/images/doctor 2.png" alt="Dr. Jyothi Dalawai" class="doc-img">
-            <span class="doc-tag-pill">Ayurveda & Women's Care</span>
-          </div>
-          <div class="doc-info">
-            <h3 class="doc-name">Dr. Jyothi Dalawai</h3>
-            <span class="doc-designation">Ayurvedic Women's Health & Wellness Specialist</span>
-            <p class="doc-bio">
-              Pioneer in holistic postnatal recovery, natural fertility management, and integrative Ayurvedic wellness tailored for modern women.
-            </p>
-            <div class="doc-specialties">
-              <span class="spec-pill">Postnatal Care</span>
-              <span class="spec-pill">Holistic Healing</span>
-              <span class="spec-pill">Women's Wellness</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ======================================================
-       WHY CHOOSE US SECTION
-   ======================================================= -->
-  <section class="why-choose-section">
-    <div class="container">
-      <div class="why-choose-container">
-        
-        <div class="section-eyebrow">
-          <span class="section-eyebrow-line"></span>
-          <span>WHY CHOOSE US</span>
-        </div>
-        <h2 class="section-title">Why Families Trust Dalawai Hospital</h2>
-
-        <div class="why-grid">
+        <!-- Top Content Block -->
+        <div class="hero-content-top">
+          <span class="label-uppercase-tag">ABOUT US</span>
           
-          <div class="why-item">
-            <div class="why-icon">🏥</div>
-            <div class="why-content">
-              <h4>Modern Modular OT & SICU</h4>
-              <p>Advanced surgical infrastructure equipped for emergencies and complex deliveries.</p>
+          <h1 class="hero-serif-headline">
+            More Than<br>
+            <span class="serif-italic-accent">A Hospital</span>
+          </h1>
+
+          <p class="hero-serif-subheading">
+            A Partner in Life’s Most Precious Moments
+          </p>
+
+          <div class="hero-meta-row">
+            <div class="meta-item location-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Dalawai Hospital, Jamkhandi</span>
+            </div>
+            
+            <div class="meta-item date-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>Established on 13 August 2026</span>
             </div>
           </div>
-
-          <div class="why-item">
-            <div class="why-icon">👩‍⚕️</div>
-            <div class="why-content">
-              <h4>24/7 Specialist Availability</h4>
-              <p>Round-the-clock doctors and emergency nursing staff on-site at all times.</p>
-            </div>
-          </div>
-
-          <div class="why-item">
-            <div class="why-icon">🌿</div>
-            <div class="why-content">
-              <h4>Integrative Healthcare</h4>
-              <p>Seamless synthesis of modern clinical obstetrics and natural Ayurvedic wellness.</p>
-            </div>
-          </div>
-
-          <div class="why-item">
-            <div class="why-icon">💝</div>
-            <div class="why-content">
-              <h4>Compassionate Nursing</h4>
-              <p>Warm, attentive care designed to make your hospital stay comfortable and safe.</p>
-            </div>
-          </div>
-
         </div>
 
-        <div class="about-cta-box">
-          <h3>Need Consultation or Assistance?</h3>
-          <p>Our expert team is available 24/7 to guide you and answer your medical questions.</p>
-          <a href="index.html#appointment" class="btn-hero-primary" style="margin-top: 12px; display: inline-flex;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            <span>Book Consultation Now</span>
+        <!-- Hero Mother & Baby Visual Area -->
+        <div class="hero-image-container">
+          <div class="hero-image-wrapper">
+            <img src="assets/images/mother_newborn.jpg" alt="Mother holding newborn baby at Dalawai Hospital" class="mother-baby-img" />
+            <div class="hero-image-fade"></div>
+          </div>
+
+          <!-- Organic Green Circular Badge (Left Floating Blob) -->
+          <div class="organic-blob-badge green-blob">
+            <span class="handwritten-script">Healthy Women</span>
+            <span class="handwritten-script-sub">Happier Families</span>
+          </div>
+
+          <!-- Pale Mint Circular Badge (Right Floating Badge) -->
+          <div class="organic-blob-badge mint-blob">
+            <div class="mint-badge-content">
+              <span>Care</span>
+              <span>Support</span>
+              <span>Empower</span>
+              <span class="mint-highlight">Every Step</span>
+              <span>of the Way</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Category Pill Card -->
+        <div class="hero-floating-categories">
+          <div class="category-item">
+            <div class="category-icon-circle">
+              <!-- Women's Health Icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M12 2a6 6 0 0 0-6 6c0 4.5 6 11 6 11s6-6.5 6-11a6 6 0 0 0-6-6z"/><circle cx="12" cy="8" r="2.5"/></svg>
+            </div>
+            <span class="category-label">Women's<br>Health</span>
+          </div>
+
+          <div class="category-divider"></div>
+
+          <div class="category-item">
+            <div class="category-icon-circle">
+              <!-- Maternity Care Icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/><path d="M12 7v6l4 2"/></svg>
+            </div>
+            <span class="category-label">Maternity<br>Care</span>
+          </div>
+
+          <div class="category-divider"></div>
+
+          <div class="category-item">
+            <div class="category-icon-circle">
+              <!-- Gynecological Care Icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="category-label">Gynecological<br>Care</span>
+          </div>
+
+          <div class="category-divider"></div>
+
+          <div class="category-item">
+            <div class="category-icon-circle">
+              <!-- Family Well-being Icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.72-8.72 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <span class="category-label">Family<br>Well-being</span>
+          </div>
+        </div>
+
+        <!-- Curved SVG Bottom Divider -->
+        <div class="hero-bottom-curve">
+          <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none">
+            <path d="M0,32L60,42.7C120,53,240,75,360,80C480,85,600,75,720,58.7C840,43,960,21,1080,21.3C1200,21,1320,43,1380,53.3L1440,64L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z" fill="#FFFFFF"/>
+          </svg>
+        </div>
+
+      </section>
+
+      <!-- ======================================================
+           2. SECTION 2: OUR STORY
+       ======================================================= -->
+      <section class="mobile-story-section">
+        <div class="section-container">
+          
+          <span class="label-uppercase-tag">OUR STORY</span>
+
+          <h2 class="serif-section-title">
+            A New Beginning<br>
+            <span class="title-highlight">for a Healthier Tomorrow</span>
+          </h2>
+
+          <div class="story-text-content">
+            <p class="story-paragraph">
+              Dalawai Hospital was established on 13 August 2026 in Jamkhandi with a vision to provide accessible, ethical and quality healthcare to individuals and families in the community.
+            </p>
+            <p class="story-paragraph">
+              Led by Dr. Satish Dalwai, a dedicated Obstetrician & Gynecologist, the hospital places special emphasis on women's health, maternity care and comprehensive gynecological services.
+            </p>
+          </div>
+
+          <!-- Hospital Image with Overlapping Organic Blob & Italic Quote -->
+          <div class="story-visual-block">
+            <div class="story-shape-backdrop"></div>
+            <img src="assets/images/hospital_exterior.jpg" alt="Dalawai Hospital Jamkhandi Facility Exterior" class="story-hospital-img" />
+            
+            <div class="story-quote-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#0D7A5F" opacity="0.3"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+              <p class="story-italic-quote">
+                "Built on trust.<br>
+                Focused on care.<br>
+                For our community."
+              </p>
+            </div>
+          </div>
+
+          <a href="specialities.html" class="outline-action-btn">
+            <span>Our Journey</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
+
         </div>
+      </section>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================================
-       FOOTER & CONTACT SECTION
-   ======================================================= -->
-  <footer class="site-footer">
-    <div class="container">
-      
-      <div class="footer-grid">
+      <!-- ======================================================
+           3. SECTION 3: MEDICAL HEAD
+       ======================================================= -->
+      <section class="mobile-doctor-section">
         
-        <div class="footer-brand">
-          <img src="assets/images/logo_transparent.png" alt="Dalawai Hospital Logo">
-          <p>Dalawai Maternity Hospital provides expert Obstetrics, Gynecology, Ayurvedic Women's Healthcare, and round-the-clock Emergency & Critical Care.</p>
+        <!-- Curved Organic SVG Top & Bottom Background -->
+        <div class="mint-curve-top">
+          <svg viewBox="0 0 1440 80" fill="none" preserveAspectRatio="none">
+            <path d="M0,0 L1440,0 L1440,40 C1200,80 900,20 600,60 C300,100 100,20 0,40 Z" fill="#FFFFFF"/>
+          </svg>
         </div>
 
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="specialities.html">Specialities</a></li>
-            <li><a href="facilities.html">Facilities</a></li>
-            <li><a href="index.html#appointment">Book Appointment</a></li>
-          </ul>
+        <div class="section-container mint-container-padding">
+          
+          <span class="label-uppercase-tag">MEET OUR MEDICAL HEAD</span>
+
+          <h2 class="serif-doctor-name">Dr. Satish Dalwai</h2>
+          <p class="doctor-subtitle">Obstetrician & Gynecologist &nbsp;|&nbsp; Medical Head</p>
+
+          <!-- Doctor Visual Area -->
+          <div class="doctor-portrait-wrapper">
+            <div class="organic-doctor-blob"></div>
+            <img src="assets/images/doctor_satish.jpg" alt="Dr. Satish Dalwai - Medical Head" class="doctor-portrait-img" />
+            
+            <!-- Dark Green Pill Tag -->
+            <div class="specialist-pill-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2a6 6 0 0 0-6 6c0 4.5 6 11 6 11s6-6.5 6-11a6 6 0 0 0-6-6z"/><circle cx="12" cy="8" r="2.5"/></svg>
+              <span>WOMEN'S HEALTH SPECIALIST</span>
+            </div>
+
+            <!-- Decorative Handwritten Script Phrase -->
+            <div class="doctor-handwritten-phrase">
+              <span>Care Guidance Expertise</span>
+              <span class="script-accent">Always With You</span>
+            </div>
+          </div>
+
+          <!-- Doctor Bio Copy -->
+          <div class="doctor-bio-text">
+            <p>
+              Dr. Satish Dalwai leads Dalawai Hospital with a commitment to providing dependable and compassionate healthcare, with a special focus on obstetrics, gynecology, maternal health and women's well-being.
+            </p>
+            <p>
+              His approach emphasizes personalized attention, ethical medical practice and patient education, creating a comfortable environment where patients can openly discuss their healthcare concerns.
+            </p>
+          </div>
+
+          <!-- Doctor Quote Box -->
+          <div class="doctor-quote-box">
+            <div class="quote-mark-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#0D7A5F"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            </div>
+            <p class="quote-statement">
+              "Every patient deserves to be heard, cared for, and treated with dignity."
+            </p>
+            <span class="quote-author">– Dr. Satish Dalwai</span>
+          </div>
+
+          <a href="specialities.html" class="outline-action-btn">
+            <span>Know More</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+
         </div>
 
-        <div class="footer-col">
-          <h4>Specialities</h4>
-          <ul class="footer-links">
-            <li><a href="index.html#services">Obstetrics & Maternity</a></li>
-            <li><a href="index.html#services">Surgical ICU (SICU)</a></li>
-            <li><a href="index.html#services">Ayurvedic Wellness</a></li>
-            <li><a href="index.html#services">Inpatient & Outpatient</a></li>
-            <li><a href="index.html#services">Operating Suites</a></li>
-          </ul>
+      </section>
+
+      <!-- ======================================================
+           4. SECTION 4: VISION & MISSION
+       ======================================================= -->
+      <section class="mobile-purpose-section">
+        <div class="section-container">
+          
+          <div class="centered-header">
+            <span class="label-uppercase-tag">OUR PURPOSE</span>
+            <h2 class="serif-section-title">Vision & Mission</h2>
+          </div>
+
+          <div class="purpose-cards-stack">
+            
+            <!-- Vision Card (Soft Mint Green Background) -->
+            <div class="purpose-card vision-card">
+              <div class="purpose-card-header">
+                <div class="purpose-icon-circle mint-icon-circle">
+                  <!-- Vision / Eye Icon -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h3 class="purpose-card-title">Our Vision</h3>
+              </div>
+
+              <blockquote class="purpose-quote">
+                "To become a trusted centre for compassionate, ethical and quality healthcare in Jamkhandi and the surrounding communities."
+              </blockquote>
+
+              <p class="purpose-detail-text">
+                We envision a healthcare environment where every patient can access dependable medical expertise, modern facilities and personalized care in a safe and respectful setting.
+              </p>
+            </div>
+
+            <!-- Mission Card (Soft Blush Pink Background) -->
+            <div class="purpose-card mission-card">
+              <div class="purpose-card-header">
+                <div class="purpose-icon-circle pink-icon-circle">
+                  <!-- Target / Mission Icon -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <h3 class="purpose-card-title">Our Mission</h3>
+              </div>
+
+              <blockquote class="purpose-quote">
+                "To provide accessible, patient-centred healthcare with compassion, integrity and clinical excellence."
+              </blockquote>
+
+              <!-- 7 Checkmarked Points -->
+              <ul class="mission-points-list">
+                <li>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Provide quality and ethical medical care to every patient.</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Deliver specialized women's and maternity healthcare.</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Maintain a safe, hygienic and patient-friendly environment.</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Use appropriate modern medical practices and technology.</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Support patients through clear communication and informed care.</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Promote preventive healthcare and health awareness.</span>
+                </li>
+                <li>
+                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Continuously improve our services and standards of patient care.</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
         </div>
+      </section>
 
-        <div class="footer-col">
-          <h4>Contact Us</h4>
-          <ul class="footer-links">
-            <li><strong>Dalawai Hospital</strong></li>
-            <li>Obstetrics, Gynecology & Critical Care</li>
-            <li>📞 Emergency & Appointments: 24/7 Available</li>
-            <li>📍 Local City Center Campus</li>
-          </ul>
+      <!-- ======================================================
+           5. SECTION 5: CORE VALUES
+       ======================================================= -->
+      <section class="mobile-values-section">
+        <div class="section-container">
+          
+          <div class="centered-header">
+            <span class="label-uppercase-tag">OUR CORE VALUES</span>
+          </div>
+
+          <div class="core-values-grid">
+            
+            <!-- 1. Heart Icon: Compassion -->
+            <div class="value-card">
+              <div class="value-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.72-8.72 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <h4 class="value-title">Compassion</h4>
+              <p class="value-desc">"We care with empathy"</p>
+            </div>
+
+            <!-- 2. Shield Icon: Integrity -->
+            <div class="value-card">
+              <div class="value-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h4 class="value-title">Integrity</h4>
+              <p class="value-desc">"We do what is right"</p>
+            </div>
+
+            <!-- 3. Family Icon: Patient Safety -->
+            <div class="value-card">
+              <div class="value-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h4 class="value-title">Patient Safety</h4>
+              <p class="value-desc">"Your safety comes first"</p>
+            </div>
+
+            <!-- 4. Star Icon: Clinical Excellence -->
+            <div class="value-card">
+              <div class="value-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <h4 class="value-title">Clinical Excellence</h4>
+              <p class="value-desc">"Committed to better care"</p>
+            </div>
+
+            <!-- 5. Handshake Icon: Respect & Dignity -->
+            <div class="value-card">
+              <div class="value-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M18 11l-5-5-5 5"/><path d="M13 6v12"/></svg>
+              </div>
+              <h4 class="value-title">Respect & Dignity</h4>
+              <p class="value-desc">"Every patient matters"</p>
+            </div>
+
+            <!-- 6. Leaf Icon: Community Care -->
+            <div class="value-card">
+              <div class="value-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+              </div>
+              <h4 class="value-title">Community Care</h4>
+              <p class="value-desc">"For a healthier tomorrow"</p>
+            </div>
+
+          </div>
+
         </div>
+      </section>
 
-      </div>
+      <!-- ======================================================
+           6. SECTION 6: APPOINTMENT CTA
+       ======================================================= -->
+      <section class="mobile-cta-section">
+        <div class="section-container">
+          
+          <div class="cta-emerald-card">
+            
+            <!-- Subtle Background SVG Line Artwork -->
+            <div class="cta-bg-artwork">
+              <svg width="100%" height="100%" viewBox="0 0 300 200" fill="none" opacity="0.12">
+                <path d="M0,100 C50,20 150,180 250,50 C300,0 350,150 400,100" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+                <path d="M50,150 Q120,50 200,120 T350,80" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 Dalawai Hospital. All rights reserved.</p>
-        <p>Designed with care for mother & child.</p>
-      </div>
+            <span class="cta-uppercase-tag">YOUR HEALTH. OUR RESPONSIBILITY.</span>
 
-    </div>
-  </footer>
+            <h2 class="cta-white-headline">
+              Book an Appointment<br>Today
+            </h2>
+
+            <p class="cta-subtext">
+              Take the first step towards a healthier, brighter tomorrow.
+            </p>
+
+            <a href="index.html#appointment" class="cta-white-pill-btn">
+              <span>Book Now</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B2B22" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+
+          </div>
+
+          <!-- Bottom Baby Hand Photograph Block -->
+          <div class="cta-baby-block">
+            <img src="assets/images/baby_hand_finger.jpg" alt="Newborn baby hand holding finger at Dalawai Hospital" class="baby-hand-img" />
+            
+            <div class="baby-overlay-text">
+              <span class="baby-handwritten-script">Caring for</span>
+              <span class="baby-handwritten-script">today and every</span>
+              <span class="baby-handwritten-script-gold">tomorrow</span>
+              
+              <!-- Heart Line SVG Accent -->
+              <svg class="heart-line-svg" width="60" height="20" viewBox="0 0 100 30" fill="none">
+                <path d="M0,15 L35,15 L40,5 L45,25 L50,10 L55,20 L60,15 L100,15" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="mobile-site-footer">
+        <p class="footer-copy">© 2026 Dalawai Hospital, Jamkhandi. Care for Every Generation.</p>
+      </footer>
+
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
