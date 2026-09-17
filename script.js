@@ -60,4 +60,28 @@ document.addEventListener('DOMContentLoaded', () => {
       bookingForm.reset();
     });
   }
+
+  // 5. Specialities Page Category Filtering
+  const filterPills = document.querySelectorAll('.filter-pill');
+  const specCards = document.querySelectorAll('.spec-detail-card');
+
+  if (filterPills.length > 0 && specCards.length > 0) {
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+
+        const filterValue = pill.getAttribute('data-filter');
+
+        specCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filterValue === 'all' || category === filterValue) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
 });

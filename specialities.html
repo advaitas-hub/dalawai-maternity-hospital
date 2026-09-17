@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Specialities & Departments | Dalawai Maternity Hospital</title>
+
+  <!-- Modern Aesthetic Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=42" />
+</head>
+<body>
+
+  <!-- ======================================================
+       HEADER / NAVIGATION BAR
+   ======================================================= -->
+  <header class="site-navbar">
+    <div class="navbar-container">
+      
+      <!-- Brand Logo Section -->
+      <div class="brand-container">
+        <a href="index.html#home" class="brand-logo-link">
+          <img src="assets/images/logo_transparent.png" alt="Dalawai Hospital Logo" class="brand-logo-img">
+          <img src="assets/images/line_transparent.png" alt="Dalawai Maternity Hospital" class="brand-line-img">
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="navbar-menu">
+        <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="specialities.html" class="nav-link active">Specialities</a></li>
+        <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
+        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Right Action & Mobile Toggle -->
+      <div class="navbar-actions">
+        <a href="index.html#appointment" class="btn-appointment">
+          <span>Book Now</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer Dropdown -->
+    <div class="mobile-nav-drawer">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="specialities.html" class="nav-link active">Specialities</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+      <a href="index.html#appointment" class="btn-hero-primary mobile-drawer-btn" style="margin-top: 10px;">
+        <span>Book Now</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       SPECIALITIES HERO PAGE HEADER
+   ======================================================= -->
+  <section class="about-hero-section">
+    <div class="container">
+      <div class="about-hero-content">
+        <div class="hero-eyebrow">
+          <span>EXPERT CLINICAL DEPARTMENTS</span>
+          <span class="eyebrow-line"></span>
+        </div>
+        <h1 class="about-page-title">
+          <span class="title-serif-dark">Comprehensive</span> <span class="title-serif-pink">Specialities</span><br>
+          <span class="title-serif-dark">For Every</span> <span class="title-serif-pink">Stage of Life</span>
+        </h1>
+        <p class="about-hero-desc">
+          Explore our dedicated clinical divisions combining advanced medical technology, experienced specialists, and compassionate patient care.
+        </p>
+
+        <div class="breadcrumbs">
+          <a href="index.html#home">Home</a>
+          <span class="bc-separator">/</span>
+          <span class="bc-current">Specialities</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FILTER PILLS BAR (Mobile Touch Optimized)
+   ======================================================= -->
+  <section class="spec-filter-section">
+    <div class="container">
+      <div class="filter-pills-wrap">
+        <button class="filter-pill active" data-filter="all">All Specialities</button>
+        <button class="filter-pill" data-filter="maternity">Obstetrics & Maternity</button>
+        <button class="filter-pill" data-filter="surgery">Gynecology & Surgery</button>
+        <button class="filter-pill" data-filter="icu">Critical Care (SICU)</button>
+        <button class="filter-pill" data-filter="ayurveda">Ayurvedic Care</button>
+        <button class="filter-pill" data-filter="opd">OPD & Emergency</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       DETAILED SPECIALITIES GRID
+   ======================================================= -->
+  <section class="specialities-detail-section">
+    <div class="container">
+      <div class="spec-cards-grid">
+
+        <!-- 1. Obstetrics & High-Risk Maternity Care -->
+        <div class="spec-detail-card" data-category="maternity">
+          <div class="spec-card-header">
+            <div class="spec-detail-icon s-icon-pink">
+              <svg class="gyno-icon" width="40" height="40" viewBox="20 10 56 84" fill="#f472b6">
+                <path d="m68.441 29.09c0.019532 0.44922-0.23828 0.87109-0.64844 1.0703l-2.2617 1.0586-2.2891 3.8008c-0.51953 0.85938-1.4492 1.3711-2.4297 1.3711-0.19141 0-0.37891-0.019531-0.55859-0.058594-0.44922-0.089843-0.96875-0.23047-1.5312-0.42188-0.35938 1.5781-0.53125 3.2305-0.58984 4.0586l9.9297 8.4102c2.0781-3.9102 1.9883-7.1094 1.8984-10.48-0.050782-1.6484-0.089844-3.3516 0.10156-5.1914 0.30078-2.7891 0.98047-4.6602 1.5703-6.3203 0.67969-1.8906 1.2695-3.5195 1.1484-6.1914-0.10156-2.1211-0.69141-4.0781-1.7617-5.8516 0.14062 0.98828 0.14844 1.6406 0.14844 1.6992 0 0.17969-0.050781 0.37109-0.12891 0.53125-0.25 0.46875-0.60937 0.89844-1.0703 1.2812-0.42969 3.5195-1.2891 5.3203-1.75 6.0703l0.21875 5.1602z"/>
+                <path d="m38.352 84.961-1.6992 9.0391h14.441c-0.62891-0.32031-1.2305-0.67969-1.8008-1.1016l-10.93-7.9414z"/>
+                <path d="m36.148 38.172c3.2617-1.5195 6.3281-2.0586 6.6484-2.1094 3.9414-1.5195 5.1992-4.0312 5.5586-5.8789 0.33984-1.75 1.0391-3.4219 2.0898-4.9492l3.1602-4.6406c1.0508-1.5508 2.8008-2.4805 4.6719-2.4883 4.6992-0.03125 8.2891-0.67969 9.9414-1.7383 0.039062-0.03125 0.089844-0.058594 0.12891-0.089844 0.23828-1.7188 0.42969-3.3984 0.57031-0.51953-0.039063-0.73047-0.25-2.6797-1.1484-4.6289-1.4609-3.1406-4.0312-4.8516-7.6602-5.0781-2.9688-0.17969-5.5391 0.17188-7.6211 1.0508-1.7188 0.73047-3.1602 1.8398-4.2812 3.3086-2.1602 2.8398-2.7383 6.4492-3.0508 8.3906-0.51953 3.2305-1.9297 5.8906-4.3086 8.1406-2.0312 1.9219-4.4219 3.2305-6.7305 4.5117-1.2305 0.67969-2.3906 1.3086-3.4102 2-2.6484 1.7812-7.0703 7.0312-7.6602 13.531-0.41016 4.5391 1.0898 8.8594 4.4609 12.871 0.078126-4.8203 0.28906-9.6016 0.73828-12.641 0.55078-3.7383 3.2891-6.8594 7.9102-9.0195z"/>
+                <path d="m75.531 71.828c-0.82812-2.0117-2-3.9102-3.4688-5.6484-2.5391-3-5.1406-4.5117-5.1719-4.5195-0.28906-0.17188-0.5-0.46094-0.55078-0.80078-0.050782-0.33984 0.050781-0.67969 0.26953-0.92969l1.2383-1.3789c1.1484-1.2812 1.7109-2.6914 1.6094-4.0781-0.10156-1.3984-0.87109-2.7305-2.2188-3.8398h-0.011719l-11-9.3086c-0.26953-0.23047-0.41016-0.55859-0.39844-0.91016 0-0.12891 0.14844-2.9609 0.80859-5.5312-1.0898-0.75-2.0586-1.8281-2.5312-3.4102-0.17969-0.58984 0.16016-1.2188 0.75-1.3984 0.58984-0.17969 1.2188 0.16016 1.3984 0.75 0.67188 2.2305 3.0586 3.0312 4.4219 3.3086 0.25 0.050782 0.5-0.058593 0.62109-0.26953l2.4688-4.1016c0.10938-0.19141 0.28125-0.33984 0.48828-0.44141l1.8906-0.89062-0.21094-4.7891c-0.011719-0.30078 0.058594-0.55078 0.26172-0.76953 0.30859-0.39844 0.87109-1.6094 1.2812-3.7188-0.67969 0.23047-1.4414 0.42969-2.3008 0.60156-2.4102 0.46875-5.0898 0.57812-6.9102 0.60156-1.1289 0-2.1914 0.57031-2.8281 1.5117l-3.1602 4.6406c-0.87109 1.2812-1.4609 2.6602-1.7383 4.1211-0.28125 1.4609-0.89844 2.7891-1.8398 3.9688-1.2617 1.5781-3.0508 2.8086-5.3203 3.6484-0.12891 0.050781-2.6172 0.070312-0.37891 0.070312-1.3789 0.26172-11.559 2.4102-12.559 9.2188-0.92969 6.3203-0.78906 20.531-0.69141 26.352 0.019531 1.3281 0.67969 2.5781 1.75 3.3594l19.078 13.84c1.2109 0.87891 2.5586 1.4883 4.0195 1.8086 3.0117 0.67188 5.7109 1.0391 7.9805 1.1094h1.6406c2.3789-0.089844 4.1211-0.57031 5.0312-1.4492 1.4102-1.3516 2.5586-2.8906 3.4414-4.5703 0.17188-0.32812 0-0.57812-0.078125-0.67188-0.078125-0.089844-0.30859-0.30078-0.66016-0.17188-2.9609 1.0703-5.1797 2.2812-6.4297 3.4883-0.39063 0.37891-0.98828 0.42969-1.4297 0.10938-0.44141-0.30859-0.60156-0.89844-0.37109-1.3906l0.44141-0.94141c0.16016-0.32812 0.03125-0.60938-0.039062-0.71875-0.058594-0.10938-0.25-0.35156-0.60938-0.37891l-1.3594-0.089844c-1.0312-0.070312-2.0391 0.26953-2.8281 0.92969l-1.6406 1.3906c-0.46875 0.39844-1.1719 0.33984-1.5781-0.12109-0.03125-0.03125-2.9102-3.3516-6.5117-6.8398-5.8984-5.7383-9.1289-7.5508-10.789-8.0703-0.5-0.16016-0.82812-0.64062-0.78906-1.1719l1.5117-18.57c0.050781-0.62109 0.58984-1.0781 1.2109-1.0312 0.62109 0.050781 1.0781 0.58984 1.0312 1.2109l-1.4492 17.719c5.6719 2.3906 14.191 11.578 16.738 14.441l0.80078-0.67969c1.2383-1.0508 2.8086-1.5703 4.4219-1.4609l1.3594 0.089844c1 0.058593 1.8906 0.60937 2.3984 1.4688 0.12891 0.21875 0.23047 0.44922 0.30078 0.69141 1.3086-0.78125 2.9297-1.5195 4.8398-2.2109 1.1094-0.39844 2.3398-0.089844 3.1211 0.80078 0.28125 0.30859 0.46875 0.67969 0.58984 1.0586 1.3789-2.2305 2.1016-4.6094 2.1289-7.1094 0.03125-2.7812-0.46875-5.4492-1.5-7.9492z"/>
+              </svg>
+            </div>
+            <div class="spec-title-wrap">
+              <span class="spec-category-badge">Maternity & Childbirth</span>
+              <h3 class="spec-card-main-title">Obstetrics & High-Risk Maternity</h3>
+            </div>
+          </div>
+          <p class="spec-card-paragraph">
+            Complete care throughout pregnancy, labor, and recovery. Equipped for both routine deliveries and high-risk pregnancy complications.
+          </p>
+          <ul class="spec-feature-list">
+            <li><span class="f-dot"></span>Comprehensive Antenatal Screening & Fetal Monitoring</li>
+            <li><span class="f-dot"></span>Painless Delivery Options (Labor Analgesia)</li>
+            <li><span class="f-dot"></span>Normal & Cesarean (C-Section) Deliveries</li>
+            <li><span class="f-dot"></span>High-Risk Pregnancy Management (Gestational Diabetes, Hypertensive Disorders)</li>
+          </ul>
+          <div class="spec-card-footer">
+            <span class="doc-badge">Lead Specialist: <strong>Dr. Sathish Dalawai</strong></span>
+            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
+              <span>Book Appointment</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Gynecology & Minimal Access Surgery -->
+        <div class="spec-detail-card" data-category="surgery">
+          <div class="spec-card-header">
+            <div class="spec-detail-icon s-icon-teal">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m18 2 4 4"/>
+                <path d="m17 7 3 3"/>
+                <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-1.6-1.6c-1-1-1-2.5 0-3.4L14 4"/>
+                <path d="m9 11 4 4"/>
+                <path d="m5 19-3 3"/>
+              </svg>
+            </div>
+            <div class="spec-title-wrap">
+              <span class="spec-category-badge badge-teal">Surgical Excellence</span>
+              <h3 class="spec-card-main-title">Gynecology & Laparoscopic Surgery</h3>
+            </div>
+          </div>
+          <p class="spec-card-paragraph">
+            Advanced minimally invasive keyhole surgical techniques for women's reproductive health, ensuring faster recovery and minimal scarring.
+          </p>
+          <ul class="spec-feature-list">
+            <li><span class="f-dot"></span>Laparoscopic Fibroid & Ovarian Cyst Surgery</li>
+            <li><span class="f-dot"></span>Total Laparoscopic Hysterectomy (TLH)</li>
+            <li><span class="f-dot"></span>Treatment of Endometriosis & Uterine Prolapse</li>
+            <li><span class="f-dot"></span>Menstrual Irregularity & PCOS Management</li>
+          </ul>
+          <div class="spec-card-footer">
+            <span class="doc-badge">Lead Specialist: <strong>Dr. Sathish Dalawai</strong></span>
+            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
+              <span>Book Appointment</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Surgical ICU (SICU) & Critical Care -->
+        <div class="spec-detail-card" data-category="icu">
+          <div class="spec-card-header">
+            <div class="spec-detail-icon s-icon-teal">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="12" rx="2"/>
+                <path d="M6 10h2l1.5-3 2.5 6 2-4 1.5 1h2.5"/>
+                <path d="M6 20h12"/>
+                <path d="M9 16v4"/>
+                <path d="M15 16v4"/>
+              </svg>
+            </div>
+            <div class="spec-title-wrap">
+              <span class="spec-category-badge badge-teal">24/7 Critical Care</span>
+              <h3 class="spec-card-main-title">Surgical ICU (SICU) & Emergency</h3>
+            </div>
+          </div>
+          <p class="spec-card-paragraph">
+            State-of-the-art intensive care unit tailored for post-operative recovery, obstetric emergencies, and acute surgical monitoring.
+          </p>
+          <ul class="spec-feature-list">
+            <li><span class="f-dot"></span>24-Hour Continuous Multi-Para Monitoring</li>
+            <li><span class="f-dot"></span>Advanced Ventilator Support & Invasive Line Care</li>
+            <li><span class="f-dot"></span>Dedicated Critical Care Nursing Staff</li>
+            <li><span class="f-dot"></span>Immediate High-Risk Surgical Resuscitation</li>
+          </ul>
+          <div class="spec-card-footer">
+            <span class="doc-badge">Lead Team: <strong>24/7 Critical Care Specialists</strong></span>
+            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
+              <span>Book Appointment</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Ayurvedic Women's Health & Wellness -->
+        <div class="spec-detail-card" data-category="ayurveda">
+          <div class="spec-card-header">
+            <div class="spec-detail-icon s-icon-pink">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 0 1 10 10H2A10 10 0 0 1 12 2z"/>
+                <path d="M12 2v4"/>
+                <path d="M8 17a4 4 0 0 0 8 0"/>
+                <path d="M16 6c0-2-2-4-4-4s-4 2-4 4"/>
+              </svg>
+            </div>
+            <div class="spec-title-wrap">
+              <span class="spec-category-badge">Integrative Healing</span>
+              <h3 class="spec-card-main-title">Ayurvedic Women’s Care & Sutika</h3>
+            </div>
+          </div>
+          <p class="spec-card-paragraph">
+            Holistic Ayurvedic treatments specializing in post-delivery maternal rehabilitation (Sutika Paricharya), natural wellness, and hormonal balance.
+          </p>
+          <ul class="spec-feature-list">
+            <li><span class="f-dot"></span>Postnatal Ayurvedic Body Rejuvenation & Abhyanga</li>
+            <li><span class="f-dot"></span>Ayurvedic Management of Infertility & PCOS</li>
+            <li><span class="f-dot"></span>Natural Hormonal Balancing Treatments</li>
+            <li><span class="f-dot"></span>Lactation & Postpartum Recovery Guidance</li>
+          </ul>
+          <div class="spec-card-footer">
+            <span class="doc-badge">Lead Specialist: <strong>Dr. Jyothi Dalawai</strong></span>
+            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
+              <span>Book Appointment</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. Inpatient Wards (IPD) & Private Rooms -->
+        <div class="spec-detail-card" data-category="maternity">
+          <div class="spec-card-header">
+            <div class="spec-detail-icon s-icon-teal">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 4v16"/>
+                <path d="M2 12h20"/>
+                <path d="M22 8v12"/>
+                <path d="M6 12V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3"/>
+              </svg>
+            </div>
+            <div class="spec-title-wrap">
+              <span class="spec-category-badge badge-teal">Inpatient Care</span>
+              <h3 class="spec-card-main-title">Inpatient Wards (IPD) & Private Suites</h3>
+            </div>
+          </div>
+          <p class="spec-card-paragraph">
+            Comfortable, hygienic, and safe accommodation designed for mother and newborn comfort, backed by attentive round-the-clock nursing care.
+          </p>
+          <ul class="spec-feature-list">
+            <li><span class="f-dot"></span>Deluxe Air-Conditioned Private Rooms</li>
+            <li><span class="f-dot"></span>Semi-Private Wards & General Inpatient Beds</li>
+            <li><span class="f-dot"></span>24-Hour Dedicated Nursing & Attendant Support</li>
+            <li><span class="f-dot"></span>Mother & Newborn Safety Infrastructure</li>
+          </ul>
+          <div class="spec-card-footer">
+            <span class="doc-badge">Care Team: <strong>Resident Medical Officers & Nurses</strong></span>
+            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
+              <span>Book Appointment</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 6. Outpatient Consultations (OPD) & Diagnostics -->
+        <div class="spec-detail-card" data-category="opd">
+          <div class="spec-card-header">
+            <div class="spec-detail-icon s-icon-pink">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 2a2 2 0 0 0-2 2v2H7a2 2 0 0 0-2 2v2a8 8 0 0 0 14 0V8a2 2 0 0 0-2-2h-2V4a2 2 0 0 0-2-2z"/>
+                <path d="M12 14v4a3 3 0 0 0 6 0v-2"/>
+              </svg>
+            </div>
+            <div class="spec-title-wrap">
+              <span class="spec-category-badge">Outpatient Services</span>
+              <h3 class="spec-card-main-title">Outpatient Consultations (OPD)</h3>
+            </div>
+          </div>
+          <p class="spec-card-paragraph">
+            Daily consultation clinics providing expert medical advice, diagnostic evaluations, pre-conception guidance, and routine health checks.
+          </p>
+          <ul class="spec-feature-list">
+            <li><span class="f-dot"></span>Routine Gynecological Check-ups</li>
+            <li><span class="f-dot"></span>Pre-Conception & Fertility Guidance</li>
+            <li><span class="f-dot"></span>In-House Diagnostic Lab & Ultrasound Screening</li>
+            <li><span class="f-dot"></span>Pap Smears & Cancer Screening Clinics</li>
+          </ul>
+          <div class="spec-card-footer">
+            <span class="doc-badge">Lead Doctors: <strong>OPD Medical Team</strong></span>
+            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
+              <span>Book Appointment</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       PATIENT CARE JOURNEY (Mobile Timeline Steps)
+   ======================================================= -->
+  <section class="journey-section">
+    <div class="container">
+      
+      <div class="section-eyebrow-wrap" style="justify-content: center; text-align: center;">
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-line"></span>
+          <span>YOUR PATIENT CARE JOURNEY</span>
+          <span class="section-eyebrow-line"></span>
+        </div>
+      </div>
+      <h2 class="section-title" style="text-align: center;">How We Care For You</h2>
+      <p class="section-subtitle" style="text-align: center;">Four simple steps ensuring comfort, clarity, and clinical safety.</p>
+
+      <div class="journey-grid">
+        
+        <div class="journey-step-card">
+          <div class="step-num">01</div>
+          <h4>Initial Consultation</h4>
+          <p>Detailed health evaluation, diagnostic ultrasound, and clear communication of your care roadmap.</p>
+        </div>
+
+        <div class="journey-step-card">
+          <div class="step-num">02</div>
+          <h4>Customized Care Plan</h4>
+          <p>Personalized antenatal monitorings or surgical planning tailored specifically to your medical needs.</p>
+        </div>
+
+        <div class="journey-step-card">
+          <div class="step-num">03</div>
+          <h4>Advanced Procedure</h4>
+          <p>Safe delivery, laparoscopic surgery, or critical care executed with clinical excellence.</p>
+        </div>
+
+        <div class="journey-step-card">
+          <div class="step-num">04</div>
+          <h4>Postnatal & Recovery</h4>
+          <p>Integrative recovery care, lactation support, and long-term wellness follow-up for you and baby.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CALL TO ACTION BANNER & APPOINTMENT
+   ======================================================= -->
+  <section class="about-cta-section" style="padding: 40px 0;">
+    <div class="container">
+      <div class="about-cta-box">
+        <h3>Schedule Your Departmental Consultation</h3>
+        <p>Book an appointment with Dr. Sathish Dalawai or Dr. Jyothi Dalawai for specialized women's care.</p>
+        <a href="index.html#appointment" class="btn-hero-primary" style="margin-top: 12px; display: inline-flex;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Confirm Appointment Booking</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER & CONTACT SECTION
+   ======================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <img src="assets/images/logo_transparent.png" alt="Dalawai Hospital Logo">
+          <p>Dalawai Maternity Hospital provides expert Obstetrics, Gynecology, Ayurvedic Women's Healthcare, and round-the-clock Emergency & Critical Care.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="specialities.html">Specialities</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="index.html#appointment">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Specialities</h4>
+          <ul class="footer-links">
+            <li><a href="specialities.html">Obstetrics & Maternity</a></li>
+            <li><a href="specialities.html">Surgical ICU (SICU)</a></li>
+            <li><a href="specialities.html">Ayurvedic Wellness</a></li>
+            <li><a href="specialities.html">Inpatient & Outpatient</a></li>
+            <li><a href="specialities.html">Operating Suites</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li><strong>Dalawai Hospital</strong></li>
+            <li>Obstetrics, Gynecology & Critical Care</li>
+            <li>📞 Emergency & Appointments: 24/7 Available</li>
+            <li>📍 Local City Center Campus</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dalawai Hospital. All rights reserved.</p>
+        <p>Designed with care for mother & child.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
