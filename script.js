@@ -84,4 +84,33 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // 6. FAQ Accordion Toggle for Speciality Detail Pages
+  const faqItems = document.querySelectorAll('.faq-accordion-item');
+  if (faqItems.length > 0) {
+    faqItems.forEach(item => {
+      const header = item.querySelector('.faq-accordion-header');
+      if (header) {
+        header.addEventListener('click', () => {
+          const isOpen = item.classList.contains('active');
+          
+          // Close other accordion items in the same container
+          const accordionContainer = item.closest('.faq-accordion');
+          if (accordionContainer) {
+            accordionContainer.querySelectorAll('.faq-accordion-item').forEach(otherItem => {
+              otherItem.classList.remove('active');
+              const otherHeader = otherItem.querySelector('.faq-accordion-header');
+              if (otherHeader) otherHeader.setAttribute('aria-expanded', 'false');
+            });
+          }
+
+          if (!isOpen) {
+            item.classList.add('active');
+            header.setAttribute('aria-expanded', 'true');
+          }
+        });
+      }
+    });
+  }
 });
+

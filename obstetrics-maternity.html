@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Obstetrics & High-Risk Maternity Care | Dalawai Maternity Hospital</title>
+
+  <!-- Modern Aesthetic Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=42" />
+</head>
+<body>
+
+  <!-- ======================================================
+       HEADER / NAVIGATION BAR
+   ======================================================= -->
+  <header class="site-navbar">
+    <div class="navbar-container">
+      
+      <!-- Brand Logo Section -->
+      <div class="brand-container">
+        <a href="index.html#home" class="brand-logo-link">
+          <img src="assets/images/logo_transparent.png" alt="Dalawai Hospital Logo" class="brand-logo-img">
+          <img src="assets/images/line_transparent.png" alt="Dalawai Maternity Hospital" class="brand-line-img">
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="navbar-menu">
+        <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="specialities.html" class="nav-link active">Specialities</a></li>
+        <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
+        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Right Action & Mobile Toggle -->
+      <div class="navbar-actions">
+        <a href="index.html#appointment" class="btn-appointment">
+          <span>Book Now</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer Dropdown -->
+    <div class="mobile-nav-drawer">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="specialities.html" class="nav-link active">Specialities</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+      <a href="index.html#appointment" class="btn-hero-primary mobile-drawer-btn" style="margin-top: 10px;">
+        <span>Book Now</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       1. BREADCRUMB & HERO SECTION
+   ======================================================= -->
+  <section class="detail-hero-section">
+    <div class="container">
+      
+      <!-- Breadcrumb -->
+      <div class="breadcrumbs" style="margin-bottom: 20px;">
+        <a href="index.html#home">Home</a>
+        <span class="bc-separator">/</span>
+        <a href="specialities.html">Specialities</a>
+        <span class="bc-separator">/</span>
+        <span class="bc-current">Obstetrics & High-Risk Maternity</span>
+      </div>
+
+      <div class="detail-hero-grid">
+        <div class="detail-hero-text">
+          <div class="detail-hero-badge-row">
+            <span class="spec-category-badge">Maternity & Childbirth</span>
+            <span class="doc-badge">24/7 Labor Support</span>
+          </div>
+          <h1 class="detail-hero-title">
+            <span class="title-serif-dark">Obstetrics & High-Risk</span><br>
+            <span class="title-serif-pink">Maternity Care</span>
+          </h1>
+          <p class="detail-hero-tagline">
+            Comprehensive, empathetic care for mother and baby from early preconception screening through labor, delivery, and postpartum recovery.
+          </p>
+          <div class="hero-cta-buttons">
+            <a href="index.html#appointment" class="btn-hero-primary">
+              <span>Schedule Antenatal Consultation</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="detail-hero-banner">
+          <!-- TODO: replace banner image with hospital birthing suite photo if desired -->
+          <img src="assets/images/mother_newborn.jpg" alt="Mother and Newborn Care at Dalawai Hospital">
+          <div class="detail-hero-banner-overlay"></div>
+          <div class="detail-hero-banner-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Dedicated High-Risk Obstetric & Fetal Monitoring Unit</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       2. OVERVIEW SECTION
+   ======================================================= -->
+  <section class="detail-overview-section">
+    <div class="container">
+      <div class="detail-overview-grid">
+        
+        <div class="overview-text-block">
+          <h2>About Obstetrics & Maternity Care at Dalawai</h2>
+          <!-- TODO: replace with real content if clinical protocols update -->
+          <p>
+            At Dalawai Maternity Hospital, our Obstetrics division is built around a single commitment: ensuring every mother experiences a safe, joyful, and dignity-filled birthing journey. Backed by over three decades of clinical expertise, our team provides complete maternal-fetal care starting from initial preconception planning to delivery and postpartum recovery.
+          </p>
+          <p>
+            We specialize in managing both seamless routine deliveries and complex high-risk pregnancy conditions, including gestational diabetes, preeclampsia, multiple gestations (twins), severe anemia, and prior C-section histories. Each pregnancy is monitored with personalized care plans, modern ultrasound scans, and continuous fetal wellbeing assessments.
+          </p>
+          <p>
+            Our maternity department features state-of-the-art labor and delivery suites, round-the-clock anesthesiologist availability for painless labor epidurals, and an immediate link to our Surgical Intensive Care Unit (SICU). Every mother receives continuous emotional and physical support from our senior obstetricians and trained birthing nurses.
+          </p>
+
+          <div class="overview-highlight-box">
+            <h4>Clinical Excellence & Maternal Safety</h4>
+            <p>
+              "Our clinical philosophy combines evidence-based obstetric protocols with compassionate, individualized care so mothers feel confident, informed, and safe at every stage of pregnancy."
+            </p>
+          </div>
+        </div>
+
+        <div class="overview-sidebar-card">
+          <h3>Department Highlights</h3>
+          <div class="sidebar-info-list">
+            
+            <div class="sidebar-info-item">
+              <div class="sidebar-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="sidebar-info-text">
+                <strong>Availability</strong>
+                <span>24/7 Emergency & Birthing Suite</span>
+              </div>
+            </div>
+
+            <div class="sidebar-info-item">
+              <div class="sidebar-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="sidebar-info-text">
+                <strong>Lead Obstetrician</strong>
+                <span>Dr. Sathish Dalawai (MD, DGO)</span>
+              </div>
+            </div>
+
+            <div class="sidebar-info-item">
+              <div class="sidebar-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <div class="sidebar-info-text">
+                <strong>Special Facilities</strong>
+                <span>Painless Delivery & SICU Support</span>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="index.html#appointment" class="btn-hero-primary" style="width: 100%; justify-content: center;">
+            <span>Book Appointment</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       3. CONDITIONS / PROCEDURES TREATED
+   ======================================================= -->
+  <section class="detail-procedures-section">
+    <div class="container">
+      <div class="section-eyebrow-wrap">
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-line"></span>
+          <span>COMPREHENSIVE CLINICAL SERVICES</span>
+        </div>
+      </div>
+      <h2 class="section-title">Conditions & Procedures Treated</h2>
+      <p class="section-subtitle">Full-spectrum obstetric care tailored for mother and newborn wellbeing.</p>
+
+      <div class="procedures-grid">
+        
+        <div class="procedure-card">
+          <div class="procedure-badge-num">01</div>
+          <div class="procedure-content">
+            <h4>Comprehensive Antenatal & Prenatal Screening</h4>
+            <p>Routine trimester blood panels, genetic risk evaluations, gestational monitoring, and dietary guidance tailored for optimal fetal development.</p>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <div class="procedure-badge-num">02</div>
+          <div class="procedure-content">
+            <h4>High-Risk Pregnancy Management</h4>
+            <p>Specialized clinical protocols for mothers facing gestational diabetes, preeclampsia, hypertension, thyroid disorders, and multiple gestations.</p>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <div class="procedure-badge-num">03</div>
+          <div class="procedure-content">
+            <h4>Painless Delivery Options (Labor Analgesia)</h4>
+            <p>Round-the-clock epidural analgesia administered by expert anesthesiologists to minimize labor discomfort while keeping mothers alert and relaxed.</p>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <div class="procedure-badge-num">04</div>
+          <div class="procedure-content">
+            <h4>Normal & Assisted Vaginal Deliveries</h4>
+            <p>Gentle, patient-centered birthing support utilizing evidence-based natural delivery techniques, perineal protection, and continuous monitoring.</p>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <div class="procedure-badge-num">05</div>
+          <div class="procedure-content">
+            <h4>Cesarean Section (C-Section) Deliveries</h4>
+            <p>Planned and emergency surgical deliveries conducted in sterile, ultra-clean operating suites with rapid recovery protocols and minimal scarring.</p>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <div class="procedure-badge-num">06</div>
+          <div class="procedure-content">
+            <h4>Fetal Wellbeing & Doppler Scans</h4>
+            <p>Advanced high-resolution ultrasonography to evaluate placental blood flow, amniotic fluid levels, organ anatomy, and intrauterine fetal growth.</p>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <div class="procedure-badge-num">07</div>
+          <div class="procedure-content">
+            <h4>Recurrent Pregnancy Loss Care</h4>
+            <p>In-depth diagnostic evaluations, immunological screening, cervical incompetence management (cerclage), and proactive therapeutic support.</p>
+          </div>
+        </div>
+
+        <div class="procedure-card">
+          <div class="procedure-badge-num">08</div>
+          <div class="procedure-content">
+            <h4>Postnatal Care & Lactation Counseling</h4>
+            <p>Immediate postpartum monitoring, infant feeding guidance, wound care, emotional health support, and maternal physical recovery tracking.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       4. WHAT TO EXPECT (PATIENT JOURNEY)
+   ======================================================= -->
+  <section class="detail-journey-section">
+    <div class="container">
+      <div class="section-eyebrow-wrap" style="justify-content: center; text-align: center;">
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-line"></span>
+          <span>MATERNITY CARE ROADMAP</span>
+          <span class="section-eyebrow-line"></span>
+        </div>
+      </div>
+      <h2 class="section-title" style="text-align: center;">What to Expect: Your Patient Journey</h2>
+      <p class="section-subtitle" style="text-align: center;">A structured, supportive 4-step path through pregnancy, delivery, and motherhood.</p>
+
+      <div class="journey-steps-grid">
+        
+        <div class="detail-step-card">
+          <div class="detail-step-num">01</div>
+          <h4>Initial Visit & Risk Assessment</h4>
+          <p>Detailed medical history review, baseline blood work, early ultrasound confirmation, and customized pregnancy care plan setup.</p>
+        </div>
+
+        <div class="detail-step-card">
+          <div class="detail-step-num">02</div>
+          <h4>Trimester Monitoring Schedule</h4>
+          <p>Regular check-ups, anomaly scans, glucose screening, fetal heartbeat monitoring, and birth plan discussions.</p>
+        </div>
+
+        <div class="detail-step-card">
+          <div class="detail-step-num">03</div>
+          <h4>Delivery Planning & Birth</h4>
+          <p>24/7 admission to private birthing suites, continuous monitoring, painless labor support, and birth execution by senior doctors.</p>
+        </div>
+
+        <div class="detail-step-card">
+          <div class="detail-step-num">04</div>
+          <h4>Postnatal & Newborn Care</h4>
+          <p>Lactation assistance, maternal recovery checks, newborn vaccinations, and integrative wellness guidance before home discharge.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       5. WHY CHOOSE DALAWAI FOR OBSTETRICS
+   ======================================================= -->
+  <section class="detail-why-section">
+    <div class="container">
+      <div class="section-eyebrow-wrap">
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-line"></span>
+          <span>THE DALAWAI ADVANTAGE</span>
+        </div>
+      </div>
+      <h2 class="section-title">Why Choose Dalawai for Maternity Care</h2>
+      <p class="section-subtitle">Key differentiators ensuring unmatched safety and comfort for mother and baby.</p>
+
+      <div class="why-features-grid">
+        
+        <div class="why-feature-card">
+          <div class="why-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>30+ Years Expertise</h4>
+          <p>Guided by senior obstetricians with decades of experience handling both routine and high-risk deliveries.</p>
+        </div>
+
+        <div class="why-feature-card">
+          <div class="why-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><rect x="2" y="4" width="20" height="12" rx="2"/><path d="M6 10h2l1.5-3 2.5 6 2-4 1.5 1h2.5"/><path d="M6 20h12"/></svg>
+          </div>
+          <h4>24/7 SICU & ER Backup</h4>
+          <p>On-site surgical ICU, emergency operating suite, and immediate critical care response team available around the clock.</p>
+        </div>
+
+        <div class="why-feature-card">
+          <div class="why-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h4>Private Birthing Suites</h4>
+          <p>Hygienic, comfortable private rooms designed to provide a serene home-like atmosphere for mother and family.</p>
+        </div>
+
+        <div class="why-feature-card">
+          <div class="why-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <h4>Integrative Postpartum Care</h4>
+          <p>Combines modern medical monitoring with traditional Ayurvedic recovery guidance for complete maternal healing.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       6. LEAD SPECIALIST
+   ======================================================= -->
+  <section class="detail-doctor-section">
+    <div class="container">
+      <div class="section-eyebrow-wrap">
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-line"></span>
+          <span>MEET OUR EXPERT</span>
+        </div>
+      </div>
+      <h2 class="section-title">Lead Obstetric Specialist</h2>
+
+      <div class="detail-doctor-card">
+        <div class="detail-doctor-img-wrap">
+          <img src="assets/images/doctor_satish.jpg" alt="Dr. Sathish Dalawai - Senior Obstetrician">
+          <span class="detail-doctor-badge">Senior Obstetrician</span>
+        </div>
+
+        <div class="detail-doctor-info">
+          <h3>Dr. Sathish Dalawai</h3>
+          <p class="detail-doctor-cred">MBBS, DGO, MD (Obstetrics & Gynecology)</p>
+          <p class="detail-doctor-bio">
+            Dr. Sathish Dalawai brings over 30 years of dedicated clinical experience in Obstetrics, High-Risk Pregnancy Management, and Laparoscopic Gynecology Surgery. He has safely delivered thousands of babies and is widely recognized for his calm clinical demeanor, patient-first approach, and expertise in managing complex birthing emergencies.
+          </p>
+          
+          <div class="detail-doctor-highlights">
+            <span class="doc-pill-tag">✓ 30+ Years Experience</span>
+            <span class="doc-pill-tag">✓ High-Risk Deliveries</span>
+            <span class="doc-pill-tag">✓ Painless Birthing Expert</span>
+            <span class="doc-pill-tag">✓ Emergency Resuscitation</span>
+          </div>
+
+          <a href="index.html#appointment" class="btn-hero-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/></svg>
+            <span>Book with Dr. Sathish Dalawai</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       7. FREQUENTLY ASKED QUESTIONS (FAQS)
+   ======================================================= -->
+  <section class="detail-faq-section">
+    <div class="container">
+      <div class="section-eyebrow-wrap" style="justify-content: center; text-align: center;">
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-line"></span>
+          <span>COMMON QUESTIONS</span>
+          <span class="section-eyebrow-line"></span>
+        </div>
+      </div>
+      <h2 class="section-title" style="text-align: center;">Frequently Asked Questions</h2>
+      <p class="section-subtitle" style="text-align: center;">Clear answers regarding maternity care, labor options, and hospital policies.</p>
+
+      <div class="faq-accordion">
+        
+        <div class="faq-accordion-item active">
+          <button class="faq-accordion-header" aria-expanded="true">
+            <span>When should I schedule my first antenatal appointment?</span>
+            <div class="accordion-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </button>
+          <div class="faq-accordion-content">
+            <p>We recommend booking your first antenatal visit as soon as you confirm your pregnancy (usually around 6 to 8 weeks after your last menstrual period). Early visits allow us to confirm viability, calculate your due date, and begin essential early trimester health screenings.</p>
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-header" aria-expanded="false">
+            <span>What options are available for painless labor at Dalawai Hospital?</span>
+            <div class="accordion-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </button>
+          <div class="faq-accordion-content">
+            <p>We offer epidural labor analgesia administered by experienced anesthesiologists. Epidurals significantly alleviate labor pain while allowing you to remain fully conscious, mobile, and active in your baby's delivery process.</p>
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-header" aria-expanded="false">
+            <span>How does Dalawai Hospital manage high-risk pregnancy complications?</span>
+            <div class="accordion-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </button>
+          <div class="faq-accordion-content">
+            <p>High-risk pregnancies receive extra clinical vigilance, including frequent Doppler ultrasounds, specialized blood pressure monitoring, blood sugar tracking, and 24/7 backing by our Surgical ICU (SICU) team.</p>
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-header" aria-expanded="false">
+            <span>Can my spouse or birthing partner stay with me in the delivery room?</span>
+            <div class="accordion-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </button>
+          <div class="faq-accordion-content">
+            <p>Yes! We encourage birthing partner presence in our private labor rooms during vaginal delivery, provided clinical safety conditions allow. Your partner's emotional support is an integral part of our care model.</p>
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-header" aria-expanded="false">
+            <span>What emergency support is available if labor starts unexpectedly at night?</span>
+            <div class="accordion-icon-wrap">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </button>
+          <div class="faq-accordion-content">
+            <p>Our emergency birthing unit and resident medical team operate 24 hours a day, 7 days a week. You can arrive at any hour and receive immediate clinical evaluation and labor admission.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       8. RELATED SPECIALITIES
+   ======================================================= -->
+  <section class="detail-related-section">
+    <div class="container">
+      <div class="section-eyebrow-wrap">
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-line"></span>
+          <span>EXPLORE DEPARTMENTS</span>
+        </div>
+      </div>
+      <h2 class="section-title">Related Specialities</h2>
+
+      <div class="related-cards-grid">
+        
+        <div class="related-spec-card">
+          <div>
+            <div class="related-card-head">
+              <span class="spec-category-badge badge-teal">Surgical Excellence</span>
+            </div>
+            <h4>Gynecology & Laparoscopic Surgery</h4>
+            <p class="related-card-desc">Advanced keyhole surgical procedures for uterine fibroids, ovarian cysts, and pelvic floor restoration.</p>
+          </div>
+          <a href="gynecology-surgery.html" class="btn-learn-more">
+            <span>View Department</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="related-spec-card">
+          <div>
+            <div class="related-card-head">
+              <span class="spec-category-badge badge-teal">24/7 Critical Care</span>
+            </div>
+            <h4>Surgical ICU (SICU) & Critical Care</h4>
+            <p class="related-card-desc">Continuous monitoring and advanced ventilator support for acute surgical and obstetric emergencies.</p>
+          </div>
+          <a href="surgical-icu.html" class="btn-learn-more">
+            <span>View Department</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="related-spec-card">
+          <div>
+            <div class="related-card-head">
+              <span class="spec-category-badge">Integrative Healing</span>
+            </div>
+            <h4>Ayurvedic Women’s Care & Sutika</h4>
+            <p class="related-card-desc">Traditional post-delivery maternal rehabilitation, body rejuvenation, and hormonal balance.</p>
+          </div>
+          <a href="ayurvedic-care.html" class="btn-learn-more">
+            <span>View Department</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       9. CALL TO ACTION BANNER
+   ======================================================= -->
+  <section class="about-cta-section" style="padding: 40px 0;">
+    <div class="container">
+      <div class="about-cta-box">
+        <h3>Schedule Your Obstetric Consultation</h3>
+        <p>Book an appointment with Dr. Sathish Dalawai for expert maternity care and birthing guidance.</p>
+        <a href="index.html#appointment" class="btn-hero-primary" style="margin-top: 12px; display: inline-flex;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Confirm Appointment Booking</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       10. SHARED FOOTER
+   ======================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <img src="assets/images/logo_transparent.png" alt="Dalawai Hospital Logo">
+          <p>Dalawai Maternity Hospital provides expert Obstetrics, Gynecology, Ayurvedic Women's Healthcare, and round-the-clock Emergency & Critical Care.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="specialities.html">Specialities</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="index.html#appointment">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Specialities</h4>
+          <ul class="footer-links">
+            <li><a href="obstetrics-maternity.html">Obstetrics & Maternity</a></li>
+            <li><a href="gynecology-surgery.html">Gynecology & Surgery</a></li>
+            <li><a href="surgical-icu.html">Surgical ICU (SICU)</a></li>
+            <li><a href="ayurvedic-care.html">Ayurvedic Wellness</a></li>
+            <li><a href="inpatient-wards.html">Inpatient Wards</a></li>
+            <li><a href="opd-consultations.html">OPD Consultations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li><strong>Dalawai Hospital</strong></li>
+            <li>Obstetrics, Gynecology & Critical Care</li>
+            <li>📞 Emergency & Appointments: 24/7 Available</li>
+            <li>📍 Local City Center Campus</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dalawai Hospital. All rights reserved.</p>
+        <p>Designed with care for mother & child.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
