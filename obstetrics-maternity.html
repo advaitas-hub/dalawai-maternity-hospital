@@ -32,7 +32,20 @@
       <ul class="navbar-menu">
         <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="specialities.html" class="nav-link active">Specialities</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="specialities.html" class="nav-link active">
+            <span>Specialities</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="obstetrics-maternity.html">Obstetrics & Maternity</a></li>
+            <li><a href="gynecology-surgery.html">Gynecology & Surgery</a></li>
+            <li><a href="surgical-icu.html">Surgical ICU (SICU)</a></li>
+            <li><a href="ayurvedic-care.html">Ayurvedic & Women's Care</a></li>
+            <li><a href="inpatient-wards.html">Inpatient Wards (IPD)</a></li>
+            <li><a href="opd-consultations.html">OPD Consultations</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
         <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -71,14 +84,7 @@
   <section class="detail-hero-section">
     <div class="container">
       
-      <!-- Breadcrumb -->
-      <div class="breadcrumbs" style="margin-bottom: 20px;">
-        <a href="index.html#home">Home</a>
-        <span class="bc-separator">/</span>
-        <a href="specialities.html">Specialities</a>
-        <span class="bc-separator">/</span>
-        <span class="bc-current">Obstetrics & High-Risk Maternity</span>
-      </div>
+
 
       <div class="detail-hero-grid">
         <div class="detail-hero-text">
@@ -105,10 +111,6 @@
           <!-- TODO: replace banner image with hospital birthing suite photo if desired -->
           <img src="assets/images/mother_newborn.jpg" alt="Mother and Newborn Care at Dalawai Hospital">
           <div class="detail-hero-banner-overlay"></div>
-          <div class="detail-hero-banner-badge">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span>Dedicated High-Risk Obstetric & Fetal Monitoring Unit</span>
-          </div>
         </div>
       </div>
 
@@ -427,65 +429,78 @@
       <h2 class="section-title" style="text-align: center;">Frequently Asked Questions</h2>
       <p class="section-subtitle" style="text-align: center;">Clear answers regarding maternity care, labor options, and hospital policies.</p>
 
-      <div class="faq-accordion">
-        
-        <div class="faq-accordion-item active">
-          <button class="faq-accordion-header" aria-expanded="true">
-            <span>When should I schedule my first antenatal appointment?</span>
-            <div class="accordion-icon-wrap">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      <div class="faq-container-grid">
+        <!-- Left Side: FAQ Questions -->
+        <div class="faq-left-col">
+          <div class="faq-accordion">
+            
+            <div class="faq-accordion-item">
+              <button class="faq-accordion-header" aria-expanded="false">
+                <span>When should I schedule my first antenatal appointment?</span>
+                <div class="accordion-icon-wrap">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+              </button>
+              <div class="faq-accordion-content">
+                <p>We recommend booking your first antenatal visit as soon as you confirm your pregnancy (usually around 6 to 8 weeks after your last menstrual period). Early visits allow us to confirm viability, calculate your due date, and begin essential early trimester health screenings.</p>
+              </div>
             </div>
-          </button>
-          <div class="faq-accordion-content">
-            <p>We recommend booking your first antenatal visit as soon as you confirm your pregnancy (usually around 6 to 8 weeks after your last menstrual period). Early visits allow us to confirm viability, calculate your due date, and begin essential early trimester health screenings.</p>
+
+            <div class="faq-accordion-item">
+              <button class="faq-accordion-header" aria-expanded="false">
+                <span>What options are available for painless labor at Dalawai Hospital?</span>
+                <div class="accordion-icon-wrap">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+              </button>
+              <div class="faq-accordion-content">
+                <p>We offer epidural labor analgesia administered by experienced anesthesiologists. Epidurals significantly alleviate labor pain while allowing you to remain fully conscious, mobile, and active in your baby's delivery process.</p>
+              </div>
+            </div>
+
+            <div class="faq-accordion-item">
+              <button class="faq-accordion-header" aria-expanded="false">
+                <span>How does Dalawai Hospital manage high-risk pregnancy complications?</span>
+                <div class="accordion-icon-wrap">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+              </button>
+              <div class="faq-accordion-content">
+                <p>High-risk pregnancies receive extra clinical vigilance, including frequent Doppler ultrasounds, specialized blood pressure monitoring, blood sugar tracking, and 24/7 backing by our Surgical ICU (SICU) team.</p>
+              </div>
+            </div>
+
+            <div class="faq-accordion-item">
+              <button class="faq-accordion-header" aria-expanded="false">
+                <span>Can my spouse or birthing partner stay with me in the delivery room?</span>
+                <div class="accordion-icon-wrap">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+              </button>
+              <div class="faq-accordion-content">
+                <p>Yes! We encourage birthing partner presence in our private labor rooms during vaginal delivery, provided clinical safety conditions allow. Your partner's emotional support is an integral part of our care model.</p>
+              </div>
+            </div>
+
+            <div class="faq-accordion-item">
+              <button class="faq-accordion-header" aria-expanded="false">
+                <span>What emergency support is available if labor starts unexpectedly at night?</span>
+                <div class="accordion-icon-wrap">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+              </button>
+              <div class="faq-accordion-content">
+                <p>Our emergency birthing unit and resident medical team operate 24 hours a day, 7 days a week. You can arrive at any hour and receive immediate clinical evaluation and labor admission.</p>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="faq-accordion-item">
-          <button class="faq-accordion-header" aria-expanded="false">
-            <span>What options are available for painless labor at Dalawai Hospital?</span>
-            <div class="accordion-icon-wrap">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-          </button>
-          <div class="faq-accordion-content">
-            <p>We offer epidural labor analgesia administered by experienced anesthesiologists. Epidurals significantly alleviate labor pain while allowing you to remain fully conscious, mobile, and active in your baby's delivery process.</p>
-          </div>
-        </div>
-
-        <div class="faq-accordion-item">
-          <button class="faq-accordion-header" aria-expanded="false">
-            <span>How does Dalawai Hospital manage high-risk pregnancy complications?</span>
-            <div class="accordion-icon-wrap">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-          </button>
-          <div class="faq-accordion-content">
-            <p>High-risk pregnancies receive extra clinical vigilance, including frequent Doppler ultrasounds, specialized blood pressure monitoring, blood sugar tracking, and 24/7 backing by our Surgical ICU (SICU) team.</p>
-          </div>
-        </div>
-
-        <div class="faq-accordion-item">
-          <button class="faq-accordion-header" aria-expanded="false">
-            <span>Can my spouse or birthing partner stay with me in the delivery room?</span>
-            <div class="accordion-icon-wrap">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-          </button>
-          <div class="faq-accordion-content">
-            <p>Yes! We encourage birthing partner presence in our private labor rooms during vaginal delivery, provided clinical safety conditions allow. Your partner's emotional support is an integral part of our care model.</p>
-          </div>
-        </div>
-
-        <div class="faq-accordion-item">
-          <button class="faq-accordion-header" aria-expanded="false">
-            <span>What emergency support is available if labor starts unexpectedly at night?</span>
-            <div class="accordion-icon-wrap">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-          </button>
-          <div class="faq-accordion-content">
-            <p>Our emergency birthing unit and resident medical team operate 24 hours a day, 7 days a week. You can arrive at any hour and receive immediate clinical evaluation and labor admission.</p>
+        <!-- Right Side: Care Image -->
+        <div class="faq-right-col">
+          <div class="faq-image-card">
+            <img src="assets/images/mother_newborn.jpg" alt="Maternal and Newborn Care at Dalawai Hospital">
           </div>
         </div>
 
@@ -493,82 +508,7 @@
     </div>
   </section>
 
-  <!-- ======================================================
-       8. RELATED SPECIALITIES
-   ======================================================= -->
-  <section class="detail-related-section">
-    <div class="container">
-      <div class="section-eyebrow-wrap">
-        <div class="section-eyebrow">
-          <span class="section-eyebrow-line"></span>
-          <span>EXPLORE DEPARTMENTS</span>
-        </div>
-      </div>
-      <h2 class="section-title">Related Specialities</h2>
 
-      <div class="related-cards-grid">
-        
-        <div class="related-spec-card">
-          <div>
-            <div class="related-card-head">
-              <span class="spec-category-badge badge-teal">Surgical Excellence</span>
-            </div>
-            <h4>Gynecology & Laparoscopic Surgery</h4>
-            <p class="related-card-desc">Advanced keyhole surgical procedures for uterine fibroids, ovarian cysts, and pelvic floor restoration.</p>
-          </div>
-          <a href="gynecology-surgery.html" class="btn-learn-more">
-            <span>View Department</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-        </div>
-
-        <div class="related-spec-card">
-          <div>
-            <div class="related-card-head">
-              <span class="spec-category-badge badge-teal">24/7 Critical Care</span>
-            </div>
-            <h4>Surgical ICU (SICU) & Critical Care</h4>
-            <p class="related-card-desc">Continuous monitoring and advanced ventilator support for acute surgical and obstetric emergencies.</p>
-          </div>
-          <a href="surgical-icu.html" class="btn-learn-more">
-            <span>View Department</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-        </div>
-
-        <div class="related-spec-card">
-          <div>
-            <div class="related-card-head">
-              <span class="spec-category-badge">Integrative Healing</span>
-            </div>
-            <h4>Ayurvedic Women’s Care & Sutika</h4>
-            <p class="related-card-desc">Traditional post-delivery maternal rehabilitation, body rejuvenation, and hormonal balance.</p>
-          </div>
-          <a href="ayurvedic-care.html" class="btn-learn-more">
-            <span>View Department</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================================
-       9. CALL TO ACTION BANNER
-   ======================================================= -->
-  <section class="about-cta-section" style="padding: 40px 0;">
-    <div class="container">
-      <div class="about-cta-box">
-        <h3>Schedule Your Obstetric Consultation</h3>
-        <p>Book an appointment with Dr. Sathish Dalawai for expert maternity care and birthing guidance.</p>
-        <a href="index.html#appointment" class="btn-hero-primary" style="margin-top: 12px; display: inline-flex;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <span>Confirm Appointment Booking</span>
-        </a>
-      </div>
-    </div>
-  </section>
 
   <!-- ======================================================
        10. SHARED FOOTER

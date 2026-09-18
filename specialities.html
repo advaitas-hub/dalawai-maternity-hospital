@@ -32,7 +32,20 @@
       <ul class="navbar-menu">
         <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="specialities.html" class="nav-link active">Specialities</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="specialities.html" class="nav-link active">
+            <span>Specialities</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="obstetrics-maternity.html">Obstetrics & Maternity</a></li>
+            <li><a href="gynecology-surgery.html">Gynecology & Surgery</a></li>
+            <li><a href="surgical-icu.html">Surgical ICU (SICU)</a></li>
+            <li><a href="ayurvedic-care.html">Ayurvedic & Women's Care</a></li>
+            <li><a href="inpatient-wards.html">Inpatient Wards (IPD)</a></li>
+            <li><a href="opd-consultations.html">OPD Consultations</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
         <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -68,26 +81,53 @@
   <!-- ======================================================
        SPECIALITIES HERO PAGE HEADER
    ======================================================= -->
-  <section class="about-hero-section">
+  <section class="spec-hero-section">
     <div class="container">
-      <div class="about-hero-content">
-        <div class="hero-eyebrow">
-          <span>EXPERT CLINICAL DEPARTMENTS</span>
-          <span class="eyebrow-line"></span>
-        </div>
-        <h1 class="about-page-title">
-          <span class="title-serif-dark">Comprehensive</span> <span class="title-serif-pink">Specialities</span><br>
-          <span class="title-serif-dark">For Every</span> <span class="title-serif-pink">Stage of Life</span>
-        </h1>
-        <p class="about-hero-desc">
-          Explore our dedicated clinical divisions combining advanced medical technology, experienced specialists, and compassionate patient care.
-        </p>
+      <div class="spec-hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div class="spec-hero-content">
+          <div class="hero-eyebrow">
+            <span>EXPERT CLINICAL DEPARTMENTS</span>
+            <span class="eyebrow-line"></span>
+          </div>
+          <h1 class="spec-hero-title">
+            <span class="title-serif-dark">Comprehensive</span> <span class="title-serif-pink">Specialities</span><br>
+            <span class="title-serif-dark">For Every Stage of</span> <span class="title-serif-pink">Motherhood & Care</span>
+          </h1>
+          <p class="spec-hero-desc">
+            From high-risk maternity care and advanced keyhole surgeries to round-the-clock Surgical ICU monitoring and traditional Ayurvedic postpartum recovery — discover our complete clinical excellence.
+          </p>
 
-        <div class="breadcrumbs">
-          <a href="index.html#home">Home</a>
-          <span class="bc-separator">/</span>
-          <span class="bc-current">Specialities</span>
+          <div class="spec-hero-badges">
+            <div class="spec-hero-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>24/7 Maternity Emergency</span>
+            </div>
+            <div class="spec-hero-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Advanced Keyhole OT</span>
+            </div>
+            <div class="spec-hero-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Surgical ICU (SICU)</span>
+            </div>
+            <div class="spec-hero-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Holistic Ayurvedic Sutika</span>
+            </div>
+          </div>
+
+
         </div>
+
+        <!-- Right Hero Care Visual Image (Seamless Blend) -->
+        <div class="spec-hero-visual">
+          <div class="spec-hero-img-blend-container">
+            <img src="assets/images/maternity_care_hero.png" alt="Compassionate Maternal and Women's Care" class="spec-hero-img">
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -111,12 +151,15 @@
   <!-- ======================================================
        DETAILED SPECIALITIES GRID
    ======================================================= -->
+  <!-- ======================================================
+       DETAILED SPECIALITIES GRID
+   ======================================================= -->
   <section class="specialities-detail-section">
     <div class="container">
       <div class="spec-cards-grid">
 
-        <!-- 1. Obstetrics & High-Risk Maternity Care -->
-        <div class="spec-detail-card" data-category="maternity">
+        <!-- 1. Obstetrics & High-Risk Maternity -->
+        <a href="obstetrics-maternity.html" class="spec-detail-card" data-category="maternity">
           <div class="spec-card-header">
             <div class="spec-detail-icon s-icon-pink">
               <svg class="gyno-icon" width="40" height="40" viewBox="20 10 56 84" fill="#f472b6">
@@ -132,31 +175,18 @@
             </div>
           </div>
           <p class="spec-card-paragraph">
-            Complete care throughout pregnancy, labor, and recovery. Equipped for both routine deliveries and high-risk pregnancy complications.
+            Complete care throughout pregnancy, painless labor options, and high-risk maternity management.
           </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>Comprehensive Antenatal Screening & Fetal Monitoring</li>
-            <li><span class="f-dot"></span>Painless Delivery Options (Labor Analgesia)</li>
-            <li><span class="f-dot"></span>Normal & Cesarean (C-Section) Deliveries</li>
-            <li><span class="f-dot"></span>High-Risk Pregnancy Management (Gestational Diabetes, Hypertensive Disorders)</li>
-          </ul>
           <div class="spec-card-footer">
-            <span class="doc-badge">Lead Specialist: <strong>Dr. Sathish Dalawai</strong></span>
-            <div class="spec-card-actions">
-              <a href="obstetrics-maternity.html" class="btn-learn-more">
-                <span>Learn More</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-              <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-                <span>Book Appointment</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-            </div>
+            <span class="spec-explore-link">
+              <span>View Department</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
           </div>
-        </div>
+        </a>
 
         <!-- 2. Gynecology & Minimal Access Surgery -->
-        <div class="spec-detail-card" data-category="surgery">
+        <a href="gynecology-surgery.html" class="spec-detail-card" data-category="surgery">
           <div class="spec-card-header">
             <div class="spec-detail-icon s-icon-teal">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -173,31 +203,18 @@
             </div>
           </div>
           <p class="spec-card-paragraph">
-            Advanced minimally invasive keyhole surgical techniques for women's reproductive health, ensuring faster recovery and minimal scarring.
+            Advanced minimally invasive keyhole procedures for fast recovery and minimal scarring.
           </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>Laparoscopic Fibroid & Ovarian Cyst Surgery</li>
-            <li><span class="f-dot"></span>Total Laparoscopic Hysterectomy (TLH)</li>
-            <li><span class="f-dot"></span>Treatment of Endometriosis & Uterine Prolapse</li>
-            <li><span class="f-dot"></span>Menstrual Irregularity & PCOS Management</li>
-          </ul>
           <div class="spec-card-footer">
-            <span class="doc-badge">Lead Specialist: <strong>Dr. Sathish Dalawai</strong></span>
-            <div class="spec-card-actions">
-              <a href="gynecology-surgery.html" class="btn-learn-more">
-                <span>Learn More</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-              <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-                <span>Book Appointment</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-            </div>
+            <span class="spec-explore-link">
+              <span>View Department</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
           </div>
-        </div>
+        </a>
 
         <!-- 3. Surgical ICU (SICU) & Critical Care -->
-        <div class="spec-detail-card" data-category="icu">
+        <a href="surgical-icu.html" class="spec-detail-card" data-category="icu">
           <div class="spec-card-header">
             <div class="spec-detail-icon s-icon-teal">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -214,31 +231,18 @@
             </div>
           </div>
           <p class="spec-card-paragraph">
-            State-of-the-art intensive care unit tailored for post-operative recovery, obstetric emergencies, and acute surgical monitoring.
+            Round-the-clock emergency monitoring, post-operative care, and advanced life-support.
           </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>24-Hour Continuous Multi-Para Monitoring</li>
-            <li><span class="f-dot"></span>Advanced Ventilator Support & Invasive Line Care</li>
-            <li><span class="f-dot"></span>Dedicated Critical Care Nursing Staff</li>
-            <li><span class="f-dot"></span>Immediate High-Risk Surgical Resuscitation</li>
-          </ul>
           <div class="spec-card-footer">
-            <span class="doc-badge">Lead Team: <strong>24/7 Critical Care Specialists</strong></span>
-            <div class="spec-card-actions">
-              <a href="surgical-icu.html" class="btn-learn-more">
-                <span>Learn More</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-              <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-                <span>Book Appointment</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-            </div>
+            <span class="spec-explore-link">
+              <span>View Department</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
           </div>
-        </div>
+        </a>
 
         <!-- 4. Ayurvedic Women's Health & Wellness -->
-        <div class="spec-detail-card" data-category="ayurveda">
+        <a href="ayurvedic-care.html" class="spec-detail-card" data-category="ayurveda">
           <div class="spec-card-header">
             <div class="spec-detail-icon s-icon-pink">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -254,31 +258,18 @@
             </div>
           </div>
           <p class="spec-card-paragraph">
-            Holistic Ayurvedic treatments specializing in post-delivery maternal rehabilitation (Sutika Paricharya), natural wellness, and hormonal balance.
+            Holistic post-delivery maternal rehabilitation (Sutika Paricharya) and natural wellness therapies.
           </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>Postnatal Ayurvedic Body Rejuvenation & Abhyanga</li>
-            <li><span class="f-dot"></span>Ayurvedic Management of Infertility & PCOS</li>
-            <li><span class="f-dot"></span>Natural Hormonal Balancing Treatments</li>
-            <li><span class="f-dot"></span>Lactation & Postpartum Recovery Guidance</li>
-          </ul>
           <div class="spec-card-footer">
-            <span class="doc-badge">Lead Specialist: <strong>Dr. Jyothi Dalawai</strong></span>
-            <div class="spec-card-actions">
-              <a href="ayurvedic-care.html" class="btn-learn-more">
-                <span>Learn More</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-              <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-                <span>Book Appointment</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-            </div>
+            <span class="spec-explore-link">
+              <span>View Department</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
           </div>
-        </div>
+        </a>
 
         <!-- 5. Inpatient Wards (IPD) & Private Rooms -->
-        <div class="spec-detail-card" data-category="maternity">
+        <a href="inpatient-wards.html" class="spec-detail-card" data-category="maternity">
           <div class="spec-card-header">
             <div class="spec-detail-icon s-icon-teal">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -290,35 +281,22 @@
             </div>
             <div class="spec-title-wrap">
               <span class="spec-category-badge badge-teal">Inpatient Care</span>
-              <h3 class="spec-card-main-title">Inpatient Wards (IPD) & Private Suites</h3>
+              <h3 class="spec-card-main-title">Inpatient Wards (IPD) & Suites</h3>
             </div>
           </div>
           <p class="spec-card-paragraph">
-            Comfortable, hygienic, and safe accommodation designed for mother and newborn comfort, backed by attentive round-the-clock nursing care.
+            Hygienic deluxe private suites and semi-private rooms with 24/7 dedicated nursing support.
           </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>Deluxe Air-Conditioned Private Rooms</li>
-            <li><span class="f-dot"></span>Semi-Private Wards & General Inpatient Beds</li>
-            <li><span class="f-dot"></span>24-Hour Dedicated Nursing & Attendant Support</li>
-            <li><span class="f-dot"></span>Mother & Newborn Safety Infrastructure</li>
-          </ul>
           <div class="spec-card-footer">
-            <span class="doc-badge">Care Team: <strong>Resident Medical Officers & Nurses</strong></span>
-            <div class="spec-card-actions">
-              <a href="inpatient-wards.html" class="btn-learn-more">
-                <span>Learn More</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-              <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-                <span>Book Appointment</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-            </div>
+            <span class="spec-explore-link">
+              <span>View Department</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
           </div>
-        </div>
+        </a>
 
         <!-- 6. Outpatient Consultations (OPD) & Diagnostics -->
-        <div class="spec-detail-card" data-category="opd">
+        <a href="opd-consultations.html" class="spec-detail-card" data-category="opd">
           <div class="spec-card-header">
             <div class="spec-detail-icon s-icon-pink">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -332,32 +310,15 @@
             </div>
           </div>
           <p class="spec-card-paragraph">
-            Daily consultation clinics providing expert medical advice, diagnostic evaluations, pre-conception guidance, and routine health checks.
+            Daily specialist consultation clinics, routine health check-ups, and in-house diagnostics.
           </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>Routine Gynecological Check-ups</li>
-            <li><span class="f-dot"></span>Pre-Conception & Fertility Guidance</li>
-            <li><span class="f-dot"></span>In-House Diagnostic Lab & Ultrasound Screening</li>
-            <li><span class="f-dot"></span>Pap Smears & Cancer Screening Clinics</li>
-          </ul>
           <div class="spec-card-footer">
-            <span class="doc-badge">Lead Doctors: <strong>OPD Medical Team</strong></span>
-            <div class="spec-card-actions">
-              <a href="opd-consultations.html" class="btn-learn-more">
-                <span>Learn More</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-              <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-                <span>Book Appointment</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-            </div>
+            <span class="spec-explore-link">
+              <span>View Department</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
           </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
+        </a>
 
       </div>
     </div>
@@ -411,20 +372,7 @@
   </section>
 
   <!-- ======================================================
-       CALL TO ACTION BANNER & APPOINTMENT
-   ======================================================= -->
-  <section class="about-cta-section" style="padding: 40px 0;">
-    <div class="container">
-      <div class="about-cta-box">
-        <h3>Schedule Your Departmental Consultation</h3>
-        <p>Book an appointment with Dr. Sathish Dalawai or Dr. Jyothi Dalawai for specialized women's care.</p>
-        <a href="index.html#appointment" class="btn-hero-primary" style="margin-top: 12px; display: inline-flex;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <span>Confirm Appointment Booking</span>
-        </a>
-      </div>
-    </div>
-  </section>
+
 
   <!-- ======================================================
        FOOTER & CONTACT SECTION

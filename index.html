@@ -32,7 +32,20 @@
       <ul class="navbar-menu">
         <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
         <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="specialities.html" class="nav-link">Specialities</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="specialities.html" class="nav-link">
+            <span>Specialities</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="obstetrics-maternity.html">Obstetrics & Maternity</a></li>
+            <li><a href="gynecology-surgery.html">Gynecology & Surgery</a></li>
+            <li><a href="surgical-icu.html">Surgical ICU (SICU)</a></li>
+            <li><a href="ayurvedic-care.html">Ayurvedic & Women's Care</a></li>
+            <li><a href="inpatient-wards.html">Inpatient Wards (IPD)</a></li>
+            <li><a href="opd-consultations.html">OPD Consultations</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
         <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -247,8 +260,8 @@
       <p class="section-subtitle">Comprehensive clinical departments equipped with advanced infrastructure and round-the-clock specialists.</p>
 
       <div class="services-grid">
-               <!-- 1. Obstetrics & Gynecology -->
-        <div class="service-card">
+        <!-- 1. Obstetrics & Gynecology -->
+        <a href="obstetrics-maternity.html" class="service-card">
           <div class="service-icon-box s-icon-pink">
             <svg class="gyno-icon" width="44" height="44" viewBox="20 10 56 84" fill="#f472b6">
               <path d="m68.441 29.09c0.019532 0.44922-0.23828 0.87109-0.64844 1.0703l-2.2617 1.0586-2.2891 3.8008c-0.51953 0.85938-1.4492 1.3711-2.4297 1.3711-0.19141 0-0.37891-0.019531-0.55859-0.058594-0.44922-0.089843-0.96875-0.23047-1.5312-0.42188-0.35938 1.5781-0.53125 3.2305-0.58984 4.0586l9.9297 8.4102c2.0781-3.9102 1.9883-7.1094 1.8984-10.48-0.050782-1.6484-0.089844-3.3516 0.10156-5.1914 0.30078-2.7891 0.98047-4.6602 1.5703-6.3203 0.67969-1.8906 1.2695-3.5195 1.1484-6.1914-0.10156-2.1211-0.69141-4.0781-1.7617-5.8516 0.14062 0.98828 0.14844 1.6406 0.14844 1.6992 0 0.17969-0.050781 0.37109-0.12891 0.53125-0.25 0.46875-0.60937 0.89844-1.0703 1.2812-0.42969 3.5195-1.2891 5.3203-1.75 6.0703l0.21875 5.1602z"/>
@@ -258,11 +271,11 @@
             </svg>
           </div>
           <h3 class="service-card-title">Obstetrics &<br>Gynecology</h3>
-          <p class="service-card-desc">Complete women's<br>healthcare</p>
-        </div>
+          <p class="service-card-desc">Complete care for mother & baby</p>
+        </a>
 
         <!-- 2. Surgical ICU (SICU) -->
-        <div class="service-card">
+        <a href="surgical-icu.html" class="service-card">
           <div class="service-icon-box s-icon-teal">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="4" width="20" height="12" rx="2"/>
@@ -273,11 +286,11 @@
             </svg>
           </div>
           <h3 class="service-card-title">Surgical ICU<br>(SICU)</h3>
-          <p class="service-card-desc">Advanced critical<br>care support</p>
-        </div>
+          <p class="service-card-desc">24/7 advanced critical care</p>
+        </a>
 
         <!-- 3. Ayurvedic & Women's Care -->
-        <div class="service-card">
+        <a href="ayurvedic-care.html" class="service-card">
           <div class="service-icon-box s-icon-teal">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2a10 10 0 0 1 10 10H2A10 10 0 0 1 12 2z"/>
@@ -287,11 +300,11 @@
             </svg>
           </div>
           <h3 class="service-card-title">Ayurvedic &<br>Women’s Care</h3>
-          <p class="service-card-desc">Holistic healing<br>for a healthier you</p>
-        </div>
+          <p class="service-card-desc">Holistic healing & wellness</p>
+        </a>
 
         <!-- 4. Inpatient Wards (IPD) -->
-        <div class="service-card">
+        <a href="inpatient-wards.html" class="service-card">
           <div class="service-icon-box s-icon-teal">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M2 4v16"/>
@@ -301,11 +314,11 @@
             </svg>
           </div>
           <h3 class="service-card-title">Inpatient Wards<br>(IPD)</h3>
-          <p class="service-card-desc">Comfortable and<br>safe stay</p>
-        </div>
+          <p class="service-card-desc">Deluxe rooms & safe stay</p>
+        </a>
 
-        <!-- 5. Anesthesia Department -->
-        <div class="service-card">
+        <!-- 5. Gynecology & Laparoscopic Surgery -->
+        <a href="gynecology-surgery.html" class="service-card">
           <div class="service-icon-box s-icon-pink">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e04878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="m18 2 4 4"/>
@@ -315,12 +328,12 @@
               <path d="m5 19-3 3"/>
             </svg>
           </div>
-          <h3 class="service-card-title">Anesthesia<br>Department</h3>
-          <p class="service-card-desc">Safe procedures<br>with expert care</p>
-        </div>
+          <h3 class="service-card-title">Gynecology &<br>Surgery</h3>
+          <p class="service-card-desc">Minimally invasive keyhole OT</p>
+        </a>
 
         <!-- 6. Outpatient Consultations -->
-        <div class="service-card">
+        <a href="opd-consultations.html" class="service-card">
           <div class="service-icon-box s-icon-teal">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M11 2a2 2 0 0 0-2 2v2H7a2 2 0 0 0-2 2v2a8 8 0 0 0 14 0V8a2 2 0 0 0-2-2h-2V4a2 2 0 0 0-2-2z"/>
@@ -328,9 +341,8 @@
             </svg>
           </div>
           <h3 class="service-card-title">Outpatient<br>Consultations</h3>
-          <p class="service-card-desc">Expert advice<br>for every stage</p>
-        </div>
-
+          <p class="service-card-desc">Daily clinics & diagnostics</p>
+        </a>
       </div>
 
     </div>
