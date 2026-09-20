@@ -1,26 +1,61 @@
 // Dalawai Hospital Interactive Script
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Mobile Menu Drawer Toggle
-  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  // 1. Mobile Menu Drawer Toggle & Close Outside
+  const mobileMenuBtns = document.querySelectorAll('.mobile-menu-btn');
   const mobileNavDrawer = document.querySelector('.mobile-nav-drawer');
 
-  if (mobileMenuBtn && mobileNavDrawer) {
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileNavDrawer.classList.toggle('open');
-      const isOpen = mobileNavDrawer.classList.contains('open');
-      mobileMenuBtn.setAttribute('aria-expanded', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
+  if (mobileNavDrawer) {
+    const closeDrawer = () => {
+      mobileNavDrawer.classList.remove('open');
+      mobileMenuBtns.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+      document.body.style.overflow = '';
+    };
 
-    // Close mobile menu when a nav link is clicked
-    const drawerNavLinks = mobileNavDrawer.querySelectorAll('.nav-link, .btn-appointment');
-    drawerNavLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileNavDrawer.classList.remove('open');
-        document.body.style.overflow = '';
+    mobileMenuBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = mobileNavDrawer.classList.toggle('open');
+        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        document.body.style.overflow = isOpen ? 'hidden' : '';
       });
     });
+
+    // Close mobile menu when any nav link or CTA inside drawer is clicked
+    const drawerNavLinks = mobileNavDrawer.querySelectorAll('a, button');
+    drawerNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeDrawer();
+      });
+    });
+
+    // Close mobile menu when user clicks anywhere outside the nav drawer and toggle buttons
+    document.addEventListener('click', (e) => {
+      if (mobileNavDrawer.classList.contains('open')) {
+        let isClickOnBtn = false;
+        mobileMenuBtns.forEach(btn => {
+          if (btn.contains(e.target)) isClickOnBtn = true;
+        });
+
+        if (!mobileNavDrawer.contains(e.target) && !isClickOnBtn) {
+          closeDrawer();
+        }
+      }
+    });
+
+    // Close on touchstart outside for touch devices
+    document.addEventListener('touchstart', (e) => {
+      if (mobileNavDrawer.classList.contains('open')) {
+        let isClickOnBtn = false;
+        mobileMenuBtns.forEach(btn => {
+          if (btn.contains(e.target)) isClickOnBtn = true;
+        });
+
+        if (!mobileNavDrawer.contains(e.target) && !isClickOnBtn) {
+          closeDrawer();
+        }
+      }
+    }, { passive: true });
   }
 
   // 2. Navbar Scroll Shadow Effect
