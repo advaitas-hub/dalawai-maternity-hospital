@@ -1,76 +1,90 @@
-import React from "react";
-import Hero from "@/components/ui/animated-shader-hero";
+"use client";
 
-// Demo Component showing how to use the Hero
-const HeroDemo: React.FC = () => {
-  const handlePrimaryClick = () => {
-    console.log('Get Started clicked!');
-  };
+import { WorksWheel, type WorksWheelItem } from "@/components/ui/works-wheel";
 
-  const handleSecondaryClick = () => {
-    console.log('Explore Features clicked!');
-  };
+// Hospital Facilities Dataset
+const FACILITIES: WorksWheelItem[] = [
+  {
+    title: "Patient Rooms",
+    image:
+      "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80",
+    href: "#patient-rooms",
+    category: "Inpatient Wards",
+  },
+  {
+    title: "Operation Theatre",
+    image:
+      "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1200&q=80",
+    href: "#operation-theatre",
+    category: "Modular OT",
+  },
+  {
+    title: "Pharmacy",
+    image:
+      "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&q=80",
+    href: "#pharmacy",
+    category: "24/7 Dispensary",
+  },
+  {
+    title: "Laboratory",
+    image:
+      "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80",
+    href: "#laboratory",
+    category: "Pathology Lab",
+  },
+  {
+    title: "ICU",
+    image:
+      "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80",
+    href: "#icu",
+    category: "Surgical ICU",
+  },
+  {
+    title: "Emergency Care",
+    image:
+      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80",
+    href: "#emergency",
+    category: "24-hr Trauma ER",
+  },
+  {
+    title: "Radiology",
+    image:
+      "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80",
+    href: "#radiology",
+    category: "X-Ray & Imaging",
+  },
+  {
+    title: "Consultation Rooms",
+    image:
+      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
+    href: "#consultation",
+    category: "OPD Clinics",
+  },
+  {
+    title: "NICU",
+    image:
+      "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
+    href: "#nicu",
+    category: "Neonatal Care",
+  },
+  {
+    title: "Diagnostic Services",
+    image:
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
+    href: "#diagnostics",
+    category: "Health Scans",
+  },
+];
 
+export default function WorksWheelDemo() {
   return (
-    <div className="w-full">
-      <Hero
-        trustBadge={{
-          text: "Trusted by forward-thinking teams.",
-          icons: ["✨"]
-        }}
-        headline={{
-          line1: "Launch Your",
-          line2: "Workflow Into Orbit"
-        }}
-        subtitle="Supercharge productivity with AI-powered automation and integrations built for the next generation of teams — fast, seamless, and limitless."
-        buttons={{
-          primary: {
-            text: "Get Started for Free",
-            onClick: handlePrimaryClick
-          },
-          secondary: {
-            text: "Explore Features",
-            onClick: handleSecondaryClick
-          }
-        }}
+    <div className="w-full h-[32rem] md:h-[38rem] my-6 md:my-10">
+      <WorksWheel
+        items={FACILITIES}
+        label="Our Facilities"
+        action="View Facility"
+        className="rounded-3xl border border-emerald-100/80 bg-white/80 shadow-lg backdrop-blur-xs"
       />
-      
-      {/* Additional content below hero */}
-      <div className="bg-gray-100 p-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            How to Use the Hero Component
-          </h2>
-          <div className="bg-white p-6 rounded-lg shadow-sm">
-            <pre className="text-sm text-gray-600 overflow-x-auto">
-{`<Hero
-  trustBadge={{
-    text: "Your trust badge text",
-    icons: ["🚀", "⭐", "✨"] // optional
-  }}
-  headline={{
-    line1: "Your First Line",
-    line2: "Your Second Line"
-  }}
-  subtitle="Your compelling subtitle text goes here..."
-  buttons={{
-    primary: {
-      text: "Primary CTA",
-      onClick: handlePrimaryClick
-    },
-    secondary: {
-      text: "Secondary CTA", 
-      onClick: handleSecondaryClick
-    }
-  }}
-  className="custom-classes" // optional
-/>`}
-            </pre>
-          </div>
-        </div>
-      </div>
     </div>
   );
-};
-
-export default HeroDemo;
+}

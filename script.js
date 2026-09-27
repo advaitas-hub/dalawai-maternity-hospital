@@ -1,6 +1,27 @@
 // Dalawai Hospital Interactive Script
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 0. Minimal Blended Logo Intro
+  const introPreloader = document.getElementById('intro-preloader');
+
+  if (introPreloader) {
+    document.body.style.overflow = 'hidden'; // lock scrolling during intro
+
+    let isHidden = false;
+    const hideIntro = () => {
+      if (isHidden) return;
+      isHidden = true;
+      introPreloader.classList.add('hidden');
+      document.body.style.overflow = '';
+    };
+
+    // Click anywhere on splash screen to reveal immediately
+    introPreloader.addEventListener('click', hideIntro);
+
+    // Quick Auto Transition after 1.2 seconds
+    setTimeout(hideIntro, 1200);
+  }
+
   // 1. Mobile Menu Drawer Toggle & Close Outside
   const mobileMenuBtns = document.querySelectorAll('.mobile-menu-btn');
   const mobileNavDrawer = document.querySelector('.mobile-nav-drawer');
