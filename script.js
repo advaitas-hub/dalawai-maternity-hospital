@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (header) {
         header.addEventListener('click', () => {
           const isOpen = item.classList.contains('active');
-          
+
           // Close other accordion items in the same container
           const accordionContainer = item.closest('.faq-accordion');
           if (accordionContainer) {
@@ -166,6 +166,30 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       }
+    });
+  }
+
+  // 7. Scroll-Triggered Animations for Facilities Page
+  const animatedElements = document.querySelectorAll('.animate-on-scroll, .fac-detail-card, .safety-card, .about-hero-content, .section-eyebrow-wrap, .section-title');
+
+  if (animatedElements.length > 0) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const animationObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    animatedElements.forEach((element) => {
+      animationObserver.observe(element);
     });
   }
 });

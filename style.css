@@ -224,18 +224,18 @@ button {
 /* Mobile Nav Drawer Overlay */
 .mobile-nav-drawer {
   position: fixed;
-  top: 72px;
+  top: 0;
   left: 0;
   width: 100%;
-  max-height: calc(100vh - 72px);
+  height: 100vh;
   overflow-y: auto;
   background: #ffffff;
   box-shadow: var(--shadow-lg);
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  transform: translateY(-120%);
+  transform: translateY(-100%);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1016,6 +1016,177 @@ button {
 }
 
 /* ==========================================================================
+   ANIMATIONS FOR FACILITIES PAGE
+   ========================================================================== */
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade In Left Animation */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade In Right Animation */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation Classes */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-on-scroll.fade-in-left {
+  animation: fadeInLeft 0.6s ease-out forwards;
+}
+
+.animate-on-scroll.fade-in-right {
+  animation: fadeInRight 0.6s ease-out forwards;
+}
+
+.animate-on-scroll.scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Facility Card Specific Animations */
+.fac-detail-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.fac-detail-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animations for facility cards */
+.fac-detail-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.fac-detail-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.fac-detail-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.fac-detail-card:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.fac-detail-card:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
+.fac-detail-card:nth-child(6) {
+  transition-delay: 0.6s;
+}
+
+/* Safety Standards Card Animations */
+.safety-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.safety-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animations for safety cards */
+.safety-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.safety-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.safety-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.safety-card:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+/* Hero Content Animation */
+.about-hero-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.about-hero-content.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Section Header Animation */
+.section-eyebrow-wrap,
+.section-title {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-eyebrow-wrap.is-visible,
+.section-title.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
    APPOINTMENT SECTION
    ========================================================================== */
 .appointment-section {
@@ -1199,8 +1370,16 @@ button {
 
 @media (max-width: 768px) {
   .navbar-container {
-    height: 64px;
+    height: 56px;
     padding: 0 16px;
+  }
+
+  .brand-logo-img {
+    height: 36px;
+  }
+
+  .brand-line-img {
+    height: 24px;
   }
 
   .brand-name {
@@ -1218,16 +1397,28 @@ button {
 
   .mobile-menu-btn {
     display: flex;
+    padding: 2px;
+  }
+
+  .mobile-menu-btn svg {
+    width: 20px;
+    height: 20px;
   }
 
   .mobile-nav-drawer {
-    top: 64px;
-    max-height: calc(100vh - 64px);
+    top: 0;
+    height: 100vh;
+    padding-top: 72px;
   }
 
   .btn-appointment {
-    font-size: 0.76rem;
-    padding: 6px 12px;
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+  .btn-appointment svg {
+    width: 12px;
+    height: 12px;
   }
 
   .hero-section {
@@ -1654,6 +1845,234 @@ button {
 
   .qs-title {
     font-size: 0.58rem;
+  }
+}
+
+/* ==========================================================================
+   FACILITIES PAGE MOBILE RESPONSIVENESS
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Facilities Page Hero Section */
+  .about-hero-section {
+    padding: 60px 0 40px;
+    min-height: auto;
+  }
+
+  .about-hero-content {
+    padding: 16px;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+  }
+
+  .about-page-title {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .about-hero-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  /* Facility Detail Cards */
+  .fac-detail-card {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .fac-detail-card > div:first-child {
+    width: 100%;
+    height: 250px;
+    border-radius: 16px;
+  }
+
+  .fac-detail-card > div:first-child img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .fac-detail-card > div:last-child {
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .spec-card-main-title {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .spec-card-paragraph {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .fac-feature-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .fac-feature-list li {
+    font-size: 0.88rem;
+    align-items: flex-start;
+  }
+
+  .fac-feature-list li svg {
+    margin-right: 6px;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* Safety Standards Section */
+  .fac-section {
+    padding: 50px 0;
+  }
+
+  .section-eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.8px;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+
+  .fac-section p {
+    font-size: 0.88rem;
+    margin-bottom: 30px;
+  }
+
+  /* Safety Cards Grid - Similar to Specialities Clinical Departments */
+  .safety-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .safety-card {
+    box-sizing: border-box;
+    padding: 12px 10px !important;
+    border-radius: 16px !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .safety-card > div:first-child {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px !important;
+    margin-bottom: 8px !important;
+    text-align: left;
+  }
+
+  .safety-card > div:first-child span:first-child {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  .safety-card h4 {
+    font-size: 0.9rem !important;
+    line-height: 1.25;
+    margin: 0 !important;
+  }
+
+  .safety-card > p {
+    display: none !important;
+  }
+
+  .safety-card > ul {
+    display: flex !important;
+    flex-direction: column;
+    gap: 4px !important;
+  }
+
+  .safety-card ul li {
+    font-size: 0.72rem !important;
+    line-height: 1.3;
+  }
+
+  .safety-card ul li span {
+    width: 4px !important;
+    height: 4px !important;
+  }
+
+  /* Clinical Insights Section */
+  .fac-section[style*="background-color: #f8fafc"] {
+    padding: 50px 0;
+  }
+
+  .fac-section[style*="background-color: #f8fafc"] .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .fac-section[style*="background-color: #f8fafc"] > .container > div[style*="display: flex"] {
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .fac-section[style*="background-color: #f8fafc"] > .container > div[style*="display: flex"] > div:first-child {
+    min-width: 100%;
+    padding: 20px;
+  }
+
+  .fac-section[style*="background-color: #f8fafc"] > .container > div[style*="display: flex"] > div:last-child {
+    min-width: 100%;
+  }
+
+  .fac-section[style*="background-color: #f8fafc"] h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  .fac-section[style*="background-color: #f8fafc"] p {
+    font-size: 0.88rem;
+    margin-bottom: 12px;
+  }
+
+  .fac-section[style*="background-color: #f8fafc"] div[style*="display: flex; gap: 20px"] {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .fac-section[style*="background-color: #f8fafc"] div[style*="display: flex; gap: 20px"] > div {
+    font-size: 0.82rem;
+  }
+
+  /* Mobile Animations - Reduce animation duration for better performance */
+  .animate-on-scroll,
+  .fac-detail-card,
+  .safety-card {
+    transition-duration: 0.4s;
+  }
+
+  .about-hero-content {
+    animation-duration: 0.5s;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page-title {
+    font-size: 1.4rem;
+  }
+
+  .spec-card-main-title {
+    font-size: 1.35rem;
+  }
+
+  .fac-detail-card > div:first-child {
+    height: 220px;
   }
 }
 
@@ -3731,6 +4150,50 @@ button {
   align-items: center !important;
 }
 
+.icu-hero-bg-section {
+  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('ICU.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-size: cover !important;
+  padding: 60px 0;
+  min-height: calc(100vh - 80px) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.ayurveda-hero-bg-section {
+  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('ayurveda 2.png.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-size: cover !important;
+  padding: 60px 0;
+  min-height: calc(100vh - 80px) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.opd-hero-bg-section {
+  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('OPD consulations.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-size: cover !important;
+  padding: 60px 0;
+  min-height: calc(100vh - 80px) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.ipd-hero-bg-section {
+  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('Inpatient Care.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-size: cover !important;
+  padding: 60px 0;
+  min-height: calc(100vh - 80px) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
 .detail-hero-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -4602,6 +5065,30 @@ button {
     padding: 36px 0 32px !important;
     min-height: auto !important;
   }
+
+  .icu-hero-bg-section {
+    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('ICU.png') no-repeat center right / cover !important;
+    padding: 36px 0 32px !important;
+    min-height: auto !important;
+  }
+
+  .ayurveda-hero-bg-section {
+    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('ayurveda 2.png.png') no-repeat center right / cover !important;
+    padding: 36px 0 32px !important;
+    min-height: auto !important;
+  }
+
+  .opd-hero-bg-section {
+    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('OPD consulations.png') no-repeat center right / cover !important;
+    padding: 36px 0 32px !important;
+    min-height: auto !important;
+  }
+
+  .ipd-hero-bg-section {
+    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('Inpatient Care.png') no-repeat center right / cover !important;
+    padding: 36px 0 32px !important;
+    min-height: auto !important;
+  }
 }
 
 @media (max-width: 640px) {
@@ -5357,4 +5844,206 @@ button {
   font-size: 0.8rem;
   color: #64748b;
   font-weight: 600;
+}
+/* Added CSS for Facilities redesign */
+.fac-section { padding: 50px 0; }
+.fac-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.fac-detail-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(15,23,42,0.06);
+  box-shadow: 0 4px 12px rgba(15,23,42,0.03);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.fac-card-header { margin-bottom: 12px; }
+.fac-icon-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.fac-card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.fac-divider {
+  border: none;
+  border-top: 1px dashed rgba(15,23,42,0.12);
+  margin: 0 0 16px 0;
+}
+.fac-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.fac-feature-list li {
+  font-size: 0.85rem;
+  color: var(--text-dark);
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  line-height: 1.3;
+}
+.fac-feature-list li svg {
+  color: #059669; /* teal accent for checks */
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.fac-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(15,23,42,0.08);
+  padding-top: 16px;
+  margin-top: auto;
+}
+.fac-status {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.fac-status strong { color: var(--text-dark); }
+
+.fac-filter-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding-bottom: 8px; /* space for scrollbar */
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.fac-filter-scroll::-webkit-scrollbar { display: none; }
+.fac-filter-wrap-outer { position: relative; }
+
+@media (max-width: 1023px) {
+  .fac-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 639px) {
+  .fac-cards-grid { grid-template-columns: 1fr; }
+  .fac-feature-list { grid-template-columns: 1fr 1fr; } /* they fit in Mobile */
+  .fac-filter-wrap-outer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+    pointer-events: none;
+  }
+}
+
+/* --- Additional Facilities Optimizations --- */
+.fac-detail-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fac-detail-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08); /* deeper shadow on hover */
+}
+.fac-filter-scroll {
+  justify-content: center; /* Center filters on large screens */
+}
+@media (max-width: 768px) {
+  .fac-filter-scroll {
+    justify-content: flex-start; /* back to start on mobile for scrolling */
+  }
+}
+.about-hero-section {
+  padding: 80px 0; /* Add more vertical breathing room to the hero */
+}
+.about-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-hero-content .hero-eyebrow {
+  justify-content: center;
+}
+.about-hero-content p {
+  margin: 0 auto;
+  max-width: 650px; /* Better readability */
+}
+
+/* Footer improvements */
+.footer-grid {
+  gap: 60px; /* Added spacing between columns for a cleaner footer layout */
+}
+.site-footer {
+  padding-top: 80px; 
+}
+
+/* Specific 4-column balanced layout for Safety Standards */
+.fac-standards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+@media (max-width: 1023px) {
+  .fac-standards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 639px) {
+  .fac-standards-grid { grid-template-columns: 1fr; }
+}
+
+/* ==============================================
+   FACILITIES PAGE — ALTERNATING ZIG-ZAG LAYOUT
+   HTML order: [image] [content] inside each card
+   row        → image LEFT,  content RIGHT  (even)
+   row-reverse → content LEFT, image RIGHT  (odd)
+   ============================================== */
+
+/* Base: all cards default to image-left / content-right */
+.flagship-facilities .fac-detail-card {
+  flex-direction: row;
+}
+
+/* Odd cards (1, 3, 5): flip to content-left / image-right */
+.flagship-facilities .fac-detail-card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+/* Slide-in animation — odd cards enter from the right */
+.flagship-facilities .fac-detail-card:nth-child(odd).fade-in-up,
+.flagship-facilities .fac-detail-card:nth-child(odd)[data-aos] {
+  --slide-from: translateX(40px);
+}
+
+/* Slide-in animation — even cards enter from the left */
+.flagship-facilities .fac-detail-card:nth-child(even).fade-in-up,
+.flagship-facilities .fac-detail-card:nth-child(even)[data-aos] {
+  --slide-from: translateX(-40px);
+}
+
+/* Mobile & tablet: stack all cards as single column, image top, content below */
+@media (max-width: 768px) {
+  .flagship-facilities .fac-detail-card,
+  .flagship-facilities .fac-detail-card:nth-child(odd),
+  .flagship-facilities .fac-detail-card:nth-child(even) {
+    flex-direction: column !important;
+  }
+
+  /* Reset any order overrides on children */
+  .flagship-facilities .fac-detail-card > div {
+    order: unset !important;
+    width: 100%;
+    min-width: unset !important;
+  }
+
+  /* Fixed-height image containers should relax on mobile */
+  .flagship-facilities .fac-detail-card > div[style*="height: 420px"] {
+    height: 260px;
+  }
 }

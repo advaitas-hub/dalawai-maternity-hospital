@@ -79,313 +79,162 @@
   </header>
 
   <!-- ======================================================
-       FACILITIES HERO PAGE HEADER
+       FACILITIES HERO PAGE HEADER (FULL SCREEN BLENDED CONTENT)
    ======================================================= -->
-  <section class="about-hero-section">
-    <div class="container">
-      <div class="about-hero-content">
-        <div class="hero-eyebrow">
+  <section class="about-hero-section" style="position: relative; min-height: calc(100vh - 72px); display: flex; align-items: center; justify-content: center; background: url('facilties back.png') center/cover no-repeat; padding: 100px 0; text-align: center; color: #0f172a;">
+    <div class="container" style="width: 100%;">
+      <div class="about-hero-content animate-on-scroll fade-in-up" style="max-width: 900px; margin: 0 auto; padding: 20px;">
+        <div class="hero-eyebrow" style="justify-content: center; color: #059669; text-shadow: 0 1px 3px rgba(255,255,255,0.8);">
           <span>STATE-OF-THE-ART INFRASTRUCTURE</span>
-          <span class="eyebrow-line"></span>
+          <span class="eyebrow-line" style="background: #059669;"></span>
         </div>
-        <h1 class="about-page-title">
-          <span class="title-serif-dark">Advanced Facilities</span><br>
-          <span class="title-serif-dark">For</span> <span class="title-serif-pink">Safer, Comfortable Care</span>
+        
+        <h1 class="about-page-title" style="color: #0f172a; margin-bottom: 24px; font-size: clamp(2.2rem, 8vw, 3.6rem); line-height: 1.15; text-shadow: 0 2px 10px rgba(255,255,255,0.7);">
+          <span class="title-serif-dark" style="color: #0f172a;">Advanced Facilities</span><br>
+          <span class="title-serif-dark" style="color: #0f172a;">For</span> <span class="title-serif-pink" style="color: #db2777 !important;">Safer, Comfortable Care</span>
         </h1>
-        <p class="about-hero-desc">
-          Designed for clinical precision, patient safety, and optimal healing — explore our modular operating theatres, private labour suites, surgical ICU, and round-the-clock emergency infrastructure.
+        
+        <p class="about-hero-desc" style="color: #1e293b; max-width: 800px; margin: 0 auto 20px; font-size: clamp(1rem, 4vw, 1.25rem); line-height: 1.7; font-weight: 600; text-shadow: 0 1px 4px rgba(255,255,255,0.8);">
+          At Dalawai Maternity Hospital, every physical facility is engineered for clinical precision, infection prevention, and patient serenity. From modular operating theatres equipped with positive-pressure laminar airflow to specialized critical care recovery units, our facility design places mother and child at the heart of advanced medical technology.
         </p>
 
-
+        <p style="color: #334155; max-width: 780px; margin: 0 auto; font-size: clamp(0.95rem, 3.5vw, 1.08rem); line-height: 1.7; font-weight: 500; text-shadow: 0 1px 3px rgba(255,255,255,0.8);">
+          Whether assisting routine deliveries in private, calming labour suites or executing complex surgical interventions in our Surgical ICU (SICU), our round-the-clock emergency infrastructure guarantees immediate clinical readiness, 24/7 diagnostic support, and continuous medical supervision.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- ======================================================
-       CATEGORY FILTER PILLS (Mobile Touch Scrollable)
+       HOSPITAL FACILITIES (ALTERNATING EDITORIAL LAYOUT)
    ======================================================= -->
-  <section class="spec-filter-section">
+  <section class="fac-section" style="padding: 70px 0;">
     <div class="container">
-      <div class="filter-pills-wrap">
-        <button class="filter-pill active" data-filter="all">All Facilities</button>
-        <button class="filter-pill" data-filter="surgical">Surgical & OT</button>
-        <button class="filter-pill" data-filter="icu">Emergency & ICU</button>
-        <button class="filter-pill" data-filter="labour">Labour & Delivery</button>
-        <button class="filter-pill" data-filter="rooms">Rooms & Wards</button>
-        <button class="filter-pill" data-filter="pharmacy">Pharmacy & Lab</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================================
-       DETAILED FACILITIES GRID
-   ======================================================= -->
-  <section class="specialities-detail-section">
-    <div class="container">
-      <div class="spec-cards-grid">
-
+      <div class="flagship-facilities">
+        
         <!-- 1. Modular Operation Theatre -->
-        <div class="spec-detail-card" data-category="surgical">
-          <div class="spec-card-header">
-            <div class="spec-detail-icon f-icon-teal">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2v4M8 6h8M4 17h16M6 17v4M18 17v4"/>
-                <rect x="4" y="13" width="16" height="4" rx="1"/>
-                <path d="M10 13v-3a2 2 0 0 1 4 0v3"/>
-              </svg>
-            </div>
-            <div class="spec-title-wrap">
-              <span class="spec-category-badge badge-teal">Surgical Suite</span>
-              <h3 class="spec-card-main-title">Modular Operation Theatre (OT)</h3>
-            </div>
+        <div class="fac-detail-card spec-detail-card animate-on-scroll" data-category="surgical" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; margin-bottom: 80px;">
+          <div style="flex: 1; min-width: 250px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); height: 420px;">
+            <img src="hospital infra/OT 2.0.jpeg" alt="Modular Operation Theatre" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;">
           </div>
-          <p class="spec-card-paragraph">
-            Ultra-modern, sterile operating theatre equipped with HEPA laminar air flow, shadowless LED lights, and advanced laparoscopic towers for precision surgeries.
-          </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>HEPA Filtered Sterile Airflow & Zero-Infection Protocol</li>
-            <li><span class="f-dot"></span>Advanced High-Definition Laparoscopic Surgical Tower</li>
-            <li><span class="f-dot"></span>Multi-Parameter Cardiac & Anesthesia Workstations</li>
-            <li><span class="f-dot"></span>Uninterrupted Dual Emergency Power Generators</li>
-          </ul>
-          <div class="spec-card-footer">
-            <span class="doc-badge">Status: <strong>Fully Operational 24/7</strong></span>
-            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-              <span>Book Appointment</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
+          <div style="flex: 1; min-width: 250px;">
+            <div class="fac-icon-row" style="margin-bottom: 15px;">
+              <span class="spec-category-badge badge-teal">Surgical Suite</span>
+            </div>
+            <h3 class="spec-card-main-title" style="font-size: 2.2rem; margin-bottom: 15px;">Modular Operation Theatre (OT)</h3>
+            <p class="spec-card-paragraph" style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 25px;">Our ultra-modern, sterile operating theatre is designed for precision surgeries and optimal patient safety. Equipped with a state-of-the-art laparoscopic tower, advanced anesthesia workstations, and ensuring uninterrupted power supply for complex procedures. The laminar HEPA filtered airflow systems maintain a highly sterile environment to prevent any airborne bacterial exposure.</p>
+            
+            <ul class="fac-feature-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px;">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> HEPA Filtered Airflow</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Laparoscopic Tower</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Anesthesia Workstations</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Uninterrupted Power</li>
+            </ul>
           </div>
         </div>
 
         <!-- 2. Private Labour Suites -->
-        <div class="spec-detail-card" data-category="labour">
-          <div class="spec-card-header">
-            <div class="spec-detail-icon f-icon-pink">
-              <svg class="gyno-icon" width="38" height="38" viewBox="20 10 56 84" fill="#f472b6">
-                <path d="m68.441 29.09c0.019532 0.44922-0.23828 0.87109-0.64844 1.0703l-2.2617 1.0586-2.2891 3.8008c-0.51953 0.85938-1.4492 1.3711-2.4297 1.3711-0.19141 0-0.37891-0.019531-0.55859-0.058594-0.44922-0.089843-0.96875-0.23047-1.5312-0.42188-0.35938 1.5781-0.53125 3.2305-0.58984 4.0586l9.9297 8.4102c2.0781-3.9102 1.9883-7.1094 1.8984-10.48-0.050782-1.6484-0.089844-3.3516 0.10156-5.1914 0.30078-2.7891 0.98047-4.6602 1.5703-6.3203 0.67969-1.8906 1.2695-3.5195 1.1484-6.1914-0.10156-2.1211-0.69141-4.0781-1.7617-5.8516 0.14062 0.98828 0.14844 1.6406 0.14844 1.6992 0 0.17969-0.050781 0.37109-0.12891 0.53125-0.25 0.46875-0.60937 0.89844-1.0703 1.2812-0.42969 3.5195-1.2891 5.3203-1.75 6.0703l0.21875 5.1602z"/>
-                <path d="m38.352 84.961-1.6992 9.0391h14.441c-0.62891-0.32031-1.2305-0.67969-1.8008-1.1016l-10.93-7.9414z"/>
-                <path d="m36.148 38.172c3.2617-1.5195 6.3281-2.0586 6.6484-2.1094 3.9414-1.5195 5.1992-4.0312 5.5586-5.8789 0.33984-1.75 1.0391-3.4219 2.0898-4.9492l3.1602-4.6406c1.0508-1.5508 2.8008-2.4805 4.6719-2.4883 4.6992-0.03125 8.2891-0.67969 9.9414-1.7383 0.039062-0.03125 0.089844-0.058594 0.12891-0.089844 0.23828-1.7188 0.42969-3.3984 0.57031-0.51953-0.039063-0.73047-0.25-2.6797-1.1484-4.6289-1.4609-3.1406-4.0312-4.8516-7.6602-5.0781-2.9688-0.17969-5.5391 0.17188-7.6211 1.0508-1.7188 0.73047-3.1602 1.8398-4.2812 3.3086-2.1602 2.8398-2.7383 6.4492-3.0508 8.3906-0.51953 3.2305-1.9297 5.8906-4.3086 8.1406-2.0312 1.9219-4.4219 3.2305-6.7305 4.5117-1.2305 0.67969-2.3906 1.3086-3.4102 2-2.6484 1.7812-7.0703 7.0312-7.6602 13.531-0.41016 4.5391 1.0898 8.8594 4.4609 12.871 0.078126-4.8203 0.28906-9.6016 0.73828-12.641 0.55078-3.7383 3.2891-6.8594 7.9102-9.0195z"/>
-                <path d="m75.531 71.828c-0.82812-2.0117-2-3.9102-3.4688-5.6484-2.5391-3-5.1406-4.5117-5.1719-4.5195-0.28906-0.17188-0.5-0.46094-0.55078-0.80078-0.050782-0.33984 0.050781-0.67969 0.26953-0.92969l1.2383-1.3789c1.1484-1.2812 1.7109-2.6914 1.6094-4.0781-0.10156-1.3984-0.87109-2.7305-2.2188-3.8398h-0.011719l-11-9.3086c-0.26953-0.23047-0.41016-0.55859-0.39844-0.91016 0-0.12891 0.14844-2.9609 0.80859-5.5312-1.0898-0.75-2.0586-1.8281-2.5312-3.4102-0.17969-0.58984 0.16016-1.2188 0.75-1.3984 0.58984-0.17969 1.2188 0.16016 1.3984 0.75 0.67188 2.2305 3.0586 3.0312 4.4219 3.3086 0.25 0.050782 0.5-0.058593 0.62109-0.26953l2.4688-4.1016c0.10938-0.19141 0.28125-0.33984 0.48828-0.44141l1.8906-0.89062-0.21094-4.7891c-0.011719-0.30078 0.058594-0.55078 0.26172-0.76953 0.30859-0.39844 0.87109-1.6094 1.2812-3.7188-0.67969 0.23047-1.4414 0.42969-2.3008 0.60156-2.4102 0.46875-5.0898 0.57812-6.9102 0.60156-1.1289 0-2.1914 0.57031-2.8281 1.5117l-3.1602 4.6406c-0.87109 1.2812-1.4609 2.6602-1.7383 4.1211-0.28125 1.4609-0.89844 2.7891-1.8398 3.9688-1.2617 1.5781-3.0508 2.8086-5.3203 3.6484-0.12891 0.050781-2.6172 0.070312-0.37891 0.070312-1.3789 0.26172-11.559 2.4102-12.559 9.2188-0.92969 6.3203-0.78906 20.531-0.69141 26.352 0.019531 1.3281 0.67969 2.5781 1.75 3.3594l19.078 13.84c1.2109 0.87891 2.5586 1.4883 4.0195 1.8086 3.0117 0.67188 5.7109 1.0391 7.9805 1.1094h1.6406c2.3789-0.089844 4.1211-0.57031 5.0312-1.4492 1.4102-1.3516 2.5586-2.8906 3.4414-4.5703 0.17188-0.32812 0-0.57812-0.078125-0.67188-0.078125-0.089844-0.30859-0.30078-0.66016-0.17188-2.9609 1.0703-5.1797 2.2812-6.4297 3.4883-0.39063 0.37891-0.98828 0.42969-1.4297 0.10938-0.44141-0.30859-0.60156-0.89844-0.37109-1.3906l0.44141-0.94141c0.16016-0.32812 0.03125-0.60938-0.039062-0.71875-0.058594-0.10938-0.25-0.35156-0.60938-0.37891l-1.3594-0.089844c-1.0312-0.070312-2.0391 0.26953-2.8281 0.92969l-1.6406 1.3906c-0.46875 0.39844-1.1719 0.33984-1.5781-0.12109-0.03125-0.03125-2.9102-3.3516-6.5117-6.8398-5.8984-5.7383-9.1289-7.5508-10.789-8.0703-0.5-0.16016-0.82812-0.64062-0.78906-1.1719l1.5117-18.57c0.050781-0.62109 0.58984-1.0781 1.2109-1.0312 0.62109 0.050781 1.0781 0.58984 1.0312 1.2109l-1.4492 17.719c5.6719 2.3906 14.191 11.578 16.738 14.441l0.80078-0.67969c1.2383-1.0508 2.8086-1.5703 4.4219-1.4609l1.3594 0.089844c1 0.058593 1.8906 0.60937 2.3984 1.4688 0.12891 0.21875 0.23047 0.44922 0.30078 0.69141 1.3086-0.78125 2.9297-1.5195 4.8398-2.2109 1.1094-0.39844 2.3398-0.089844 3.1211 0.80078 0.28125 0.30859 0.46875 0.67969 0.58984 1.0586 1.3789-2.2305 2.1016-4.6094 2.1289-7.1094 0.03125-2.7812-0.46875-5.4492-1.5-7.9492z"/>
-              </svg>
-            </div>
-            <div class="spec-title-wrap">
-              <span class="spec-category-badge">Maternity Delivery</span>
-              <h3 class="spec-card-main-title">Private Labour & Delivery Suites</h3>
-            </div>
+        <div class="fac-detail-card spec-detail-card animate-on-scroll" data-category="labour" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; margin-bottom: 80px;">
+          <div style="flex: 1; min-width: 250px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+            <img src="Private Labour Suites.png" alt="Private Labour Suites" style="width: 100%; display: block;">
           </div>
-          <p class="spec-card-paragraph">
-            Tranquil, private delivery rooms designed for physical and emotional comfort during labor, supporting family presence and pain-free labor options.
-          </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>Private & Hygienic Delivery Room Environment</li>
-            <li><span class="f-dot"></span>Continuous Fetal Telemetry Monitoring</li>
-            <li><span class="f-dot"></span>Immediate Access to Epidural Labor Analgesia</li>
-            <li><span class="f-dot"></span>Family Companion Support Seating</li>
-          </ul>
-          <div class="spec-card-footer">
-            <span class="doc-badge">Status: <strong>Available 24/7</strong></span>
-            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-              <span>Book Appointment</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
+          <div style="flex: 1; min-width: 250px;">
+            <div class="fac-icon-row" style="margin-bottom: 15px;">
+              <span class="spec-category-badge">Maternity Delivery</span>
+            </div>
+            <h3 class="spec-card-main-title" style="font-size: 2.2rem; margin-bottom: 15px;">Private Labour Suites</h3>
+            <p class="spec-card-paragraph" style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 25px;">Our private labour suites provide a tranquil, comforting environment, supporting both the physical and emotional wellbeing of mothers during labor. With constant fetal telemetry and ready epidural access, you can trust our maternal care specialists at every step. We also welcome companion support, assuring families are together through this beautiful journey.</p>
+            
+            <ul class="fac-feature-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px;">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Hygienic Environment</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Fetal Telemetry</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Epidural Access</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Companion Support</li>
+            </ul>
           </div>
         </div>
 
-        <!-- 3. Surgical ICU (SICU) -->
-        <div class="spec-detail-card" data-category="icu">
-          <div class="spec-card-header">
-            <div class="spec-detail-icon f-icon-teal">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="4" width="20" height="12" rx="2"/>
-                <path d="M6 10h2l1.5-3 2.5 6 2-4 1.5 1h2.5"/>
-                <path d="M6 20h12"/>
-                <path d="M9 16v4"/>
-                <path d="M15 16v4"/>
-              </svg>
-            </div>
-            <div class="spec-title-wrap">
-              <span class="spec-category-badge badge-teal">Critical Care Unit</span>
-              <h3 class="spec-card-main-title">Surgical Intensive Care Unit (SICU)</h3>
-            </div>
+        <!-- 3. Surgical ICU -->
+        <div class="fac-detail-card spec-detail-card animate-on-scroll" data-category="icu" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; margin-bottom: 80px;">
+          <div style="flex: 1; min-width: 250px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); height: 420px;">
+            <img src="hospital infra/sicu.png" alt="Surgical ICU" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;">
           </div>
-          <p class="spec-card-paragraph">
-            Dedicated multi-bed intensive care unit offering invasive ventilation, continuous hemodynamic monitoring, and 1-on-1 critical nursing care.
-          </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>Continuous Multi-Para Cardiac & Blood Pressure Monitors</li>
-            <li><span class="f-dot"></span>Invasive Ventilator & Resuscitation Equipment</li>
-            <li><span class="f-dot"></span>24/7 Specialist Intensivist Availability</li>
-            <li><span class="f-dot"></span>Centralized Oxygen & Suction Lines</li>
-          </ul>
-          <div class="spec-card-footer">
-            <span class="doc-badge">Status: <strong>Active Emergency ICU</strong></span>
-            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-              <span>Book Appointment</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
+          <div style="flex: 1; min-width: 250px;">
+            <div class="fac-icon-row" style="margin-bottom: 15px;">
+              <span class="spec-category-badge badge-teal">Critical Care</span>
+            </div>
+            <h3 class="spec-card-main-title" style="font-size: 2.2rem; margin-bottom: 15px;">Surgical ICU (SICU)</h3>
+            <p class="spec-card-paragraph" style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 25px;">Our dedicated multi-bed Critical Care unit offers 1-on-1 expert nursing care for critical postoperative recovery. Comprehensive monitoring capabilities include advanced cardiac monitors and invasive ventilators, supervised 24/7 by experienced intensivists. Coupled with a centralized oxygen supply, we ensure swift, life-saving responses at a moment's notice.</p>
+            
+            <ul class="fac-feature-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px;">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Cardiac Monitors</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Invasive Ventilators</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> 24/7 Intensivist</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Centralized O2</li>
+            </ul>
           </div>
         </div>
 
         <!-- 4. Post-Op Recovery Ward -->
-        <div class="spec-detail-card" data-category="labour">
-          <div class="spec-card-header">
-            <div class="spec-detail-icon f-icon-teal">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 10h18M3 14h18M5 10v7M19 10v7M12 4v4M10 6h4"/>
-                <rect x="3" y="10" width="18" height="4" rx="1"/>
-              </svg>
-            </div>
-            <div class="spec-title-wrap">
-              <span class="spec-category-badge badge-teal">Post-Surgery Care</span>
-              <h3 class="spec-card-main-title">Post-Op Recovery Ward</h3>
-            </div>
+        <div class="fac-detail-card spec-detail-card animate-on-scroll" data-category="surgical" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; margin-bottom: 80px;">
+          <div style="flex: 1; min-width: 250px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); height: 420px;">
+            <img src="Post-Op Recovery Ward.png" alt="Post-Op Recovery Ward" style="width: 100%; height: 100%; object-fit: cover; object-position: center bottom; display: block;">
           </div>
-          <p class="spec-card-paragraph">
-            Specialized recovery bay for patients awakening from surgery or delivery, providing pain management and vital stabilization before ward transfer.
-          </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>Motorized Ergonomic Pain-Relief Patient Beds</li>
-            <li><span class="f-dot"></span>Direct Anesthesiologist Supervision & Vital Check</li>
-            <li><span class="f-dot"></span>Immediate Post-Surgical Warmers & Oxygen Care</li>
-            <li><span class="f-dot"></span>Attentive Post-Op Nursing Protocols</li>
-          </ul>
-          <div class="spec-card-footer">
-            <span class="doc-badge">Status: <strong>Continuous Monitoring</strong></span>
-            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-              <span>Book Appointment</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
+          <div style="flex: 1; min-width: 250px;">
+            <div class="fac-icon-row" style="margin-bottom: 15px;">
+              <span class="spec-category-badge badge-teal">Post-Surgery</span>
+            </div>
+            <h3 class="spec-card-main-title" style="font-size: 2.2rem; margin-bottom: 15px;">Post-Op Recovery Ward</h3>
+            <p class="spec-card-paragraph" style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 25px;">Our specialized post-operative recovery ward is equipped for direct medical supervision, patient stabilization, and active pain management following surgical procedures. Designed with ergonomic patient beds, patient warmers, and supplemental oxygen lines, our attentive nursing team guarantees continuous monitoring during critical recovery windows.</p>
+            
+            <ul class="fac-feature-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px;">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Ergonomic Beds</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Direct Supervision</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Warmers &amp; O2</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Attentive Nursing</li>
+            </ul>
           </div>
         </div>
 
-        <!-- 5. Inpatient Wards & Private AC Rooms -->
-        <div class="spec-detail-card" data-category="rooms">
-          <div class="spec-card-header">
-            <div class="spec-detail-icon f-icon-pink">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2 4v16"/>
-                <path d="M2 12h20"/>
-                <path d="M22 8v12"/>
-                <path d="M6 12V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3"/>
-              </svg>
-            </div>
-            <div class="spec-title-wrap">
-              <span class="spec-category-badge">Patient Accommodation</span>
-              <h3 class="spec-card-main-title">Deluxe Private AC Rooms & Wards</h3>
-            </div>
+        <!-- 5. Diagnostic Laboratory -->
+        <div class="fac-detail-card spec-detail-card animate-on-scroll" data-category="pharmacy" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; margin-bottom: 80px;">
+          <div style="flex: 1; min-width: 250px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+            <img src="lab.png" alt="Diagnostic Laboratory" style="width: 100%; display: block;">
           </div>
-          <p class="spec-card-paragraph">
-            Clean, quiet, and cheerful inpatient rooms designed to provide privacy and comfort for mothers, newborns, and recovering surgical patients.
-          </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>Deluxe Air-Conditioned Private Rooms with Television</li>
-            <li><span class="f-dot"></span>Attached Private Washroom & Hygienic Sanitization</li>
-            <li><span class="f-dot"></span>Comfortable Attendant Couch & Bedding</li>
-            <li><span class="f-dot"></span>24/7 Patient-Nurse Call Button System</li>
-          </ul>
-          <div class="spec-card-footer">
-            <span class="doc-badge">Accommodation: <strong>Private & Shared Available</strong></span>
-            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-              <span>Book Appointment</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- 6. 24/7 Emergency ER & Trauma -->
-        <div class="spec-detail-card" data-category="icu">
-          <div class="spec-card-header">
-            <div class="spec-detail-icon f-icon-pink">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3a6 6 0 0 0-6 6v4h12V9a6 6 0 0 0-6-6Z"/>
-                <path d="M4 13h16v3H4z"/>
-                <path d="M12 19v3M7 19l-1 2M17 19l1 2"/>
-              </svg>
-            </div>
-            <div class="spec-title-wrap">
-              <span class="spec-category-badge">Emergency Care</span>
-              <h3 class="spec-card-main-title">24-Hour Emergency ER & Triage</h3>
-            </div>
-          </div>
-          <p class="spec-card-paragraph">
-            Immediate emergency entrance and resuscitation area equipped to handle acute labor pains, bleeding, high-risk complications, and trauma.
-          </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>Immediate Emergency Triage & Doctor Evaluation</li>
-            <li><span class="f-dot"></span>24/7 On-Call Obstetricians & Gynecological Surgeons</li>
-            <li><span class="f-dot"></span>Priority Admission to OT or ICU</li>
-            <li><span class="f-dot"></span>Emergency Ambulance Transport Support</li>
-          </ul>
-          <div class="spec-card-footer">
-            <span class="doc-badge">Emergency Contact: <strong>24/7 Available On-Site</strong></span>
-            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-              <span>Book Appointment</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- 7. In-House Diagnostic Laboratory -->
-        <div class="spec-detail-card" data-category="pharmacy">
-          <div class="spec-card-header">
-            <div class="spec-detail-icon f-icon-pink">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 18h12M12 18v-4M9 14a3 3 0 0 1 6 0M12 2v6M9 5h6"/>
-                <circle cx="12" cy="11" r="1.5" fill="#f472b6"/>
-              </svg>
-            </div>
-            <div class="spec-title-wrap">
+          <div style="flex: 1; min-width: 250px;">
+            <div class="fac-icon-row" style="margin-bottom: 15px;">
               <span class="spec-category-badge">Diagnostic Testing</span>
-              <h3 class="spec-card-main-title">In-House Diagnostic Laboratory</h3>
             </div>
-          </div>
-          <p class="spec-card-paragraph">
-            Fast, reliable diagnostic pathology and blood analysis within the hospital campus for quick clinical decision-making.
-          </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>Full Hematology & Complete Blood Count (CBC)</li>
-            <li><span class="f-dot"></span>Hormonal Panels & Thyroid Function Tests</li>
-            <li><span class="f-dot"></span>Pathology, Urine Analysis & Microbiology</li>
-            <li><span class="f-dot"></span>Rapid Emergency Turn-around Reporting</li>
-          </ul>
-          <div class="spec-card-footer">
-            <span class="doc-badge">Lab Status: <strong>Open Daily & 24/7 Emergency</strong></span>
-            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-              <span>Book Appointment</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
+            <h3 class="spec-card-main-title" style="font-size: 2.2rem; margin-bottom: 15px;">Diagnostic Laboratory</h3>
+            <p class="spec-card-paragraph" style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 25px;">Our in-house diagnostic laboratory provides rapid bedside and outpatient pathology services around the clock. Covering comprehensive blood counts, prenatal hormonal panels, and clinical microbiology tests, our advanced equipment delivers accurate and swift test reports to support timely clinical decision-making.</p>
+            
+            <ul class="fac-feature-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px;">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Blood Count</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Hormonal Panels</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Microbiology</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Rapid Reports</li>
+            </ul>
           </div>
         </div>
 
-        <!-- 8. 24/7 On-Site Pharmacy -->
-        <div class="spec-detail-card" data-category="pharmacy">
-          <div class="spec-card-header">
-            <div class="spec-detail-icon f-icon-teal">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m10.5 20.5 9-9a4.95 4.95 0 1 0-7-7l-8.5 8.5a4.95 4.95 0 1 0 7 7Z"/>
-                <path d="m8.5 8.5 7 7"/>
-              </svg>
-            </div>
-            <div class="spec-title-wrap">
-              <span class="spec-category-badge badge-teal">Pharmacy Services</span>
-              <h3 class="spec-card-main-title">24/7 On-Site Hospital Pharmacy</h3>
-            </div>
+        <!-- 6. Hospital Pharmacy -->
+        <div class="fac-detail-card spec-detail-card animate-on-scroll" data-category="pharmacy" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; margin-bottom: 40px;">
+          <div style="flex: 1; min-width: 250px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+            <img src="Pharmacy.png" alt="Hospital Pharmacy" style="width: 100%; display: block;">
           </div>
-          <p class="spec-card-paragraph">
-            Fully stocked internal pharmacy ensuring instant access to genuine maternity, surgical, pediatric, and emergency medicines at all hours.
-          </p>
-          <ul class="spec-feature-list">
-            <li><span class="f-dot"></span>Genuine Prescribed Maternal & Gynecological Medicines</li>
-            <li><span class="f-dot"></span>Surgical Supplies & Antenatal Supplements</li>
-            <li><span class="f-dot"></span>Newborn Care & Hygiene Essentials</li>
-            <li><span class="f-dot"></span>Direct Inpatient Ward Delivery</li>
-          </ul>
-          <div class="spec-card-footer">
-            <span class="doc-badge">Pharmacy Status: <strong>24 Hours Open</strong></span>
-            <a href="index.html#appointment" class="btn-hero-primary btn-sm">
-              <span>Book Appointment</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
+          <div style="flex: 1; min-width: 250px;">
+            <div class="fac-icon-row" style="margin-bottom: 15px;">
+              <span class="spec-category-badge badge-teal">Pharmacy Services</span>
+            </div>
+            <h3 class="spec-card-main-title" style="font-size: 2.2rem; margin-bottom: 15px;">Hospital Pharmacy</h3>
+            <p class="spec-card-paragraph" style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 25px;">Operating 24/7, our fully stocked internal hospital pharmacy guarantees immediate access to authentic prescription medicines, essential surgical supplies, and specialized newborn care formulations. We also provide direct ward delivery for admitted patients, ensuring seamless medication management.</p>
+            
+            <ul class="fac-feature-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px;">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Genuine Medicines</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Surgical Supplies</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Newborn Care</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3" style="margin-right:8px;"><polyline points="20 6 9 17 4 12"/></svg> Ward Delivery</li>
+            </ul>
           </div>
         </div>
 
@@ -394,64 +243,151 @@
   </section>
 
   <!-- ======================================================
-       SAFETY & HYGIENE STANDARDS SECTION
+       SAFETY & HYGIENE STANDARDS SECTION (REDESIGNED)
    ======================================================= -->
-  <section class="journey-section">
+  <section class="fac-section" style="padding: 80px 0; background: #f8fafc; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
     <div class="container">
-      
-      <div class="section-eyebrow-wrap" style="justify-content: center; text-align: center;">
+
+      <div class="section-eyebrow-wrap animate-on-scroll" style="justify-content: center; text-align: center; margin-bottom: 10px;">
         <div class="section-eyebrow">
           <span class="section-eyebrow-line"></span>
-          <span>PATIENT SAFETY & HYGIENE</span>
+          <span>PATIENT SAFETY &amp; HYGIENE</span>
           <span class="section-eyebrow-line"></span>
         </div>
       </div>
-      <h2 class="section-title" style="text-align: center;">Our Uncompromising Standards</h2>
+      <h2 class="section-title animate-on-scroll" style="text-align: center; font-size: 2rem; margin-bottom: 10px;">Our Uncompromising Standards</h2>
+      <p style="text-align: center; color: #64748b; font-size: 1rem; max-width: 680px; margin: 0 auto 50px; line-height: 1.7;">
+        Every process, every protocol, and every square metre of our hospital is governed by clinical-grade safety standards designed to protect patients, families, and clinical staff.
+      </p>
 
-      <div class="journey-grid">
-        
-        <div class="journey-step-card" style="text-align: center;">
-          <div style="font-size: 2.2rem; margin-bottom: 10px;">🧼</div>
-          <h4>Infection Control</h4>
-          <p>Strict daily sterilization protocols, hospital-grade disinfectants, and zero-contamination standards.</p>
+      <!-- 2-Column Editorial Grid -->
+      <div class="safety-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+
+        <!-- Card 1: Infection Control -->
+        <div class="safety-card animate-on-scroll" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; padding: 36px; box-shadow: 0 4px 16px rgba(15,23,42,0.05);">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+            <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #059669; flex-shrink: 0;"></span>
+            <h4 style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.15rem; color: #0f172a; margin: 0;">Infection Control</h4>
+          </div>
+          <p style="font-size: 0.97rem; color: #475569; line-height: 1.75; margin-bottom: 18px;">
+            Our hospital follows a rigorous daily sterilization protocol across all wards, theatres, and recovery areas. Hospital-grade disinfectants approved for clinical use are applied after every procedure, and all surface touchpoints — beds, rails, switches, and instruments — are cleaned between patient contacts. Zero-contamination is enforced by our dedicated Infection Control Unit.
+          </p>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #059669; flex-shrink: 0; display: inline-block;"></span> Daily full-theatre sterilization after every surgical slot</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #059669; flex-shrink: 0; display: inline-block;"></span> Dedicated Infection Control nurse assigned per unit</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #059669; flex-shrink: 0; display: inline-block;"></span> Glove, gown, and mask compliance actively monitored</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #059669; flex-shrink: 0; display: inline-block;"></span> Regular microbiological sampling and testing</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #059669; flex-shrink: 0; display: inline-block;"></span> Strict hand hygiene protocols for all staff</li>
+          </ul>
         </div>
 
-        <div class="journey-step-card" style="text-align: center;">
-          <div style="font-size: 2.2rem; margin-bottom: 10px;">💨</div>
-          <h4>Clean Air HEPA</h4>
-          <p>Laminar HEPA air filtration system in modular OTs preventing airborne bacterial exposure.</p>
+        <!-- Card 2: Clean Air HEPA -->
+        <div class="safety-card animate-on-scroll" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; padding: 36px; box-shadow: 0 4px 16px rgba(15,23,42,0.05);">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+            <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #f472b6; flex-shrink: 0;"></span>
+            <h4 style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.15rem; color: #0f172a; margin: 0;">Clean Air &amp; HEPA Filtration</h4>
+          </div>
+          <p style="font-size: 0.97rem; color: #475569; line-height: 1.75; margin-bottom: 18px;">
+            Our modular operation theatres are equipped with laminar airflow systems and HEPA-grade air filters, removing 99.97% of airborne particles, bacteria, and contaminants. The positive-pressure environment ensures that unfiltered air from corridors never enters the surgical field — a non-negotiable standard for all gynaecological and laparoscopic procedures.
+          </p>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #f472b6; flex-shrink: 0; display: inline-block;"></span> HEPA H14 air filtration in all operating theatres</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #f472b6; flex-shrink: 0; display: inline-block;"></span> Laminar airflow with positive-pressure control</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #f472b6; flex-shrink: 0; display: inline-block;"></span> Air quality audits conducted quarterly</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #f472b6; flex-shrink: 0; display: inline-block;"></span> UV-C disinfection systems in critical areas</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #f472b6; flex-shrink: 0; display: inline-block;"></span> Temperature and humidity monitoring 24/7</li>
+          </ul>
         </div>
 
-        <div class="journey-step-card" style="text-align: center;">
-          <div style="font-size: 2.2rem; margin-bottom: 10px;">⚡</div>
-          <h4>Power & Oxygen</h4>
-          <p>Continuous emergency power generator backup and dedicated central medical oxygen supply.</p>
+        <!-- Card 3: Power & Oxygen -->
+        <div class="safety-card animate-on-scroll" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; padding: 36px; box-shadow: 0 4px 16px rgba(15,23,42,0.05);">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+            <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #059669; flex-shrink: 0;"></span>
+            <h4 style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.15rem; color: #0f172a; margin: 0;">Uninterrupted Power &amp; Oxygen</h4>
+          </div>
+          <p style="font-size: 0.97rem; color: #475569; line-height: 1.75; margin-bottom: 18px;">
+            Critical care and surgical operations cannot tolerate a single moment of power failure. Our hospital maintains a dedicated emergency power generator that activates within milliseconds of any mains disruption, ensuring that ventilators, monitors, OT equipment, and NICU life-support systems continue without interruption. In parallel, a centralized medical oxygen supply — backed by reserve cylinders — guarantees uninterrupted respiratory support at every bed.
+          </p>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #059669; flex-shrink: 0; display: inline-block;"></span> Millisecond-response backup generator system</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #059669; flex-shrink: 0; display: inline-block;"></span> Centralized piped medical oxygen to every ward</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #059669; flex-shrink: 0; display: inline-block;"></span> Reserve cylinder bank tested and replenished daily</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #059669; flex-shrink: 0; display: inline-block;"></span> UPS systems for critical medical equipment</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #059669; flex-shrink: 0; display: inline-block;"></span> Automatic power failure alarm systems</li>
+          </ul>
         </div>
 
-        <div class="journey-step-card" style="text-align: center;">
-          <div style="font-size: 2.2rem; margin-bottom: 10px;">🛡️</div>
-          <h4>Infant Security</h4>
-          <p>24/7 CCTV surveillance, biometric security checkpoints, and strict visitor verification.</p>
+        <!-- Card 4: Infant Security -->
+        <div class="safety-card animate-on-scroll" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; padding: 36px; box-shadow: 0 4px 16px rgba(15,23,42,0.05);">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+            <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #f472b6; flex-shrink: 0;"></span>
+            <h4 style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.15rem; color: #0f172a; margin: 0;">Infant Security</h4>
+          </div>
+          <p style="font-size: 0.97rem; color: #475569; line-height: 1.75; margin-bottom: 18px;">
+            The safety of every newborn is secured through a multilayer surveillance and access-control framework. Our maternity wing operates under round-the-clock closed-circuit camera monitoring, and all entry points to the labour and neonatal areas are controlled through biometric verification. Every visitor undergoes identity checks, and our nursing staff perform regular scheduled infant security sweeps to ensure no infant is ever unsupervised.
+          </p>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #f472b6; flex-shrink: 0; display: inline-block;"></span> 24/7 CCTV across all labour and neonatal zones</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #f472b6; flex-shrink: 0; display: inline-block;"></span> Biometric access control at all maternity entrances</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #f472b6; flex-shrink: 0; display: inline-block;"></span> Visitor identity verification at every ward entry</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #f472b6; flex-shrink: 0; display: inline-block;"></span> Mother-infant matching identification bands</li>
+            <li style="font-size: 0.9rem; color: #475569; display: flex; align-items: center; gap: 10px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #f472b6; flex-shrink: 0; display: inline-block;"></span> Regular infant security sweeps by nursing staff</li>
+          </ul>
         </div>
 
       </div>
-
     </div>
   </section>
 
   <!-- ======================================================
-       CALL TO ACTION BANNER & APPOINTMENT
+       INFORMATIVE BLOG / INSIGHTS ARTICLE SECTION (ABOVE FOOTER)
    ======================================================= -->
-  <section class="about-cta-section" style="padding: 40px 0;">
+  <section class="fac-section" style="padding: 70px 0; background-color: #f8fafc;">
     <div class="container">
-      <div class="about-cta-box">
-        <h3>Visit Our State-of-the-Art Hospital</h3>
-        <p>Experience safe, compassionate, and high-quality maternal and surgical care with our expert medical team.</p>
-        <a href="index.html#appointment" class="btn-hero-primary" style="margin-top: 12px; display: inline-flex;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <span>Schedule a Visit / Book Now</span>
-        </a>
+      
+      <div class="section-eyebrow-wrap animate-on-scroll" style="justify-content: center; text-align: center; margin-bottom: 12px;">
+        <div class="section-eyebrow">
+          <span class="section-eyebrow-line"></span>
+          <span>CLINICAL INSIGHTS &amp; PATIENT GUIDES</span>
+          <span class="section-eyebrow-line"></span>
+        </div>
       </div>
+      <h2 class="section-title animate-on-scroll" style="text-align: center; margin-bottom: 40px; font-size: 2.2rem;">
+        Integrated Healthcare Infrastructure: Our Continuum of Care
+      </h2>
+
+      <div class="animate-on-scroll" style="background: #ffffff; border-radius: 24px; padding: 40px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06); border: 1px solid #e2e8f0; display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+        <div style="flex: 1; min-width: 300px; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.08); background: #f8fafc; display: flex; align-items: center; justify-content: center; padding: 40px;">
+          <img src="assets/images/logo_transparent.png" alt="Dalawai Maternity Hospital" style="width: 100%; max-width: 320px; display: block; margin: 0 auto;">
+        </div>
+        
+        <div style="flex: 1.2; min-width: 300px;">
+          
+          <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.6rem; font-weight: 700; color: #0f172a; margin-bottom: 16px; line-height: 1.3;">
+            How Modern Hospital Facilities Connect to Ensure Patient Safety and Rapid Recovery
+          </h3>
+          
+          <p style="font-size: 0.98rem; color: #475569; line-height: 1.7; margin-bottom: 16px;">
+            At Dalawai Maternity Hospital, patient safety is achieved through an interconnected healthcare continuum rather than isolated department units. From pre-operative surgical assessment to post-natal recovery, every square foot of our hospital infrastructure is architected for immediate emergency response and sterile care delivery.
+          </p>
+          
+          <p style="font-size: 0.98rem; color: #475569; line-height: 1.7; margin-bottom: 20px;">
+            Our modular operating theatres feature laminar HEPA air filtration and direct proximity to both the Surgical ICU (SICU) and private labour suites. This physical integration reduces critical transport times during emergency C-sections or high-risk surgical procedures, while our round-the-clock diagnostic laboratory and pharmacy provide real-time bedside clinical support.
+          </p>
+
+          <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.9rem; color: #059669;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>24/7 Bedside Monitoring</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.9rem; color: #059669;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Rapid Diagnostic Response</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
