@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=43" />
+  <link rel="stylesheet" href="style.css?v=57" />
 </head>
 <body>
 
@@ -390,6 +390,142 @@
 
     </div>
   </section>
+
+  <!-- ======================================================
+       HOSPITAL INFRASTRUCTURE & DEPARTMENT PHOTO CAROUSEL
+   ======================================================= -->
+  <section class="hospital-gallery-section" id="gallery">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="gallery-header">
+        <div class="section-eyebrow" style="justify-content: center;">
+          <span class="section-eyebrow-line"></span>
+          <span>OUR INFRASTRUCTURE & DEPARTMENTS</span>
+          <span class="section-eyebrow-line"></span>
+        </div>
+        <h2 class="section-title">Explore Our Hospital Premises</h2>
+        <p class="section-subtitle">Swipe or use the navigation arrows to tour our clinical spaces, modular operation theatre, deluxe inpatient suites, and 24/7 facilities.</p>
+      </div>
+
+      <!-- Carousel Container with Side Navigation Buttons -->
+      <div class="gallery-carousel-wrapper">
+        <button class="carousel-nav-btn prev-btn" id="galleryPrevBtn" aria-label="Previous Photo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <div class="gallery-carousel-track" id="galleryTrack">
+          
+          <!-- Slide 1 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge">Front Desk</span>
+              <img src="assets/hospital images/reception.jpeg" alt="Dalawai Hospital Reception Desk">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">Hospital Reception & Registration Desk</h3>
+                <p class="slide-desc">Warm, modern, and efficient welcoming desk for smooth admission and patient registration.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge pink">OPD Clinic</span>
+              <img src="assets/hospital images/consultation room.jpeg" alt="OPD Doctor Consultation Room">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">OPD Doctor Consultation Room</h3>
+                <p class="slide-desc">Private, serene consultation suite for personalized healthcare guidance and patient diagnosis.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge">Modular OT</span>
+              <img src="assets/hospital images/operation teater.jpeg" alt="Modular Operation Theatre">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">Modular Operation Theatre (OT)</h3>
+                <p class="slide-desc">Ultra-modern sterile surgical suite equipped with laparoscopic systems and surgical monitors.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge pink">IPD Suites</span>
+              <img src="assets/hospital images/special ward.jpeg" alt="Special Inpatient Rooms & Wards">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">Special Inpatient Wards (IPD)</h3>
+                <p class="slide-desc">Deluxe private recovery rooms offering comfort, privacy, and 24/7 nursing care for mother & child.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge">24/7 Pharmacy</span>
+              <img src="assets/hospital images/pharma.jpeg" alt="24/7 On-Site Hospital Pharmacy">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">24/7 In-House Hospital Pharmacy</h3>
+                <p class="slide-desc">Fully stocked on-site pharmacy providing immediate access to critical and maternity medicines.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge pink">Visitor Lounge</span>
+              <img src="assets/hospital images/waiting area.jpeg" alt="Patient & Family Waiting Lounge">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">Patient & Family Waiting Lounge</h3>
+                <p class="slide-desc">Spacious, air-conditioned, and comfortable waiting environment designed for patient families.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge">Infrastructure</span>
+              <img src="assets/hospital images/coridor.jpeg" alt="Clean Hospital Corridor & Patient Bay">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">Clean Hospital Corridors & Bays</h3>
+                <p class="slide-desc">Hygienic, wide, and well-lit corridors ensuring seamless movement and emergency transfer.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-nav-btn next-btn" id="galleryNextBtn" aria-label="Next Photo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <!-- Pagination Indicators / Dots -->
+      <div class="carousel-dots" id="galleryDots"></div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Photo Preview -->
+  <div class="gallery-modal-overlay" id="galleryModal">
+    <div class="gallery-modal-box">
+      <button class="gallery-modal-close" id="closeGalleryModal" aria-label="Close Preview">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <img src="" alt="" class="gallery-modal-img" id="modalImg">
+      <div class="gallery-modal-info">
+        <h3 class="gallery-modal-title" id="modalTitle"></h3>
+        <p class="gallery-desc" id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
 
   <!-- ======================================================
        FOOTER & CONTACT SECTION
