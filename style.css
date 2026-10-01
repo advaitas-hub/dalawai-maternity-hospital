@@ -6802,10 +6802,10 @@ button {
 }
 
 /* ==========================================================================
-   REDESIGNED APPOINTMENT & CONTACT SECTION (ULTRA PREMIUM AESTHETIC)
+   REDESIGNED APPOINTMENT & CONTACT SECTION (SLEEK & WARM SOFT-LIGHT THEME)
    ========================================================================== */
 .appointment-section {
-  padding: 80px 0;
+  padding: 85px 0;
   position: relative;
   background-color: var(--bg-main);
   overflow: hidden;
@@ -6814,15 +6814,15 @@ button {
 .appointment-container {
   position: relative;
   border-radius: 32px;
-  background: linear-gradient(135deg, #047857 0%, #059669 45%, #0d9488 100%);
-  box-shadow: 0 24px 60px rgba(5, 150, 105, 0.22);
+  background: linear-gradient(135deg, #fff5f8 0%, #fcf7ff 45%, #f0fdf4 100%);
+  box-shadow: 0 20px 50px rgba(219, 39, 119, 0.07);
   padding: 56px 52px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: center;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid #fbcfe8;
 }
 
 /* Background Ambient Ornaments */
@@ -6833,7 +6833,7 @@ button {
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(244, 114, 182, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(251, 207, 232, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
   pointer-events: none;
 }
 
@@ -6844,7 +6844,7 @@ button {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(45, 212, 191, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(209, 250, 229, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
   pointer-events: none;
 }
 
@@ -6852,7 +6852,8 @@ button {
   position: absolute;
   top: 5%;
   left: 2%;
-  opacity: 0.4;
+  opacity: 0.15;
+  color: #db2777;
   pointer-events: none;
 }
 
@@ -6860,44 +6861,43 @@ button {
 .appointment-content {
   position: relative;
   z-index: 2;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .appointment-content .emergency-chip {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: rgba(255, 255, 255, 0.16);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #fde8ef;
+  border: 1px solid #fbcfe8;
   padding: 8px 18px;
   border-radius: 999px;
   font-size: 0.88rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #db2777;
   letter-spacing: 0.3px;
   margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(219, 39, 119, 0.08);
 }
 
 .pulse-dot {
   width: 8px;
   height: 8px;
-  background-color: #f472b6;
+  background-color: #db2777;
   border-radius: 50%;
-  box-shadow: 0 0 0 0 rgba(244, 114, 182, 0.7);
+  box-shadow: 0 0 0 0 rgba(219, 39, 119, 0.6);
   animation: pulseDot 1.8s infinite;
 }
 
 @keyframes pulseDot {
   0% {
-    box-shadow: 0 0 0 0 rgba(244, 114, 182, 0.7);
+    box-shadow: 0 0 0 0 rgba(219, 39, 119, 0.6);
   }
   70% {
-    box-shadow: 0 0 0 8px rgba(244, 114, 182, 0);
+    box-shadow: 0 0 0 8px rgba(219, 39, 119, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(244, 114, 182, 0);
+    box-shadow: 0 0 0 0 rgba(219, 39, 119, 0);
   }
 }
 
@@ -6906,15 +6906,15 @@ button {
   font-size: clamp(2.1rem, 4vw, 2.75rem);
   font-weight: 800;
   line-height: 1.18;
-  color: #ffffff;
+  color: #0f172a;
   margin-bottom: 20px;
   letter-spacing: -0.02em;
 }
 
 .highlight-pink-text {
-  color: #fbcfe8;
+  color: #db2777;
   position: relative;
-  background: linear-gradient(135deg, #fbcfe8 0%, #f472b6 100%);
+  background: linear-gradient(135deg, #db2777 0%, #059669 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -6922,13 +6922,13 @@ button {
 .appointment-sub-text {
   font-size: 1.05rem;
   line-height: 1.75;
-  color: rgba(255, 255, 255, 0.92);
+  color: #475569;
   margin-bottom: 32px;
   font-weight: 400;
 }
 
 .appointment-sub-text strong {
-  color: #ffffff;
+  color: #0f172a;
   font-weight: 700;
 }
 
@@ -6944,32 +6944,32 @@ button {
   display: flex;
   align-items: center;
   gap: 16px;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  padding: 14px 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+  padding: 16px 20px;
   border-radius: 16px;
   text-decoration: none;
-  color: #ffffff;
+  color: #0f172a;
   transition: all 0.3s ease;
 }
 
 .apt-info-card:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateX(4px);
-  border-color: rgba(255, 255, 255, 0.4);
+  background: #ffffff;
+  transform: translateY(-2px);
+  border-color: #fbcfe8;
+  box-shadow: 0 10px 25px rgba(219, 39, 119, 0.12);
 }
 
 .apt-info-icon {
   width: 42px;
   height: 42px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.2);
+  background: #fde8ef;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #db2777;
   flex-shrink: 0;
 }
 
@@ -6983,13 +6983,13 @@ button {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: rgba(255, 255, 255, 0.75);
+  color: #64748b;
 }
 
 .apt-info-val {
   font-size: 0.96rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 /* Trust Pills */
@@ -7003,24 +7003,25 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(0, 0, 0, 0.15);
+  background: #ffffff;
   padding: 6px 14px;
   border-radius: 999px;
   font-size: 0.82rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #059669;
+  border: 1px solid #d1fae5;
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.06);
 }
 
-/* Right Column: Floating Glass Form Card */
+/* Right Column: Premium Floating Card Form */
 .booking-form-card {
   position: relative;
   z-index: 2;
   background: #ffffff;
   border-radius: 24px;
   padding: 40px 36px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.16);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+  border: 1.5px solid #f1f5f9;
 }
 
 .form-card-header {
@@ -7087,13 +7088,13 @@ button {
 
 .input-with-icon .form-control:focus {
   background-color: #ffffff;
-  border-color: #10b981;
-  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+  border-color: #059669;
+  box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.12);
 }
 
 .input-with-icon .form-control:focus ~ .input-icon,
 .input-with-icon:focus-within .input-icon {
-  color: #10b981;
+  color: #059669;
 }
 
 .booking-form-card .form-row {
@@ -7106,7 +7107,7 @@ button {
   width: 100%;
   margin-top: 10px;
   padding: 16px 24px;
-  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
   color: #ffffff;
   border-radius: 14px;
   font-size: 1.02rem;
@@ -7115,7 +7116,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.35);
+  box-shadow: 0 10px 24px rgba(5, 150, 105, 0.28);
   border: none;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -7123,8 +7124,8 @@ button {
 
 .btn-submit-form:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(16, 185, 129, 0.45);
-  background: linear-gradient(135deg, #047857 0%, #059669 100%);
+  box-shadow: 0 14px 30px rgba(5, 150, 105, 0.38);
+  background: linear-gradient(135deg, #047857 0%, #065f46 100%);
 }
 
 .btn-submit-form svg {
