@@ -107,13 +107,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Appointment Form Handling
+  // 4. Appointment Form Handling with Smooth Inline Confirmation
   const bookingForm = document.getElementById('appointmentForm');
   if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('Thank you! Your appointment request has been submitted. Our team will contact you shortly.');
-      bookingForm.reset();
+      const card = bookingForm.closest('.booking-form-card');
+      if (card) {
+        card.innerHTML = `
+          <div style="text-align: center; padding: 40px 20px;">
+            <div style="width: 64px; height: 64px; background: #d1fae5; color: #059669; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">Appointment Slot Requested!</h3>
+            <p style="color: #475569; font-size: 1rem; line-height: 1.6; margin-bottom: 24px;">Thank you. Our care coordination team will reach out to you within 15 minutes to confirm your time slot.</p>
+            <button onclick="window.location.reload()" style="background: #059669; color: #fff; border: none; padding: 12px 24px; border-radius: 12px; font-weight: 700; font-size: 0.95rem; cursor: pointer;">Book Another Slot</button>
+          </div>
+        `;
+      } else {
+        alert('Thank you! Your appointment request has been submitted. Our team will contact you shortly.');
+        bookingForm.reset();
+      }
     });
   }
 

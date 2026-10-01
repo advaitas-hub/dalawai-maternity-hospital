@@ -6800,3 +6800,364 @@ button {
     height: 260px;
   }
 }
+
+/* ==========================================================================
+   REDESIGNED APPOINTMENT & CONTACT SECTION (ULTRA PREMIUM AESTHETIC)
+   ========================================================================== */
+.appointment-section {
+  padding: 80px 0;
+  position: relative;
+  background-color: var(--bg-main);
+  overflow: hidden;
+}
+
+.appointment-container {
+  position: relative;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #047857 0%, #059669 45%, #0d9488 100%);
+  box-shadow: 0 24px 60px rgba(5, 150, 105, 0.22);
+  padding: 56px 52px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Background Ambient Ornaments */
+.apt-bg-glow-1 {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+}
+
+.apt-bg-glow-2 {
+  position: absolute;
+  bottom: -120px;
+  right: -80px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+}
+
+.apt-bg-pattern {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Left Column Styling */
+.appointment-content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.appointment-content .emergency-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  margin-bottom: 24px;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #f472b6;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(244, 114, 182, 0.7);
+  animation: pulseDot 1.8s infinite;
+}
+
+@keyframes pulseDot {
+  0% {
+    box-shadow: 0 0 0 0 rgba(244, 114, 182, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(244, 114, 182, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(244, 114, 182, 0);
+  }
+}
+
+.appointment-main-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.18;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.highlight-pink-text {
+  color: #fbcfe8;
+  position: relative;
+  background: linear-gradient(135deg, #fbcfe8 0%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.appointment-sub-text {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 32px;
+  font-weight: 400;
+}
+
+.appointment-sub-text strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Contact Cards Grid */
+.apt-contact-cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.apt-info-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  padding: 14px 20px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.apt-info-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(4px);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.apt-info-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.apt-info-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.apt-info-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.apt-info-val {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Trust Pills */
+.apt-trust-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.apt-trust-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Right Column: Floating Glass Form Card */
+.booking-form-card {
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px 36px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.form-card-header {
+  margin-bottom: 26px;
+}
+
+.form-card-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.form-card-header p {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.booking-form-card .form-group {
+  margin-bottom: 20px;
+}
+
+.booking-form-card .form-label {
+  display: block;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 8px;
+  letter-spacing: 0.1px;
+}
+
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-icon .input-icon {
+  position: absolute;
+  left: 16px;
+  color: #94a3b8;
+  pointer-events: none;
+  transition: color 0.2s ease;
+}
+
+.input-with-icon .form-control {
+  width: 100%;
+  padding: 14px 16px 14px 46px;
+  border-radius: 14px;
+  border: 1.5px solid #e2e8f0;
+  background-color: #f8fafc;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.input-with-icon .form-control::placeholder {
+  color: #94a3b8;
+}
+
+.input-with-icon .form-control:focus {
+  background-color: #ffffff;
+  border-color: #10b981;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+}
+
+.input-with-icon .form-control:focus ~ .input-icon,
+.input-with-icon:focus-within .input-icon {
+  color: #10b981;
+}
+
+.booking-form-card .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.btn-submit-form {
+  width: 100%;
+  margin-top: 10px;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: #ffffff;
+  border-radius: 14px;
+  font-size: 1.02rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.35);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-submit-form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(16, 185, 129, 0.45);
+  background: linear-gradient(135deg, #047857 0%, #059669 100%);
+}
+
+.btn-submit-form svg {
+  transition: transform 0.25s ease;
+}
+
+.btn-submit-form:hover svg {
+  transform: translateX(4px);
+}
+
+/* Responsive adjustments for Appointment Container */
+@media (max-width: 1024px) {
+  .appointment-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 44px 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .appointment-container {
+    padding: 32px 20px;
+    border-radius: 24px;
+  }
+
+  .booking-form-card {
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+
+  .booking-form-card .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
