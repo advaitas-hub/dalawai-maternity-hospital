@@ -1939,112 +1939,7 @@ button {
   transform: translateY(0);
 }
 
-/* ==========================================================================
-   APPOINTMENT SECTION
-   ========================================================================== */
-.appointment-section {
-  padding: 56px 0;
-  background: #ffffff;
-}
-
-.appointment-container {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 40px;
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
-  border-radius: 28px;
-  padding: 40px;
-  color: #ffffff;
-}
-
-.emergency-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-  padding: 6px 14px;
-  border-radius: 9999px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.appointment-content h2 {
-  font-family: var(--font-serif);
-  font-size: 2.4rem;
-  line-height: 1.2;
-  margin-bottom: 14px;
-}
-
-.appointment-content p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  opacity: 0.9;
-}
-
-.booking-form-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 28px;
-  color: var(--text-dark);
-}
-
-.booking-form-card h3 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-
-.form-group {
-  margin-bottom: 16px;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.form-label {
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 700;
-  margin-bottom: 6px;
-  color: var(--text-dark);
-}
-
-.form-control {
-  width: 100%;
-  padding: 10px 14px;
-  border-radius: 10px;
-  border: 1px solid var(--border-light);
-  font-family: inherit;
-  font-size: 0.88rem;
-  outline: none;
-  transition: var(--transition);
-}
-
-.form-control:focus {
-  border-color: var(--primary-teal);
-  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.15);
-}
-
-.btn-submit-form {
-  width: 100%;
-  background: var(--primary-teal);
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 0.92rem;
-  padding: 12px;
-  border-radius: 12px;
-  margin-top: 10px;
-  transition: var(--transition);
-}
-
-.btn-submit-form:hover {
-  background: var(--primary-teal-dark);
-}
+/* Note: Appointment & Contact section styles are defined at the end of stylesheet */
 
 /* ==========================================================================
    FOOTER
@@ -2515,15 +2410,6 @@ button {
 
   .section-title {
     font-size: 1.5rem;
-  }
-
-  .appointment-container {
-    padding: 24px;
-    border-radius: 20px;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
   }
 
   .footer-grid {
