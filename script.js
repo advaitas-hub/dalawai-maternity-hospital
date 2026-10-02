@@ -107,13 +107,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Appointment Form Handling
+  // 4. Appointment Form Handling with Smooth Inline Confirmation
   const bookingForm = document.getElementById('appointmentForm');
   if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('Thank you! Your appointment request has been submitted. Our team will contact you shortly.');
-      bookingForm.reset();
+      const card = bookingForm.closest('.booking-form-card');
+      if (card) {
+        card.innerHTML = `
+          <div style="text-align: center; padding: 40px 20px;">
+            <div style="width: 64px; height: 64px; background: #d1fae5; color: #059669; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">Appointment Slot Requested!</h3>
+            <p style="color: #475569; font-size: 1rem; line-height: 1.6; margin-bottom: 24px;">Thank you. Our care coordination team will reach out to you within 15 minutes to confirm your time slot.</p>
+            <button onclick="window.location.reload()" style="background: #059669; color: #fff; border: none; padding: 12px 24px; border-radius: 12px; font-weight: 700; font-size: 0.95rem; cursor: pointer;">Book Another Slot</button>
+          </div>
+        `;
+      } else {
+        alert('Thank you! Your appointment request has been submitted. Our team will contact you shortly.');
+        bookingForm.reset();
+      }
     });
   }
 
@@ -191,6 +205,103 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedElements.forEach((element) => {
       animationObserver.observe(element);
     });
+  }
+
+  // 8. Hospital Photo Carousel Controls & Swap Navigation
+  const galleryTrack = document.getElementById('galleryTrack');
+  const prevBtn = document.getElementById('galleryPrevBtn');
+  const nextBtn = document.getElementById('galleryNextBtn');
+  const dotsContainer = document.getElementById('galleryDots');
+  const galleryModal = document.getElementById('galleryModal');
+  const modalImg = document.getElementById('modalImg');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDesc = document.getElementById('modalDesc');
+  const closeGalleryModal = document.getElementById('closeGalleryModal');
+
+  if (galleryTrack) {
+    const slides = galleryTrack.querySelectorAll('.gallery-slide-card');
+    
+    // Generate Dot Indicators
+    if (dotsContainer && slides.length > 0) {
+      dotsContainer.innerHTML = '';
+      slides.forEach((_, idx) => {
+        const dot = document.createElement('div');
+        dot.className = `dot-pill ${idx === 0 ? 'active' : ''}`;
+        dot.addEventListener('click', () => {
+          const slideWidth = slides[0].offsetWidth + 24;
+          galleryTrack.scrollTo({ left: slideWidth * idx, behavior: 'smooth' });
+        });
+        dotsContainer.appendChild(dot);
+      });
+    }
+
+    const updateDots = () => {
+      if (!dotsContainer) return;
+      const dots = dotsContainer.querySelectorAll('.dot-pill');
+      if (dots.length === 0 || slides.length === 0) return;
+
+      const slideWidth = slides[0].offsetWidth + 24;
+      const scrollPosition = galleryTrack.scrollLeft;
+      const activeIdx = Math.round(scrollPosition / slideWidth);
+
+      dots.forEach((dot, idx) => {
+        if (idx === activeIdx) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    };
+
+    galleryTrack.addEventListener('scroll', updateDots, { passive: true });
+
+    // Next Button Click
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        const slideWidth = slides[0].offsetWidth + 24;
+        galleryTrack.scrollBy({ left: slideWidth, behavior: 'smooth' });
+      });
+    }
+
+    // Prev Button Click
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        const slideWidth = slides[0].offsetWidth + 24;
+        galleryTrack.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+      });
+    }
+
+    // Lightbox modal trigger on slide click
+    slides.forEach(slide => {
+      slide.addEventListener('click', () => {
+        const img = slide.querySelector('img');
+        const title = slide.querySelector('.slide-title');
+        const desc = slide.querySelector('.slide-desc');
+
+        if (img && galleryModal && modalImg) {
+          modalImg.src = img.src;
+          modalImg.alt = img.alt || '';
+          if (modalTitle && title) modalTitle.textContent = title.textContent;
+          if (modalDesc && desc) modalDesc.textContent = desc.textContent;
+          galleryModal.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    if (closeGalleryModal && galleryModal) {
+      closeGalleryModal.addEventListener('click', () => {
+        galleryModal.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+
+      galleryModal.addEventListener('click', (e) => {
+        if (e.target === galleryModal) {
+          galleryModal.classList.remove('open');
+          document.body.style.overflow = '';
+        }
+      });
+    }
   }
 });
 
