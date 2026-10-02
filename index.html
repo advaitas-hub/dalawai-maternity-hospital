@@ -10,9 +10,84 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=40" />
+  <link rel="stylesheet" href="style.css?v=68" />
+  <style>
+    /* ======================================================
+       CLEAN & MINIMAL LOGO INTRO (PURE FADE-IN)
+    ======================================================= */
+    .clean-intro-splash {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      background: #ffffff !important;
+      z-index: 999999 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      overflow: hidden !important;
+      transition: opacity 0.4s ease-out, visibility 0.4s ease-out !important;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+      cursor: pointer;
+    }
+
+    .clean-intro-splash.hidden {
+      opacity: 0 !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+    }
+
+    .clean-intro-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      text-align: center;
+      padding: 30px 20px;
+      max-width: 550px;
+      width: 90%;
+      animation: cleanFadeIn 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    @keyframes cleanFadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .clean-logo-img {
+      width: 210px;
+      max-width: 65vw;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .clean-name-img {
+      width: 440px;
+      max-width: 88vw;
+      height: auto;
+      object-fit: contain;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- ======================================================
+       CLEAN & MINIMAL LOGO INTRO
+   ======================================================= -->
+  <div id="intro-preloader" class="clean-intro-splash">
+    <div class="clean-intro-content">
+      <img src="assets/images/logo_transparent.png" alt="Dalawai Hospital Logo" class="clean-logo-img">
+      <img src="assets/images/line_transparent.png" alt="Dalawai Maternity Hospital" class="clean-name-img">
+    </div>
+  </div>
 
   <!-- ======================================================
        HEADER / NAVIGATION BAR
@@ -32,7 +107,20 @@
       <ul class="navbar-menu">
         <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
         <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="specialities.html" class="nav-link">Specialities</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="specialities.html" class="nav-link">
+            <span>Specialities</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="obstetrics-maternity.html">Obstetrics & Maternity</a></li>
+            <li><a href="gynecology-surgery.html">Gynecology & Surgery</a></li>
+            <li><a href="surgical-icu.html">Surgical ICU (SICU)</a></li>
+            <li><a href="ayurvedic-care.html">Ayurvedic & Women's Care</a></li>
+            <li><a href="inpatient-wards.html">Inpatient Wards (IPD)</a></li>
+            <li><a href="opd-consultations.html">OPD Consultations</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
         <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -195,6 +283,60 @@
       </div>
     </div>
   </div>
+  <!-- ======================================================
+       HOSPITAL KEY STATS HIGHLIGHT BAR
+   ======================================================= -->
+  <section class="hospital-stats-section">
+    <div class="container">
+      <div class="hospital-stats-bar">
+        
+        <!-- 1. 5000+ Patients -->
+        <div class="stat-card">
+          <div class="stat-icon-wrapper stat-icon-teal">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <div class="stat-number">5,000+</div>
+            <div class="stat-label">Happy Patients</div>
+          </div>
+        </div>
+
+        <!-- 2. 8+ Years of Experience -->
+        <div class="stat-card">
+          <div class="stat-icon-wrapper stat-icon-pink">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="6"/>
+              <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <div class="stat-number">8+ Years</div>
+            <div class="stat-label">Clinical Experience</div>
+          </div>
+        </div>
+
+        <!-- 3. 24/7 Care & Support -->
+        <div class="stat-card">
+          <div class="stat-icon-wrapper stat-icon-teal">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Emergency Care</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- ======================================================
        EXPERIENCED DOCTORS HERO CAROUSEL CARD
@@ -206,7 +348,7 @@
         <!-- Left: Doctors Cutout Image -->
         <div class="h-doc-image-col">
           <div class="h-doc-blob-bg"></div>
-          <img src="assets/images/hero section doctor.png" alt="Experienced Doctors" class="h-doc-img">
+          <img src="assets/images/hero section doctor.png" alt="Dr. Sathish Dalawai" class="h-doc-img">
         </div>
 
         <!-- Right: Doctors Info -->
@@ -225,6 +367,7 @@
     </div>
   </div>
 
+
   <!-- ======================================================
        SPECIALITIES & DEPARTMENTS SECTION
    ======================================================= -->
@@ -237,7 +380,7 @@
           <span class="section-eyebrow-line"></span>
           <span>OUR SERVICES</span>
         </div>
-        <a href="#appointment" class="section-link-all">
+        <a href="specialities.html" class="section-link-all">
           <span>View All</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
@@ -247,8 +390,8 @@
       <p class="section-subtitle">Comprehensive clinical departments equipped with advanced infrastructure and round-the-clock specialists.</p>
 
       <div class="services-grid">
-               <!-- 1. Obstetrics & Gynecology -->
-        <div class="service-card">
+        <!-- 1. Obstetrics & Gynecology -->
+        <a href="obstetrics-maternity.html" class="service-card">
           <div class="service-icon-box s-icon-pink">
             <svg class="gyno-icon" width="44" height="44" viewBox="20 10 56 84" fill="#f472b6">
               <path d="m68.441 29.09c0.019532 0.44922-0.23828 0.87109-0.64844 1.0703l-2.2617 1.0586-2.2891 3.8008c-0.51953 0.85938-1.4492 1.3711-2.4297 1.3711-0.19141 0-0.37891-0.019531-0.55859-0.058594-0.44922-0.089843-0.96875-0.23047-1.5312-0.42188-0.35938 1.5781-0.53125 3.2305-0.58984 4.0586l9.9297 8.4102c2.0781-3.9102 1.9883-7.1094 1.8984-10.48-0.050782-1.6484-0.089844-3.3516 0.10156-5.1914 0.30078-2.7891 0.98047-4.6602 1.5703-6.3203 0.67969-1.8906 1.2695-3.5195 1.1484-6.1914-0.10156-2.1211-0.69141-4.0781-1.7617-5.8516 0.14062 0.98828 0.14844 1.6406 0.14844 1.6992 0 0.17969-0.050781 0.37109-0.12891 0.53125-0.25 0.46875-0.60937 0.89844-1.0703 1.2812-0.42969 3.5195-1.2891 5.3203-1.75 6.0703l0.21875 5.1602z"/>
@@ -258,11 +401,11 @@
             </svg>
           </div>
           <h3 class="service-card-title">Obstetrics &<br>Gynecology</h3>
-          <p class="service-card-desc">Complete women's<br>healthcare</p>
-        </div>
+          <p class="service-card-desc">Complete care for mother & baby</p>
+        </a>
 
         <!-- 2. Surgical ICU (SICU) -->
-        <div class="service-card">
+        <a href="surgical-icu.html" class="service-card">
           <div class="service-icon-box s-icon-teal">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="4" width="20" height="12" rx="2"/>
@@ -273,11 +416,11 @@
             </svg>
           </div>
           <h3 class="service-card-title">Surgical ICU<br>(SICU)</h3>
-          <p class="service-card-desc">Advanced critical<br>care support</p>
-        </div>
+          <p class="service-card-desc">24/7 advanced critical care</p>
+        </a>
 
         <!-- 3. Ayurvedic & Women's Care -->
-        <div class="service-card">
+        <a href="ayurvedic-care.html" class="service-card">
           <div class="service-icon-box s-icon-teal">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2a10 10 0 0 1 10 10H2A10 10 0 0 1 12 2z"/>
@@ -287,11 +430,11 @@
             </svg>
           </div>
           <h3 class="service-card-title">Ayurvedic &<br>Women’s Care</h3>
-          <p class="service-card-desc">Holistic healing<br>for a healthier you</p>
-        </div>
+          <p class="service-card-desc">Holistic healing & wellness</p>
+        </a>
 
         <!-- 4. Inpatient Wards (IPD) -->
-        <div class="service-card">
+        <a href="inpatient-wards.html" class="service-card">
           <div class="service-icon-box s-icon-teal">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M2 4v16"/>
@@ -301,11 +444,11 @@
             </svg>
           </div>
           <h3 class="service-card-title">Inpatient Wards<br>(IPD)</h3>
-          <p class="service-card-desc">Comfortable and<br>safe stay</p>
-        </div>
+          <p class="service-card-desc">Deluxe rooms & safe stay</p>
+        </a>
 
-        <!-- 5. Anesthesia Department -->
-        <div class="service-card">
+        <!-- 5. Gynecology & Laparoscopic Surgery -->
+        <a href="gynecology-surgery.html" class="service-card">
           <div class="service-icon-box s-icon-pink">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e04878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="m18 2 4 4"/>
@@ -315,12 +458,12 @@
               <path d="m5 19-3 3"/>
             </svg>
           </div>
-          <h3 class="service-card-title">Anesthesia<br>Department</h3>
-          <p class="service-card-desc">Safe procedures<br>with expert care</p>
-        </div>
+          <h3 class="service-card-title">Gynecology &<br>Surgery</h3>
+          <p class="service-card-desc">Minimally invasive keyhole OT</p>
+        </a>
 
         <!-- 6. Outpatient Consultations -->
-        <div class="service-card">
+        <a href="opd-consultations.html" class="service-card">
           <div class="service-icon-box s-icon-teal">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M11 2a2 2 0 0 0-2 2v2H7a2 2 0 0 0-2 2v2a8 8 0 0 0 14 0V8a2 2 0 0 0-2-2h-2V4a2 2 0 0 0-2-2z"/>
@@ -328,9 +471,8 @@
             </svg>
           </div>
           <h3 class="service-card-title">Outpatient<br>Consultations</h3>
-          <p class="service-card-desc">Expert advice<br>for every stage</p>
-        </div>
-
+          <p class="service-card-desc">Daily clinics & diagnostics</p>
+        </a>
       </div>
 
     </div>
@@ -436,83 +578,430 @@
 
       </div>
 
-      <!-- Bottom Banner Card -->
-      <div class="facility-banner-card">
-        <div class="banner-icon-box">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#f472b6"/>
-            <path d="M18 11c0 3.5-3 6.5-6 8.5-3-2-6-5-6-8.5" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-          </svg>
+
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       EXPERT DOCTOR SHOWCASE SECTION (DESKTOP REFERENCE UI)
+   ======================================================= -->
+  <section class="doctor-showcase-section" id="doctors">
+    <!-- Leaf Watermark Ornament -->
+    <div class="doctor-bg-leaf">
+      <svg width="260" height="260" viewBox="0 0 100 100" fill="#a7f3d0" opacity="0.3">
+        <path d="M50 5 C70 20 85 50 50 95 C15 50 30 20 50 5Z"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      
+      <!-- Doctor 1: Dr. Satish Dalawai -->
+      <div class="doctor-showcase-card">
+        
+        <!-- Left: Organic Blob Image Frame -->
+        <div class="doc-blob-col">
+          <div class="doc-blob-bg"></div>
+          <div class="doc-image-frame">
+            <img src="assets/Codex Image Sep 15, 2026, 08_40_12 PM.png" alt="Dr. Satish Dalawai - Consultant Gynecologist & Obstetrician">
+          </div>
         </div>
-        <div class="banner-text-content">
-          <span class="banner-tagline">ALWAYS HERE FOR YOU</span>
-          <h4 class="banner-title">Your Health, Our Priority</h4>
-          <p class="banner-desc">Compassionate care, every step of the way.</p>
+
+        <!-- Right: Doctor Info & Features -->
+        <div class="doc-info-col">
+          <div class="doc-eyebrow">OUR DOCTOR</div>
+          <h2 class="doc-name-title">
+            Dr. Satish Dalwai
+            <span class="doc-title-underline"></span>
+          </h2>
+
+          <div class="doc-subtitle-row">
+            <span class="doc-sub-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><path d="M12 2v20M2 12h20"/></svg>
+            </span>
+            <span class="doc-subtitle-text">Consultant Gynecologist & <span class="highlight-cyan">Obstetrician</span></span>
+          </div>
+
+          <p class="doc-description">
+            Dr. Satish Dalwai is a dedicated gynecologist with a strong commitment to women’s health and safe motherhood. With years of experience in obstetrics and gynecology, he provides compassionate, personalized care for every patient.
+          </p>
+
+          <!-- 3 Micro Features Row -->
+          <div class="doc-features-row">
+            
+            <div class="doc-feat-item">
+              <div class="doc-feat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+              </div>
+              <span class="doc-feat-label">Experienced<br>Gynecologist</span>
+            </div>
+
+            <div class="doc-feat-item">
+              <div class="doc-feat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <span class="doc-feat-label">Personalized<br>Attention</span>
+            </div>
+
+            <div class="doc-feat-item">
+              <div class="doc-feat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <span class="doc-feat-label">Focus on Safe<br>Motherhood</span>
+            </div>
+
+          </div>
+
+          <!-- Bottom Action & Script Quote -->
+          <div class="doc-action-row">
+            <a href="#appointment" class="btn-doc-appointment">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>Book Appointment</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+            <div class="doc-script-quote">
+              &ldquo;Your Health ♡ Our Priority&rdquo;
+            </div>
+          </div>
+
         </div>
-        <a href="#appointment" class="banner-arrow-btn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
+
+      </div>
+
+      <!-- Doctor 2: Dr. Jyothi Dalawai -->
+      <div class="doctor-showcase-card" style="margin-top: 60px;">
+        
+        <!-- Left: Organic Blob Image Frame -->
+        <div class="doc-blob-col">
+          <div class="doc-blob-bg doc-blob-bg-pink"></div>
+          <div class="doc-image-frame">
+            <img src="assets/doctor 2.png" alt="Dr. Jyothi Dalawai - Senior Consultant Gynecologist">
+          </div>
+        </div>
+
+        <!-- Right: Doctor Info & Features -->
+        <div class="doc-info-col">
+          <div class="doc-eyebrow pink">OUR SPECIALIST</div>
+          <h2 class="doc-name-title">
+            Dr. Jyothi Dalwai
+            <span class="doc-title-underline pink"></span>
+          </h2>
+
+          <div class="doc-subtitle-row">
+            <span class="doc-sub-icon pink">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e04878" stroke-width="2.5"><path d="M12 2v20M2 12h20"/></svg>
+            </span>
+            <span class="doc-subtitle-text">Consultant Gynecologist & <span class="highlight-pink">Ayurvedic Care Specialist</span></span>
+          </div>
+
+          <p class="doc-description">
+            Dr. Jyothi Dalawai specializes in integrative women’s wellness, painless labor guidance, and holistic post-natal recovery. Dedicated to supporting mothers and families with warmth, compassion, and clinical excellence.
+          </p>
+
+          <!-- 3 Micro Features Row -->
+          <div class="doc-features-row">
+            
+            <div class="doc-feat-item">
+              <div class="doc-feat-icon pink">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e04878" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              </div>
+              <span class="doc-feat-label">Women’s Wellness<br>Specialist</span>
+            </div>
+
+            <div class="doc-feat-item">
+              <div class="doc-feat-icon pink">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e04878" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </div>
+              <span class="doc-feat-label">Ayurvedic &<br>Holistic Care</span>
+            </div>
+
+            <div class="doc-feat-item">
+              <div class="doc-feat-icon pink">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e04878" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 14a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"/></svg>
+              </div>
+              <span class="doc-feat-label">Maternal &<br>Postnatal Wellbeing</span>
+            </div>
+
+          </div>
+
+          <!-- Bottom Action & Script Quote -->
+          <div class="doc-action-row">
+            <a href="#appointment" class="btn-doc-appointment pink">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>Book Appointment</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+            <div class="doc-script-quote pink">
+              &ldquo;Care with Heart & Integrity&rdquo;
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
   </section>
 
+  <!-- ======================================================
+       HOSPITAL INFRASTRUCTURE & DEPARTMENT PHOTO CAROUSEL
+   ======================================================= -->
+  <section class="hospital-gallery-section" id="gallery">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="gallery-header">
+        <div class="section-eyebrow" style="justify-content: center;">
+          <span class="section-eyebrow-line"></span>
+          <span>OUR INFRASTRUCTURE & DEPARTMENTS</span>
+          <span class="section-eyebrow-line"></span>
+        </div>
+        <h2 class="section-title">Explore Our Hospital Premises</h2>
+        <p class="section-subtitle">Swipe or use the navigation arrows to tour our clinical spaces, modular operation theatre, deluxe inpatient suites, and 24/7 facilities.</p>
+      </div>
+
+      <!-- Carousel Container with Side Navigation Buttons -->
+      <div class="gallery-carousel-wrapper">
+        <button class="carousel-nav-btn prev-btn" id="galleryPrevBtn" aria-label="Previous Photo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <div class="gallery-carousel-track" id="galleryTrack">
+          
+          <!-- Slide 1 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge">Front Desk</span>
+              <img src="assets/hospital images/reception.jpeg" alt="Dalawai Hospital Reception Desk">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">Hospital Reception & Registration Desk</h3>
+                <p class="slide-desc">Warm, modern, and efficient welcoming desk for smooth admission and patient registration.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge pink">OPD Clinic</span>
+              <img src="assets/hospital images/consultation room.jpeg" alt="OPD Doctor Consultation Room">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">OPD Doctor Consultation Room</h3>
+                <p class="slide-desc">Private, serene consultation suite for personalized healthcare guidance and patient diagnosis.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge">Modular OT</span>
+              <img src="assets/hospital images/operation teater.jpeg" alt="Modular Operation Theatre">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">Modular Operation Theatre (OT)</h3>
+                <p class="slide-desc">Ultra-modern sterile surgical suite equipped with laparoscopic systems and surgical monitors.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge pink">IPD Suites</span>
+              <img src="assets/hospital images/special ward.jpeg" alt="Special Inpatient Rooms & Wards">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">Special Inpatient Wards (IPD)</h3>
+                <p class="slide-desc">Deluxe private recovery rooms offering comfort, privacy, and 24/7 nursing care for mother & child.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge">24/7 Pharmacy</span>
+              <img src="assets/hospital images/pharma.jpeg" alt="24/7 On-Site Hospital Pharmacy">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">24/7 In-House Hospital Pharmacy</h3>
+                <p class="slide-desc">Fully stocked on-site pharmacy providing immediate access to critical and maternity medicines.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge pink">Visitor Lounge</span>
+              <img src="assets/hospital images/waiting area.jpeg" alt="Patient & Family Waiting Lounge">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">Patient & Family Waiting Lounge</h3>
+                <p class="slide-desc">Spacious, air-conditioned, and comfortable waiting environment designed for patient families.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="gallery-slide-card">
+            <div class="slide-img-box">
+              <span class="gallery-badge">Infrastructure</span>
+              <img src="assets/hospital images/coridor.jpeg" alt="Clean Hospital Corridor & Patient Bay">
+              <div class="slide-caption-overlay">
+                <h3 class="slide-title">Clean Hospital Corridors & Bays</h3>
+                <p class="slide-desc">Hygienic, wide, and well-lit corridors ensuring seamless movement and emergency transfer.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-nav-btn next-btn" id="galleryNextBtn" aria-label="Next Photo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <!-- Pagination Indicators / Dots -->
+      <div class="carousel-dots" id="galleryDots"></div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Photo Preview -->
+  <div class="gallery-modal-overlay" id="galleryModal">
+    <div class="gallery-modal-box">
+      <button class="gallery-modal-close" id="closeGalleryModal" aria-label="Close Preview">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <img src="" alt="" class="gallery-modal-img" id="modalImg">
+      <div class="gallery-modal-info">
+        <h3 class="gallery-modal-title" id="modalTitle"></h3>
+        <p class="gallery-desc" id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
 
 
   <!-- ======================================================
-       APPOINTMENT & EMERGENCY BOOKING SECTION
+       REDESIGNED APPOINTMENT & CONTACT SECTION
    ======================================================= -->
   <section class="appointment-section" id="appointment">
     <div class="container">
       <div class="appointment-container">
         
-        <!-- Left Content -->
+        <!-- Ambient Glowing Graphic Ornaments -->
+        <div class="apt-bg-glow-1"></div>
+        <div class="apt-bg-glow-2"></div>
+        <div class="apt-bg-pattern">
+          <svg width="340" height="340" viewBox="0 0 100 100" fill="rgba(255,255,255,0.04)">
+            <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>
+            <circle cx="50" cy="50" r="30" stroke="currentColor" stroke-width="1" fill="none"/>
+            <path d="M50 5 L50 95 M5 50 L95 50" stroke="currentColor" stroke-width="1"/>
+          </svg>
+        </div>
+
+        <!-- Left Column: Trust Info & Quick Contact -->
         <div class="appointment-content">
           <div class="emergency-chip">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span class="pulse-dot"></span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <span>24/7 Emergency & Maternity Assistance</span>
           </div>
 
-          <h2>Schedule Your Consultation Today</h2>
-          <p>Book an appointment with Dr. Sathish Dalawai or Dr. Jyothi Dalawai. We ensure minimal waiting times, personalized guidance, and warm patient care.</p>
+          <h2 class="appointment-main-heading">
+            Schedule Your <span class="highlight-pink-text">Consultation</span> Today
+          </h2>
+          <p class="appointment-sub-text">
+            Consult with top specialists <strong>Dr. Sathish Dalawai</strong> or <strong>Dr. Jyothi Dalawai</strong>. We offer minimal waiting times, personalized guidance, and round-the-clock emergency care.
+          </p>
+
+          <!-- Contact Quick Info Grid -->
+          <div class="apt-contact-cards-grid">
+            
+            <a href="tel:+919876543210" class="apt-info-card">
+              <div class="apt-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="apt-info-details">
+                <span class="apt-info-label">Emergency Helpline</span>
+                <span class="apt-info-val">+91 98765 43210 / 24/7 Desk</span>
+              </div>
+            </a>
+
+            <div class="apt-info-card">
+              <div class="apt-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="apt-info-details">
+                <span class="apt-info-label">Hospital Location</span>
+                <span class="apt-info-val">Dalawai Hospital, Hubballi Campus</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Trust Pills -->
+          <div class="apt-trust-pills">
+            <span class="apt-trust-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Zero Waiting Time</span>
+            <span class="apt-trust-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 100% Confidential</span>
+            <span class="apt-trust-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Direct Doctor Callback</span>
+          </div>
+
         </div>
 
-        <!-- Right Booking Form Card -->
+        <!-- Right Column: Premium Floating Card Form -->
         <div class="booking-form-card">
-          <h3>Book an Appointment</h3>
+          <div class="form-card-header">
+            <h3>Book an Appointment</h3>
+            <p>Fast-track your consultation in less than 1 minute.</p>
+          </div>
           
           <form id="appointmentForm">
             <div class="form-group">
               <label class="form-label" for="fullName">Full Name</label>
-              <input type="text" id="fullName" class="form-control" placeholder="Enter your name" required>
+              <div class="input-with-icon">
+                <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+              </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="phone">Phone Number</label>
-                <input type="tel" id="phone" class="form-control" placeholder="Enter phone number" required>
+                <div class="input-with-icon">
+                  <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <input type="tel" id="phone" class="form-control" placeholder="Enter phone number" required>
+                </div>
               </div>
 
               <div class="form-group">
                 <label class="form-label" for="prefDate">Preferred Date</label>
-                <input type="date" id="prefDate" class="form-control" required>
+                <div class="input-with-icon">
+                  <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <input type="date" id="prefDate" class="form-control" required>
+                </div>
               </div>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="doctorSelect">Select Doctor / Department</label>
-              <select id="doctorSelect" class="form-control" required>
-                <option value="">Choose Specialist</option>
-                <option value="dr-sathish">Dr. Sathish Dalawai (Obstetrics & Gynecology)</option>
-                <option value="dr-jyothi">Dr. Jyothi Dalawai (Ayurvedic & Women's Care)</option>
-                <option value="general">General Outpatient (OPD)</option>
-              </select>
+              <label class="form-label" for="doctorSelect">Select Specialist / Specialty</label>
+              <div class="input-with-icon">
+                <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.8 2.3A.3.3 0 0 0 4.5 2.6V5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V2.6a.3.3 0 0 0-.3-.3H4.8z"/><path d="M8 7v4a4 4 0 0 0 8 0V7"/><path d="M12 15v6"/><circle cx="12" cy="21" r="1"/></svg>
+                <select id="doctorSelect" class="form-control" required>
+                  <option value="">Choose Specialist</option>
+                  <option value="dr-sathish">Dr. Sathish Dalawai (Obstetrics & Gynecology)</option>
+                  <option value="dr-jyothi">Dr. Jyothi Dalawai (Ayurvedic & Women's Care)</option>
+                  <option value="general">General Outpatient OPD Consultation</option>
+                </select>
+              </div>
             </div>
 
-            <button type="submit" class="btn-submit-form">Confirm Appointment Booking</button>
+            <button type="submit" class="btn-submit-form">
+              <span>Confirm Appointment Booking</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
           </form>
+
         </div>
 
       </div>

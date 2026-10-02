@@ -1,516 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <title>About Us | Dalawai Hospital Jamkhandi</title>
-
-  <!-- High-Contrast Luxury Fonts -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="About Dalawai Hospital, Jamkhandi — trusted women's health, maternity and gynecological care led by Dr. Satish Dalwai. Established 13 August 2026."/>
+<title>About Us | Dalawai Hospital — Jamkhandi</title>
+  <!-- Modern Aesthetic Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=40" />
+<style>
+    :root{--forest:#1b3d2e;--teal:#0d4a46;--emerald:#2e7d52;--mint:#e8f5ee;--mint-d:#c6e8d4;--ivory:#faf8f3;--white:#ffffff;--blush:#fdf4f2;--gold:#c9a85c;--gold-s:#f5e9d4;--td:#1a2e22;--tm:#3d5a49;--tb:#4a5e55;--tl:#7a9086;--border:#dde8e2;--serif:'Outfit','Plus Jakarta Sans',sans-serif;--sans:'Plus Jakarta Sans',system-ui,sans-serif;--hand:'Caveat',cursive;--rsm:12px;--rmd:20px;--rlg:32px;--rxl:48px;--ssm:0 2px 12px rgba(27,61,46,.07);--smd:0 8px 32px rgba(27,61,46,.10);--slg:0 20px 56px rgba(27,61,46,.13);--ease:cubic-bezier(.25,.46,.45,.94);--mw:1280px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);background:var(--white);color:var(--td);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%}a{text-decoration:none;color:inherit}button{border:none;background:none;cursor:pointer;font-family:var(--sans)}ul{list-style:none}
+    .c{width:100%;max-width:var(--mw);margin:0 auto;padding:0 32px}
+    .lbl{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--emerald);margin-bottom:16px}
+    .lbl-l{color:var(--mint-d)}
+    .h1{font-family:var(--serif);font-size:clamp(2.8rem,5.5vw,5.2rem);font-weight:600;line-height:1.08;color:var(--td);letter-spacing:-.01em}
+    .h2{font-family:var(--serif);font-size:clamp(2rem,4vw,3.6rem);font-weight:600;line-height:1.12;color:var(--td)}
+    .body{font-size:1rem;line-height:1.78;color:var(--tb)}
+    .btn-p{display:inline-flex;align-items:center;gap:8px;background:var(--forest);color:var(--white);padding:14px 28px;border-radius:var(--rxl);font-size:.9rem;font-weight:600;transition:all .3s var(--ease)}
+    .btn-p:hover{background:var(--emerald);transform:translateY(-2px);box-shadow:var(--smd)}
+    .btn-o{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--forest);color:var(--forest);padding:13px 28px;border-radius:var(--rxl);font-size:.9rem;font-weight:600;transition:all .3s var(--ease)}
+    .btn-o:hover{background:var(--forest);color:var(--white);transform:translateY(-2px)}
+    .btn-p-l{background:var(--white)!important;color:var(--forest)!important}
+    .btn-p-l:hover{background:var(--mint)!important}
+    .btn-o-l{border-color:rgba(255,255,255,.5)!important;color:var(--white)!important}
+    .btn-o-l:hover{background:rgba(255,255,255,.15)!important}
+    .reveal{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+    .reveal.in{opacity:1;transform:translateY(0)}
+    .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+    .divider{width:48px;height:3px;background:linear-gradient(to right,var(--emerald),var(--gold));border-radius:2px;margin:16px 0 24px}
+    .divider-c{margin:16px auto 24px}
+    /* HEADER */
+    .hdr{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(221,232,226,.6);transition:box-shadow .3s}
+    .hdr.s{box-shadow:var(--ssm)}
+    .ni{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:var(--mw);margin:0 auto;padding:0 32px}
+    .nlogo{display:flex;align-items:center;gap:10px}
+    .nlogo img{height:44px;width:auto}
+    .nlt{display:flex;flex-direction:column}
+    .nlt strong{font-size:1.05rem;font-weight:700;color:var(--forest)}
+    .nlt span{font-size:.65rem;color:var(--tl);letter-spacing:.1em;text-transform:uppercase}
+    .nm{display:flex;align-items:center;gap:36px}
+    .nm a{font-size:.88rem;font-weight:500;color:var(--tb);transition:color .2s;position:relative}
+    .nm a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--emerald);transition:width .3s}
+    .nm a:hover,.nm a.act{color:var(--emerald)}.nm a:hover::after,.nm a.act::after{width:100%}
+    .ncta{display:flex;align-items:center;gap:12px}
+    .hbg{display:none;flex-direction:column;gap:5px;padding:6px;cursor:pointer}
+    .hbg span{display:block;width:22px;height:2px;background:var(--forest);border-radius:2px;transition:all .3s}
+    .hbg.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+    .hbg.open span:nth-child(2){opacity:0}
+    .hbg.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+    .mm{display:none;position:fixed;top:70px;left:0;right:0;background:var(--white);padding:20px 24px;border-top:1px solid var(--border);box-shadow:var(--smd);z-index:998;flex-direction:column;gap:4px}
+    .mm.open{display:flex}
+    .mm a{font-size:1rem;font-weight:500;color:var(--td);padding:12px 16px;border-radius:var(--rsm);transition:all .2s}
+    .mm a:hover{background:var(--mint);color:var(--emerald)}
+    .mc-call{display:none!important}
+    /* HERO */
+    .hero{min-height:88vh;background:var(--ivory);padding-top:72px;position:relative;overflow:visible;display:flex;align-items:center}
+    .hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(232,245,238,.9),transparent 70%);top:-100px;right:-100px;pointer-events:none}
+    .hero::after{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,92,.08),transparent 70%);bottom:0;left:0;pointer-events:none}
+    .hgrid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:64px;position:relative;z-index:1;padding:60px 0 80px}
+    .hl em{font-style:normal;font-weight:700;color:var(--emerald)}
+    .hsh{font-family:var(--serif);font-size:clamp(1.2rem,2vw,1.6rem);color:var(--emerald);font-weight:500;font-style:normal;margin-bottom:20px;display:block}
+    .hdesc{font-size:1rem;color:var(--tb);line-height:1.78;max-width:480px;margin-bottom:28px}
+    .hbadge{display:inline-flex;flex-direction:column;align-items:flex-start;background:var(--white);border:1px solid var(--border);border-radius:var(--rmd);padding:14px 20px;margin-bottom:32px;box-shadow:var(--ssm)}
+    .hbadge small{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tl);font-weight:600;margin-bottom:4px}
+    .hbadge strong{font-size:.95rem;color:var(--forest);font-weight:700}
+    .hbtns{display:flex;gap:14px;flex-wrap:wrap}
+    .hrgt{position:relative;display:flex;justify-content:center;align-items:center}
+    .hiw{position:relative;width:100%;max-width:500px}
+    .hib{position:absolute;inset:-24px;border-radius:60% 40% 55% 45%/50% 55% 45% 50%;background:linear-gradient(135deg,var(--mint),var(--mint-d) 60%,rgba(46,125,82,.12));z-index:0;animation:morphb 8s ease-in-out infinite alternate}
+    @keyframes morphb{0%{border-radius:60% 40% 55% 45%/50% 55% 45% 50%}50%{border-radius:45% 55% 40% 60%/55% 45% 60% 40%}100%{border-radius:55% 45% 60% 40%/40% 60% 50% 55%}}
+    .hif{position:relative;z-index:1;border-radius:48% 52% 44% 56%/50% 46% 54% 50%;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--slg)}
+    .hif img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .6s var(--ease)}
+    .hif:hover img{transform:scale(1.04)}
+    .fc{position:absolute;padding:12px 16px;z-index:3;animation:fcard 4s ease-in-out infinite alternate}
+    @keyframes fcard{from{transform:translateY(0)}to{transform:translateY(-8px)}}
+    .fcg{top:-20px;left:-30px;max-width:190px}
+    .fcg .lbl-l{color:var(--emerald)!important;text-shadow:0 1px 8px rgba(255,255,255,.6)}
+    .fcg .htxt{font-family:var(--hand);font-size:1.2rem;line-height:1.45;color:var(--forest);text-shadow:0 1px 8px rgba(255,255,255,.5)}
 
-  <link rel="stylesheet" href="style.css?v=50" />
+    .leaf{position:absolute;z-index:0;opacity:.18;pointer-events:none}.leaf svg{fill:var(--emerald)}
+    .mobile-about-lbl{display:none}
+    /* SERVICE STRIP */
+    .ss{background:var(--white);border-radius:var(--rxl);box-shadow:var(--slg);margin-top:0;position:relative;z-index:10;overflow:hidden}
+    .ssi{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+    .si{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:28px 20px;border-right:1px solid var(--border);transition:all .3s var(--ease)}
+    .si:last-child{border-right:none}.si:hover{background:var(--mint);border-radius:var(--rmd)}
+    .sic{width:48px;height:48px;border-radius:14px;background:var(--mint);display:flex;align-items:center;justify-content:center;color:var(--emerald);transition:all .3s}
+    .si:hover .sic{background:var(--emerald);color:var(--white)}
+    .sic svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8}
+    .si h4{font-size:.9rem;font-weight:600;color:var(--td)}.si p{font-size:.78rem;color:var(--tl);line-height:1.5}
+    /* STORY */
+    .sto{background:var(--white);padding:120px 0;position:relative;overflow:hidden}
+    .sto::before{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,var(--gold-s),transparent 70%);top:40px;right:80px;opacity:.5;pointer-events:none}
+    .stogrid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    .stol{position:relative}
+    .stoi{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--rxl);box-shadow:var(--slg);transition:transform .6s var(--ease)}
+    .stoi:hover{transform:scale(1.02)}
+
+    .scacc{position:absolute;top:-20px;left:-20px;width:80px;height:80px;border:2px solid var(--gold);border-radius:var(--rmd);opacity:.35;pointer-events:none}
+    .stor .body{margin-bottom:20px}
+    .slink{display:inline-flex;align-items:center;gap:8px;color:var(--emerald);font-weight:600;font-size:.92rem;margin-top:12px;transition:gap .3s}.slink:hover{gap:14px}
+    /* DOCTOR */
+    .doc{background:var(--ivory);padding:120px 0;position:relative;overflow:hidden}
+    .doc::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,var(--mint),transparent 70%);bottom:-100px;left:-100px;opacity:.7;pointer-events:none}
+    .docgrid{display:grid;grid-template-columns:5fr 6fr;gap:80px;align-items:center}
+    .docw{position:relative;display:flex;align-items:center;justify-content:center}
+    .docw::before{content:'';position:absolute;width:80%;height:80%;background:linear-gradient(135deg,var(--mint) 0%,var(--mint-d) 60%,rgba(46,125,82,.15) 100%);border-radius:50%;z-index:0;top:10%;left:10%}
+    .docf{aspect-ratio:3/4;position:relative;z-index:1;max-width:380px;margin:0 auto}
+    .docf::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 55%,var(--ivory) 95%);z-index:2;pointer-events:none}
+    .docf img{width:100%;height:100%;object-fit:contain;object-position:center top;}
+    .dbadge{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);background:var(--emerald);color:var(--white);padding:8px 16px;border-radius:var(--rxl);font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;box-shadow:var(--ssm)}
+    .ddec{position:absolute;top:-16px;right:-16px;font-family:var(--hand);font-size:1.4rem;color:var(--emerald);opacity:.35;line-height:1.6;text-align:right;pointer-events:none}
+    .dname{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:700;color:var(--td);margin-bottom:6px;line-height:1.1}
+    .dtitle{font-size:.88rem;color:var(--emerald);font-weight:600;letter-spacing:.05em;margin-bottom:28px}
+    .doci .body{margin-bottom:18px}
+    .dquote{border-left:3px solid var(--emerald);padding:16px 20px 16px 24px;margin:28px 0;background:var(--mint);border-radius:0 var(--rsm) var(--rsm) 0}
+    .dquote p{font-family:var(--serif);font-size:1.15rem;font-style:italic;color:var(--tm);line-height:1.55}
+    .dquote cite{display:block;margin-top:10px;font-size:.82rem;color:var(--tl);font-style:normal;font-weight:600}
+    /* VISION MISSION */
+    .vm{background:var(--white);padding:120px 0}.vmh{text-align:center;margin-bottom:60px}
+    .vmgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .vmc{border-radius:var(--rxl);padding:48px 44px;position:relative;overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s}
+    .vmc:hover{transform:translateY(-6px);box-shadow:var(--slg)}.vmc-v{background:var(--mint)}.vmc-m{background:var(--blush)}
+    .vmci{width:56px;height:56px;border-radius:var(--rmd);display:flex;align-items:center;justify-content:center;margin-bottom:28px}
+    .vmc-v .vmci{background:var(--emerald);color:var(--white)}.vmc-m .vmci{background:#c87070;color:var(--white)}
+    .vmci svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.8}
+    .vmc h3{font-family:var(--serif);font-size:1.9rem;font-weight:700;margin-bottom:16px;color:var(--td)}
+    .vmc .body{margin-bottom:16px}
+    .vcl{margin-top:20px;display:flex;flex-direction:column;gap:10px}
+    .vcl li{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--tb);line-height:1.55}
+    .ci{width:18px;height:18px;border-radius:50%;background:#c87070;color:var(--white);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+    .ci svg{width:10px;height:10px;stroke:currentColor;fill:none;stroke-width:3}
+    /* VALUES */
+    .val{background:var(--ivory);padding:120px 0}.valh{text-align:center;margin-bottom:60px}
+    .valgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+    .vc{background:var(--white);border-radius:var(--rlg);padding:32px 20px;text-align:center;transition:all .3s var(--ease);border:1px solid var(--border)}
+    .vc:hover{background:var(--forest);transform:translateY(-8px);box-shadow:var(--smd)}
+    .vi{width:52px;height:52px;border-radius:var(--rsm);background:var(--mint);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:var(--emerald);transition:all .3s}
+    .vc:hover .vi{background:rgba(255,255,255,.15);color:var(--white)}.vi svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8}
+    .vc h4{font-size:.9rem;font-weight:700;margin-bottom:8px;transition:color .3s}.vc:hover h4{color:var(--white)}
+    .vc p{font-size:.76rem;color:var(--tl);line-height:1.5;transition:color .3s}.vc:hover p{color:rgba(255,255,255,.7)}
+    /* CTA */
+    .cta{padding:80px 0;background:var(--ivory)}
+    .ctai{background:linear-gradient(135deg,var(--forest),var(--teal));border-radius:var(--rxl);overflow:hidden;display:grid;grid-template-columns:1.1fr 1fr;min-height:480px}
+    .ctal{padding:72px 60px;display:flex;flex-direction:column;justify-content:center;position:relative}
+    .ctal::after{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.03);top:-80px;left:-80px;pointer-events:none}
+    .ctasp{color:var(--mint-d);margin-bottom:16px;font-size:.7rem;letter-spacing:.16em;font-weight:700;text-transform:uppercase}
+    .ctah{font-family:var(--serif);font-size:clamp(2rem,3.5vw,3.2rem);font-weight:700;color:var(--white);line-height:1.1;margin-bottom:20px}
+    .ctad{color:rgba(255,255,255,.72);font-size:.98rem;line-height:1.7;margin-bottom:36px}
+    .ctabtns{display:flex;gap:14px;flex-wrap:wrap}
+    .ctar{position:relative;overflow:hidden}
+    .ctar img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .6s var(--ease)}.ctar:hover img{transform:scale(1.04)}
+    .ctaro{position:absolute;inset:0;background:linear-gradient(to right,rgba(13,74,70,.3),transparent 60%)}
+    .mom{position:relative;height:360px;overflow:hidden}
+    .mom img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+    .momo{position:absolute;inset:0;background:linear-gradient(to top,rgba(27,61,46,.75),rgba(27,61,46,.1) 50%,transparent);display:flex;align-items:flex-end;justify-content:center;padding-bottom:48px}
+    .momt{font-family:var(--hand);font-size:clamp(1.8rem,4vw,3rem);color:var(--white);text-align:center;line-height:1.35;text-shadow:0 2px 20px rgba(0,0,0,.3)}
+    /* FOOTER */
+    .ft{background:var(--forest);color:rgba(255,255,255,.8);padding:64px 0 32px}
+    .ftgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:48px;margin-bottom:48px}
+    .ftb img{height:40px;margin-bottom:16px;filter:brightness(10)}.ftb p{font-size:.85rem;line-height:1.7;color:rgba(255,255,255,.6);max-width:260px}
+    .ftcol h5{font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mint-d);margin-bottom:18px}
+    .ftcol a{display:block;font-size:.88rem;color:rgba(255,255,255,.65);padding:5px 0;transition:color .2s}.ftcol a:hover{color:var(--white)}
+    .ftco p{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.7}
+    .ftbot{border-top:1px solid rgba(255,255,255,.1);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    .ftbot p{font-size:.82rem;color:rgba(255,255,255,.45)}
+    /* RESPONSIVE */
+    @media(max-width:1024px){.valgrid{grid-template-columns:repeat(3,1fr)}.hgrid{gap:40px}.docgrid{gap:48px}.stogrid{gap:48px}.ftgrid{grid-template-columns:1fr 1fr}}
+    @media(max-width:900px){.nm{display:none}.ncta .btn-p{display:none}.hbg{display:flex!important}.hgrid{grid-template-columns:1fr;gap:0}.fcg,.fcm{display:none}.stogrid,.docgrid,.vmgrid,.ctai{grid-template-columns:1fr}.ctar{height:320px}.ssi{grid-template-columns:repeat(2,1fr)}.si:nth-child(2){border-right:none}.si:nth-child(1),.si:nth-child(2){border-bottom:1px solid var(--border)}}
+    @media(max-width:767px){
+      .c{padding:0 20px}.ni{padding:0 20px;height:64px}.nlogo img{height:36px}.nlt strong{font-size:.95rem}
+      .mc-call{display:inline-flex!important;align-items:center;gap:6px;background:var(--emerald);color:var(--white);padding:8px 14px;border-radius:var(--rxl);font-size:.8rem;font-weight:600}
+      .hero{padding-top:64px;min-height:auto}.hgrid{grid-template-columns:1fr;padding:0;gap:28px}.hrgt{order:-1}.hiw{max-width:300px;margin:0 auto}.hib{inset:-12px}
+      .mobile-about-lbl{display:flex!important;align-items:center;gap:8px;padding:12px 0 6px}.mobile-about-lbl .lbl{font-size:1.5rem;font-weight:800;letter-spacing:.02em;text-transform:none;color:var(--emerald)}
+      .hdesc{font-size:.92rem}
+      .hbtns .btn-p,.hbtns .btn-o{padding:12px 22px;font-size:.85rem;width:100%;justify-content:center}
+      .ss{border-radius:var(--rlg);margin-top:0}.ssi{grid-template-columns:repeat(2,1fr)}.si{padding:18px 12px}
+      .si:nth-child(odd){border-right:1px solid var(--border)}.si:nth-child(3),.si:nth-child(4){border-right:none}.si:nth-child(1),.si:nth-child(2){border-bottom:1px solid var(--border)}
+      .sto{padding:72px 0}.stogrid{grid-template-columns:1fr;gap:32px}.stol{order:2}.stor{order:1}
+      .stoi{border-radius:var(--rlg) var(--rlg) 48% 48%/var(--rlg) var(--rlg) 120px 120px}
+      .sqcard{position:relative;bottom:auto;right:auto;margin-top:20px;max-width:100%}.scacc{display:none}
+      .doc{padding:72px 0;overflow:hidden}.docgrid{grid-template-columns:1fr;gap:32px}.docw{max-width:280px;margin:0 auto}.docw::before{width:100%;height:100%;top:0;left:0;border-radius:50%}.docf{aspect-ratio:1/1;border-radius:50%;max-width:240px;margin:0 auto;overflow:hidden}.docf::after{display:none}.ddec{display:none}.dbadge{display:none}
+      .vm{padding:72px 0}.vmgrid{grid-template-columns:1fr;gap:20px}.vmc{padding:32px 24px}
+      .val{padding:72px 0}.valgrid{grid-template-columns:repeat(2,1fr);gap:12px}.vc{padding:22px 12px}
+      .cta{padding:48px 0}.ctai{grid-template-columns:1fr}.ctal{padding:44px 28px}.ctar{height:260px}
+      .ctabtns{flex-direction:column}.ctabtns .btn-p-l,.ctabtns .btn-o-l{justify-content:center}
+      .mom{height:260px}.momt{font-size:1.6rem}
+      .ftgrid{grid-template-columns:1fr;gap:28px}.ftbot{flex-direction:column;text-align:center}
+    }
+    @media(max-width:480px){.h1{font-size:2.4rem!important}.h2{font-size:1.8rem!important}}
+</style>
 </head>
-<body class="mobile-website-body">
+<body>
 
-  <!-- Mobile Screen Wrapper Container -->
-  <div class="mobile-phone-frame">
-    
-    <!-- Floating Compact Mobile Header -->
-    <header class="mobile-site-header">
-      <div class="header-inner">
-        <!-- Dalawai Hospital Logo on Left -->
-        <a href="index.html" class="mobile-brand-logo">
+<header class="site-navbar">
+    <div class="navbar-container">
+      
+      <!-- Brand Logo Section -->
+      <div class="brand-container">
+        <a href="index.html" class="brand-logo-link">
           <img src="assets/images/logo_transparent.png" alt="Dalawai Hospital Logo" class="brand-logo-img">
-          <div class="brand-text-block">
-            <span class="brand-name">DALAWAI</span>
-            <span class="brand-sub">HOSPITAL</span>
-          </div>
+          <img src="assets/images/line_transparent.png" alt="Dalawai Maternity Hospital" class="brand-line-img">
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="navbar-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link active">About Us</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="specialities.html" class="nav-link">
+            <span>Specialities</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="obstetrics-maternity.html">Obstetrics &amp; Maternity</a></li>
+            <li><a href="gynecology-surgery.html">Gynecology &amp; Surgery</a></li>
+            <li><a href="surgical-icu.html">Surgical ICU (SICU)</a></li>
+            <li><a href="ayurvedic-care.html">Ayurvedic &amp; Women's Care</a></li>
+            <li><a href="inpatient-wards.html">Inpatient Wards (IPD)</a></li>
+            <li><a href="opd-consultations.html">OPD Consultations</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
+        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Right Action & Mobile Toggle -->
+      <div class="navbar-actions">
+        <a href="index.html#appointment" class="btn-appointment">
+          <span>Book Now</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
 
-        <!-- Right Header Action Group (Call Now + Menu Bar) -->
-        <div class="header-right-actions">
-          <a href="tel:+919876543210" class="call-now-pill">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>Call Now</span>
-          </a>
-
-          <button class="menu-icon-btn mobile-menu-btn" aria-label="Open Navigation Menu">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F382C" stroke-width="2.2" stroke-linecap="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <!-- Navigation Drawer -->
-    <div class="mobile-nav-drawer">
-      <div class="drawer-header">
-        <span class="drawer-title">DALAWAI HOSPITAL</span>
-        <button class="close-drawer-btn mobile-menu-btn" aria-label="Close Menu">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F382C" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        <button class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
         </button>
       </div>
-      <nav class="drawer-links">
-        <a href="index.html" class="drawer-link">Home</a>
-        <a href="about.html" class="drawer-link active">About Us</a>
-        <a href="specialities.html" class="drawer-link">Specialities</a>
-        <a href="facilities.html" class="drawer-link">Facilities</a>
-        <a href="index.html#contact" class="drawer-link">Contact</a>
-        <a href="index.html#appointment" class="drawer-cta-btn">Book Appointment</a>
-      </nav>
+
     </div>
 
-    <!-- MAIN SCROLLABLE CONTENT -->
-    <main class="mobile-main-content">
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About Us</a>
+      <a href="specialities.html" class="nav-link">Specialities</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+      <a href="index.html#appointment" class="btn-hero-primary mobile-drawer-btn" style="margin-top: 10px;">
+        <span>Book Now</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </header>
 
-      <!-- ======================================================
-           1. HERO SECTION
-       ======================================================= -->
-      <section class="hero-organic-section">
-        
-        <!-- Botanical Leaves Background Accents -->
-        <div class="botanical-leaf leaf-top-left">
-          <svg width="90" height="90" viewBox="0 0 100 100" fill="none">
-            <path d="M10,90 Q40,10 90,10 Q60,60 10,90 Z" fill="#E8F5F1" opacity="0.7"/>
-            <path d="M10,90 Q50,50 90,10" stroke="#0D7A5F" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
-          </svg>
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="leaf" style="top:15%;right:8%;width:60px;transform:rotate(30deg)"><svg viewBox="0 0 60 100"><path d="M30 5 C50 20 55 50 30 95 C5 50 10 20 30 5Z"/></svg></div>
+  <div class="leaf" style="bottom:20%;left:5%;width:40px;transform:rotate(-20deg)"><svg viewBox="0 0 60 100"><path d="M30 5 C50 20 55 50 30 95 C5 50 10 20 30 5Z"/></svg></div>
+  <div class="leaf" style="top:30%;left:3%;width:30px;transform:rotate(15deg)"><svg viewBox="0 0 60 100"><path d="M30 5 C50 20 55 50 30 95 C5 50 10 20 30 5Z"/></svg></div>
+  <div class="c">
+    <div class="mobile-about-lbl">
+      <span class="lbl" style="margin-bottom:0">About Us</span>
+    </div>
+    <div class="hgrid">
+      <div class="hl reveal">
+        <h1 class="h1" style="margin-bottom:16px">More Than<br/><em>A Hospital</em></h1>
+        <span class="hsh">A Partner in Life&rsquo;s Most Precious Moments</span>
+        <p class="hdesc">Dalawai Hospital, Jamkhandi, was established on 13&nbsp;August&nbsp;2026 with a commitment to accessible, ethical and quality healthcare &mdash; placing women&rsquo;s health and family well-being at the heart of everything we do.</p>
+        <div class="hbadge"><small>Established On</small><strong>13 August 2026, Jamkhandi</strong></div>
+        <div class="hbtns">
+          <a href="index.html#appointment" class="btn-p">Book an Appointment</a>
+          <a href="index.html#contact" class="btn-o">Contact Us</a>
         </div>
-        <div class="botanical-leaf leaf-mid-right">
-          <svg width="70" height="70" viewBox="0 0 100 100" fill="none">
-            <path d="M90,90 Q60,10 10,10 Q40,60 90,90 Z" fill="#E3EBE6" opacity="0.6"/>
-            <path d="M90,90 Q50,50 10,10" stroke="#0D7A5F" stroke-width="1.5" opacity="0.3"/>
-          </svg>
-        </div>
-
-        <!-- Top Content Block -->
-        <div class="hero-content-top">
-          <span class="label-uppercase-tag">ABOUT US</span>
-          
-          <h1 class="hero-serif-headline">
-            More Than<br>
-            <span class="serif-italic-accent">A Hospital</span>
-          </h1>
-
-          <p class="hero-serif-subheading">
-            A Partner in Life’s Most Precious Moments
-          </p>
-
-          <div class="hero-meta-row">
-            <div class="meta-item location-tag">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Dalawai Hospital, Jamkhandi</span>
-            </div>
-            
-            <div class="meta-item date-badge">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              <span>Established on 13 August 2026</span>
-            </div>
+      </div>
+      <div class="hrgt reveal d2">
+        <div class="hiw">
+          <div class="hib"></div>
+          <div class="fc fcg">
+            <span class="lbl lbl-l" style="margin-bottom:8px;font-size:.6rem">Our Promise</span>
+            <p class="htxt">Healthy Women<br/>Happier Families</p>
           </div>
-        </div>
-
-        <!-- Hero Mother & Baby Visual Area -->
-        <div class="hero-image-container">
-          <div class="hero-image-wrapper">
-            <img src="assets/images/mother_newborn.jpg" alt="Mother holding newborn baby at Dalawai Hospital" class="mother-baby-img" />
-            <div class="hero-image-fade"></div>
-          </div>
-
-          <!-- Organic Green Circular Badge (Left Floating Blob) -->
-          <div class="organic-blob-badge green-blob">
-            <span class="handwritten-script">Healthy Women</span>
-            <span class="handwritten-script-sub">Happier Families</span>
-          </div>
-
-          <!-- Pale Mint Circular Badge (Right Floating Badge) -->
-          <div class="organic-blob-badge mint-blob">
-            <div class="mint-badge-content">
-              <span>Care</span>
-              <span>Support</span>
-              <span>Empower</span>
-              <span class="mint-highlight">Every Step</span>
-              <span>of the Way</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Floating Category Pill Card -->
-        <div class="hero-floating-categories">
-          <div class="category-item">
-            <div class="category-icon-circle">
-              <!-- Women's Health Icon -->
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M12 2a6 6 0 0 0-6 6c0 4.5 6 11 6 11s6-6.5 6-11a6 6 0 0 0-6-6z"/><circle cx="12" cy="8" r="2.5"/></svg>
-            </div>
-            <span class="category-label">Women's<br>Health</span>
-          </div>
-
-          <div class="category-divider"></div>
-
-          <div class="category-item">
-            <div class="category-icon-circle">
-              <!-- Maternity Care Icon -->
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/><path d="M12 7v6l4 2"/></svg>
-            </div>
-            <span class="category-label">Maternity<br>Care</span>
-          </div>
-
-          <div class="category-divider"></div>
-
-          <div class="category-item">
-            <div class="category-icon-circle">
-              <!-- Gynecological Care Icon -->
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <span class="category-label">Gynecological<br>Care</span>
-          </div>
-
-          <div class="category-divider"></div>
-
-          <div class="category-item">
-            <div class="category-icon-circle">
-              <!-- Family Well-being Icon -->
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.72-8.72 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            </div>
-            <span class="category-label">Family<br>Well-being</span>
-          </div>
-        </div>
-
-        <!-- Curved SVG Bottom Divider -->
-        <div class="hero-bottom-curve">
-          <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none">
-            <path d="M0,32L60,42.7C120,53,240,75,360,80C480,85,600,75,720,58.7C840,43,960,21,1080,21.3C1200,21,1320,43,1380,53.3L1440,64L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z" fill="#FFFFFF"/>
-          </svg>
-        </div>
-
-      </section>
-
-      <!-- ======================================================
-           2. SECTION 2: OUR STORY
-       ======================================================= -->
-      <section class="mobile-story-section">
-        <div class="section-container">
-          
-          <span class="label-uppercase-tag">OUR STORY</span>
-
-          <h2 class="serif-section-title">
-            A New Beginning<br>
-            <span class="title-highlight">for a Healthier Tomorrow</span>
-          </h2>
-
-          <div class="story-text-content">
-            <p class="story-paragraph">
-              Dalawai Hospital was established on 13 August 2026 in Jamkhandi with a vision to provide accessible, ethical and quality healthcare to individuals and families in the community.
-            </p>
-            <p class="story-paragraph">
-              Led by Dr. Satish Dalwai, a dedicated Obstetrician & Gynecologist, the hospital places special emphasis on women's health, maternity care and comprehensive gynecological services.
-            </p>
-          </div>
-
-          <!-- Hospital Image with Overlapping Organic Blob & Italic Quote -->
-          <div class="story-visual-block">
-            <div class="story-shape-backdrop"></div>
-            <img src="assets/images/hospital_exterior.jpg" alt="Dalawai Hospital Jamkhandi Facility Exterior" class="story-hospital-img" />
-            
-            <div class="story-quote-card">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="#0D7A5F" opacity="0.3"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-              <p class="story-italic-quote">
-                "Built on trust.<br>
-                Focused on care.<br>
-                For our community."
-              </p>
-            </div>
-          </div>
-
-          <a href="specialities.html" class="outline-action-btn">
-            <span>Our Journey</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-
-        </div>
-      </section>
-
-      <!-- ======================================================
-           3. SECTION 3: MEDICAL HEAD
-       ======================================================= -->
-      <section class="mobile-doctor-section">
-        
-        <!-- Curved Organic SVG Top & Bottom Background -->
-        <div class="mint-curve-top">
-          <svg viewBox="0 0 1440 80" fill="none" preserveAspectRatio="none">
-            <path d="M0,0 L1440,0 L1440,40 C1200,80 900,20 600,60 C300,100 100,20 0,40 Z" fill="#FFFFFF"/>
-          </svg>
-        </div>
-
-        <div class="section-container mint-container-padding">
-          
-          <span class="label-uppercase-tag">MEET OUR MEDICAL HEAD</span>
-
-          <h2 class="serif-doctor-name">Dr. Satish Dalwai</h2>
-          <p class="doctor-subtitle">Obstetrician & Gynecologist &nbsp;|&nbsp; Medical Head</p>
-
-          <!-- Doctor Visual Area -->
-          <div class="doctor-portrait-wrapper">
-            <div class="organic-doctor-blob"></div>
-            <img src="assets/images/doctor_satish.jpg" alt="Dr. Satish Dalwai - Medical Head" class="doctor-portrait-img" />
-            
-            <!-- Dark Green Pill Tag -->
-            <div class="specialist-pill-tag">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2a6 6 0 0 0-6 6c0 4.5 6 11 6 11s6-6.5 6-11a6 6 0 0 0-6-6z"/><circle cx="12" cy="8" r="2.5"/></svg>
-              <span>WOMEN'S HEALTH SPECIALIST</span>
-            </div>
-
-            <!-- Decorative Handwritten Script Phrase -->
-            <div class="doctor-handwritten-phrase">
-              <span>Care Guidance Expertise</span>
-              <span class="script-accent">Always With You</span>
-            </div>
-          </div>
-
-          <!-- Doctor Bio Copy -->
-          <div class="doctor-bio-text">
-            <p>
-              Dr. Satish Dalwai leads Dalawai Hospital with a commitment to providing dependable and compassionate healthcare, with a special focus on obstetrics, gynecology, maternal health and women's well-being.
-            </p>
-            <p>
-              His approach emphasizes personalized attention, ethical medical practice and patient education, creating a comfortable environment where patients can openly discuss their healthcare concerns.
-            </p>
-          </div>
-
-          <!-- Doctor Quote Box -->
-          <div class="doctor-quote-box">
-            <div class="quote-mark-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="#0D7A5F"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-            </div>
-            <p class="quote-statement">
-              "Every patient deserves to be heard, cared for, and treated with dignity."
-            </p>
-            <span class="quote-author">– Dr. Satish Dalwai</span>
-          </div>
-
-          <a href="specialities.html" class="outline-action-btn">
-            <span>Know More</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-
-        </div>
-
-      </section>
-
-      <!-- ======================================================
-           4. SECTION 4: VISION & MISSION
-       ======================================================= -->
-      <section class="mobile-purpose-section">
-        <div class="section-container">
-          
-          <div class="centered-header">
-            <span class="label-uppercase-tag">OUR PURPOSE</span>
-            <h2 class="serif-section-title">Vision & Mission</h2>
-          </div>
-
-          <div class="purpose-cards-stack">
-            
-            <!-- Vision Card (Soft Mint Green Background) -->
-            <div class="purpose-card vision-card">
-              <div class="purpose-card-header">
-                <div class="purpose-icon-circle mint-icon-circle">
-                  <!-- Vision / Eye Icon -->
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                </div>
-                <h3 class="purpose-card-title">Our Vision</h3>
-              </div>
-
-              <blockquote class="purpose-quote">
-                "To become a trusted centre for compassionate, ethical and quality healthcare in Jamkhandi and the surrounding communities."
-              </blockquote>
-
-              <p class="purpose-detail-text">
-                We envision a healthcare environment where every patient can access dependable medical expertise, modern facilities and personalized care in a safe and respectful setting.
-              </p>
-            </div>
-
-            <!-- Mission Card (Soft Blush Pink Background) -->
-            <div class="purpose-card mission-card">
-              <div class="purpose-card-header">
-                <div class="purpose-icon-circle pink-icon-circle">
-                  <!-- Target / Mission Icon -->
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-                </div>
-                <h3 class="purpose-card-title">Our Mission</h3>
-              </div>
-
-              <blockquote class="purpose-quote">
-                "To provide accessible, patient-centred healthcare with compassion, integrity and clinical excellence."
-              </blockquote>
-
-              <!-- 7 Checkmarked Points -->
-              <ul class="mission-points-list">
-                <li>
-                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Provide quality and ethical medical care to every patient.</span>
-                </li>
-                <li>
-                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Deliver specialized women's and maternity healthcare.</span>
-                </li>
-                <li>
-                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Maintain a safe, hygienic and patient-friendly environment.</span>
-                </li>
-                <li>
-                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Use appropriate modern medical practices and technology.</span>
-                </li>
-                <li>
-                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Support patients through clear communication and informed care.</span>
-                </li>
-                <li>
-                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Promote preventive healthcare and health awareness.</span>
-                </li>
-                <li>
-                  <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Continuously improve our services and standards of patient care.</span>
-                </li>
-              </ul>
-            </div>
-
+          <div class="hif">
+            <img src="assets/images/mother_newborn.jpg" alt="Mother holding newborn at Dalawai Hospital" loading="eager"/>
           </div>
 
         </div>
-      </section>
-
-      <!-- ======================================================
-           5. SECTION 5: CORE VALUES
-       ======================================================= -->
-      <section class="mobile-values-section">
-        <div class="section-container">
-          
-          <div class="centered-header">
-            <span class="label-uppercase-tag">OUR CORE VALUES</span>
-          </div>
-
-          <div class="core-values-grid">
-            
-            <!-- 1. Heart Icon: Compassion -->
-            <div class="value-card">
-              <div class="value-icon-circle">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.72-8.72 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-              </div>
-              <h4 class="value-title">Compassion</h4>
-              <p class="value-desc">"We care with empathy"</p>
-            </div>
-
-            <!-- 2. Shield Icon: Integrity -->
-            <div class="value-card">
-              <div class="value-icon-circle">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <h4 class="value-title">Integrity</h4>
-              <p class="value-desc">"We do what is right"</p>
-            </div>
-
-            <!-- 3. Family Icon: Patient Safety -->
-            <div class="value-card">
-              <div class="value-icon-circle">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              </div>
-              <h4 class="value-title">Patient Safety</h4>
-              <p class="value-desc">"Your safety comes first"</p>
-            </div>
-
-            <!-- 4. Star Icon: Clinical Excellence -->
-            <div class="value-card">
-              <div class="value-icon-circle">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              </div>
-              <h4 class="value-title">Clinical Excellence</h4>
-              <p class="value-desc">"Committed to better care"</p>
-            </div>
-
-            <!-- 5. Handshake Icon: Respect & Dignity -->
-            <div class="value-card">
-              <div class="value-icon-circle">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M18 11l-5-5-5 5"/><path d="M13 6v12"/></svg>
-              </div>
-              <h4 class="value-title">Respect & Dignity</h4>
-              <p class="value-desc">"Every patient matters"</p>
-            </div>
-
-            <!-- 6. Leaf Icon: Community Care -->
-            <div class="value-card">
-              <div class="value-icon-circle">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A5F" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-              </div>
-              <h4 class="value-title">Community Care</h4>
-              <p class="value-desc">"For a healthier tomorrow"</p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      <!-- ======================================================
-           6. SECTION 6: APPOINTMENT CTA
-       ======================================================= -->
-      <section class="mobile-cta-section">
-        <div class="section-container">
-          
-          <div class="cta-emerald-card">
-            
-            <!-- Subtle Background SVG Line Artwork -->
-            <div class="cta-bg-artwork">
-              <svg width="100%" height="100%" viewBox="0 0 300 200" fill="none" opacity="0.12">
-                <path d="M0,100 C50,20 150,180 250,50 C300,0 350,150 400,100" stroke="#FFFFFF" stroke-width="3" fill="none"/>
-                <path d="M50,150 Q120,50 200,120 T350,80" stroke="#FFFFFF" stroke-width="2" fill="none"/>
-              </svg>
-            </div>
-
-            <span class="cta-uppercase-tag">YOUR HEALTH. OUR RESPONSIBILITY.</span>
-
-            <h2 class="cta-white-headline">
-              Book an Appointment<br>Today
-            </h2>
-
-            <p class="cta-subtext">
-              Take the first step towards a healthier, brighter tomorrow.
-            </p>
-
-            <a href="index.html#appointment" class="cta-white-pill-btn">
-              <span>Book Now</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B2B22" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-
-          </div>
-
-          <!-- Bottom Baby Hand Photograph Block -->
-          <div class="cta-baby-block">
-            <img src="assets/images/baby_hand_finger.jpg" alt="Newborn baby hand holding finger at Dalawai Hospital" class="baby-hand-img" />
-            
-            <div class="baby-overlay-text">
-              <span class="baby-handwritten-script">Caring for</span>
-              <span class="baby-handwritten-script">today and every</span>
-              <span class="baby-handwritten-script-gold">tomorrow</span>
-              
-              <!-- Heart Line SVG Accent -->
-              <svg class="heart-line-svg" width="60" height="20" viewBox="0 0 100 30" fill="none">
-                <path d="M0,15 L35,15 L40,5 L45,25 L50,10 L55,20 L60,15 L100,15" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- FOOTER -->
-      <footer class="mobile-site-footer">
-        <p class="footer-copy">© 2026 Dalawai Hospital, Jamkhandi. Care for Every Generation.</p>
-      </footer>
-
-    </main>
+      </div>
+    </div>
   </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- SERVICE STRIP -->
+<div class="c" style="position:relative;z-index:10;padding-top:32px">
+  <div class="ss reveal">
+    <div class="ssi">
+      <div class="si">
+        <div class="sic"><svg viewBox="0 0 24 24"><path d="M12 21.7C17.3 17 22 13 22 8.5 22 5.42 19.58 3 16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 4.5 4.7 8.5 10 13.2z"/></svg></div>
+        <h4>Women&rsquo;s Health</h4><p>Holistic care for every stage</p>
+      </div>
+      <div class="si">
+        <div class="sic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M12 14c-4.42 0-8 1.79-8 4v2h16v-2c0-2.21-3.58-4-8-4z"/></svg></div>
+        <h4>Maternity Care</h4><p>Compassionate birth support</p>
+      </div>
+      <div class="si">
+        <div class="sic"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 100 10A5 5 0 0012 2zm0 12c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z"/></svg></div>
+        <h4>Gynecological Care</h4><p>Expert diagnosis &amp; treatment</p>
+      </div>
+      <div class="si">
+        <div class="sic"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 12.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5C23 14.17 18.33 13 16 13z"/></svg></div>
+        <h4>Family Well-being</h4><p>Care across generations</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- OUR STORY -->
+<section class="sto" id="story">
+  <div class="c">
+    <div class="stogrid">
+      <div class="stol reveal">
+        <div class="scacc"></div>
+        <div style="position:relative">
+          <img src="assets/hospial.jpeg" alt="Dalawai Hospital exterior, Jamkhandi" class="stoi" loading="lazy"/>
+
+        </div>
+      </div>
+      <div class="stor reveal d2">
+        <span class="lbl">Our Story</span>
+        <h2 class="h2">A New Beginning<br/>for a Healthier Tomorrow</h2>
+        <div class="divider"></div>
+        <p class="body">Dalawai Hospital was established on <strong>13 August 2026</strong> in Jamkhandi with a vision to provide accessible, ethical and quality healthcare to individuals and families in the community.</p>
+        <p class="body">Led by <strong>Dr. Satish Dalwai</strong>, a dedicated Obstetrician &amp; Gynecologist, the hospital places special emphasis on women&rsquo;s health, maternity care and comprehensive gynecological services &mdash; delivered with compassion, integrity and personalized attention.</p>
+        <p class="body" style="color:var(--tm);font-style:italic;border-left:3px solid var(--gold);padding-left:16px">From the very first consultation to post-natal care, our team walks alongside every patient with warmth and expertise.</p>
+        <a href="#story" class="slink">Our Journey &nbsp;&rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTOR -->
+<section class="doc" id="doctor">
+  <div class="c">
+    <div style="text-align:center;margin-bottom:60px" class="reveal">
+      <span class="lbl">Meet Our Medical Head</span>
+      <h2 class="h2">Dr. Satish Dalwai</h2>
+      <div class="divider divider-c"></div>
+    </div>
+    <div class="docgrid">
+      <div class="docw reveal">
+        <div class="ddec">Care<br/>Guidance<br/>Expertise<br/>Always With You</div>
+        <div class="docf">
+          <img src="assets/Codex Image Sep 15, 2026, 08_40_12 PM.png" alt="Dr. Satish Dalwai, Obstetrician and Gynecologist at Dalawai Hospital" loading="lazy" style="object-fit:cover;object-position:center top"/>
+        </div>
+        <div class="dbadge">Women&rsquo;s Health Specialist</div>
+      </div>
+      <div class="doci reveal d2">
+        <p class="dname">Dr. Satish Dalwai</p>
+        <p class="dtitle">Obstetrician &amp; Gynecologist &nbsp;&bull;&nbsp; Medical Head</p>
+        <p class="body">Dr. Satish Dalwai leads Dalawai Hospital with a commitment to providing dependable and compassionate healthcare, with a special focus on obstetrics, gynecology, maternal health and women&rsquo;s well-being.</p>
+        <p class="body">His approach emphasizes personalized attention, ethical medical practice and patient education, creating a comfortable environment where patients can openly discuss their healthcare concerns with confidence and trust.</p>
+        <div class="dquote">
+          <p>&ldquo;Every patient deserves to be heard,<br/>cared for, and treated with dignity.&rdquo;</p>
+          <cite>&mdash; Dr. Satish Dalwai</cite>
+        </div>
+        <a href="index.html#appointment" class="btn-p">Book a Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION & MISSION -->
+<section class="vm" id="vision">
+  <div class="c">
+    <div class="vmh reveal">
+      <span class="lbl">Our Purpose</span>
+      <h2 class="h2">Vision &amp; Mission</h2>
+      <div class="divider divider-c"></div>
+      <p class="body" style="max-width:560px;margin:0 auto">Two guiding principles that shape every decision, interaction and service at Dalawai Hospital.</p>
+    </div>
+    <div class="vmgrid">
+      <div class="vmc vmc-v reveal">
+        <div class="vmci"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+        <h3>Our Vision</h3>
+        <p class="body">To become a trusted centre for compassionate, ethical and quality healthcare in Jamkhandi and the surrounding communities.</p>
+        <p class="body" style="margin-top:14px">We envision a healthcare environment where every patient can access dependable medical expertise, modern facilities and personalized care in a safe and respectful setting.</p>
+      </div>
+      <div class="vmc vmc-m reveal d2">
+        <div class="vmci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><circle cx="12" cy="12" r="6" stroke-width="2"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg></div>
+        <h3>Our Mission</h3>
+        <p class="body">To provide accessible, patient-centred healthcare with compassion, integrity and clinical excellence.</p>
+        <ul class="vcl"><li><div class="ci"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Provide quality and ethical medical care to every patient.</li>
+<li><div class="ci"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Deliver specialized women's and maternity healthcare.</li>
+<li><div class="ci"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Maintain a safe, hygienic and patient-friendly environment.</li>
+<li><div class="ci"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Use appropriate modern medical practices and technology.</li>
+<li><div class="ci"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Support patients through clear communication and informed care.</li>
+<li><div class="ci"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Promote preventive healthcare and health awareness.</li>
+<li><div class="ci"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Continuously improve our services and standards of care.</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="val" id="values">
+  <div class="c">
+    <div class="valh reveal">
+      <span class="lbl">Our Core Values</span>
+      <h2 class="h2">What We Stand For</h2>
+      <div class="divider divider-c"></div>
+    </div>
+    <div class="valgrid">
+      <div class="vc reveal "><div class="vi"><svg viewBox="0 0 24 24"><path d="M12 21.7C17.3 17 22 13 22 8.5 22 5.42 19.58 3 16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 4.5 4.7 8.5 10 13.2z"/></svg></div><h4>Compassion</h4><p>We care with empathy</p></div>
+<div class="vc reveal d1"><div class="vi"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div><h4>Integrity</h4><p>We do what is right</p></div>
+<div class="vc reveal d2"><div class="vi"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div><h4>Patient Safety</h4><p>Your safety comes first</p></div>
+<div class="vc reveal d3"><div class="vi"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><h4>Clinical Excellence</h4><p>Committed to better care</p></div>
+<div class="vc reveal d3"><div class="vi"><svg viewBox="0 0 24 24"><path d="M11 6C9.35 6 8 7.35 8 9s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm6 3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM11 14c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><h4>Respect &amp; Dignity</h4><p>Every patient matters</p></div>
+<div class="vc reveal d4"><div class="vi"><svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 19.5l1.71 1L7 19c3-4.5 4.5-9 10-11V8z"/></svg></div><h4>Community Care</h4><p>For a healthier tomorrow</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="cta">
+  <div class="c">
+    <div class="ctai reveal">
+      <div class="ctal">
+        <p class="ctasp">Your Health. Our Responsibility.</p>
+        <h2 class="ctah">Your Health Deserves<br/>Dedicated Care.</h2>
+        <p class="ctad">Book an appointment with our team today and take the first step towards a healthier, happier tomorrow.</p>
+        <div class="ctabtns">
+          <a href="index.html#appointment" class="btn-p btn-p-l">Book an Appointment</a>
+          <a href="index.html#contact" class="btn-o btn-o-l">Contact Us</a>
+        </div>
+      </div>
+      <div class="ctar">
+        <img src="assets/images/mother 2.png" alt="Compassionate maternity care at Dalawai Hospital" loading="lazy"/>
+        <div class="ctaro"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOMENT -->
+<section class="mom">
+  <img src="assets/images/baby_hand_finger.jpg" alt="Newborn baby hand holding an adult finger — the beginning of a lifelong bond" loading="lazy"/>
+  <div class="momo"><p class="momt">Caring for today<br/>and every tomorrow</p></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img src="assets/images/logo_transparent.png" alt="Dalawai Hospital Logo">
+        <p>Dalawai Maternity Hospital provides expert Obstetrics, Gynecology, Ayurvedic Women's Healthcare, and round-the-clock Emergency & Critical Care.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="specialities.html">Specialities</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="index.html#appointment">Book Appointment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Specialities</h4>
+        <ul class="footer-links">
+          <li><a href="obstetrics-maternity.html">Obstetrics & Maternity</a></li>
+          <li><a href="surgical-icu.html">Surgical ICU (SICU)</a></li>
+          <li><a href="ayurvedic-care.html">Ayurvedic Wellness</a></li>
+          <li><a href="inpatient-wards.html">Inpatient & Outpatient</a></li>
+          <li><a href="gynecology-surgery.html">Operating Suites</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="footer-links">
+          <li><strong>Dalawai Hospital</strong></li>
+          <li>Obstetrics, Gynecology & Critical Care</li>
+          <li>📞 Emergency & Appointments: 24/7 Available</li>
+          <li>📍 Local City Center Campus</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Dalawai Hospital. All rights reserved.</p>
+      <p>Designed with care for mother & child.</p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Reveal on scroll
+  const obs = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold: .1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+</script>
 </body>
 </html>
