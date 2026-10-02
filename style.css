@@ -1715,12 +1715,9 @@ button {
   overflow: hidden;
 }
 
-.facilities-bg-leaf {
-  position: absolute;
-  top: 45px;
-  right: -20px;
-  pointer-events: none;
-  opacity: 0.65;
+.facilities-bg-leaf,
+.doctor-bg-leaf {
+  display: none !important;
 }
 
 .facilities-grid {
