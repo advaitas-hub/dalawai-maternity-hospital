@@ -41,3 +41,5 @@ ehthumbs.db
 # Build / cache artifacts
 .eslintcache
 *.tsbuildinfo
+.vite/
+
