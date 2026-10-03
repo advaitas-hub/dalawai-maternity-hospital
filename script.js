@@ -29,7 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mobileNavDrawer) {
     const closeDrawer = () => {
       mobileNavDrawer.classList.remove('open');
-      mobileMenuBtns.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+      mobileMenuBtns.forEach(btn => {
+        btn.setAttribute('aria-expanded', 'false');
+        btn.classList.remove('open', 'active');
+      });
       document.body.style.overflow = '';
     };
 
@@ -38,6 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
         e.stopPropagation();
         const isOpen = mobileNavDrawer.classList.toggle('open');
         btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        btn.classList.toggle('open', isOpen);
+        btn.classList.toggle('active', isOpen);
         document.body.style.overflow = isOpen ? 'hidden' : '';
       });
     });
@@ -79,15 +84,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // 2. Navbar Scroll Shadow Effect
+  // 2. Navbar Scroll Shadow Effect (Optimized Passive Handler)
   const navbar = document.querySelector('.site-navbar');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  });
+  if (navbar) {
+    let isScrolled = false;
+    const updateNavbarScroll = () => {
+      const scrolled = window.scrollY > 15;
+      if (scrolled !== isScrolled) {
+        isScrolled = scrolled;
+        navbar.classList.toggle('scrolled', isScrolled);
+      }
+    };
+    window.addEventListener('scroll', updateNavbarScroll, { passive: true });
+    updateNavbarScroll();
+  }
 
   // 3. Smooth Navigation Scroll & Active Section Highlight
   const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
