@@ -4957,7 +4957,7 @@ button {
 }
 
 .gyno-hero-bg-section {
-  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('gynecology.png') !important;
+  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('assets/images/specialities/gynecology.png') !important;
   background-repeat: no-repeat !important;
   background-position: right center !important;
   background-size: cover !important;
@@ -4968,7 +4968,7 @@ button {
 }
 
 .maternity-hero-bg-section {
-  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('maternity.png') !important;
+  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('assets/images/specialities/maternity.png') !important;
   background-repeat: no-repeat !important;
   background-position: right center !important;
   background-size: cover !important;
@@ -4979,7 +4979,7 @@ button {
 }
 
 .icu-hero-bg-section {
-  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('ICU.png') !important;
+  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('assets/images/specialities/icu.png') !important;
   background-repeat: no-repeat !important;
   background-position: right center !important;
   background-size: cover !important;
@@ -4990,7 +4990,7 @@ button {
 }
 
 .ayurveda-hero-bg-section {
-  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('ayurveda 2.png.png') !important;
+  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('assets/images/specialities/ayurveda.png') !important;
   background-repeat: no-repeat !important;
   background-position: right center !important;
   background-size: cover !important;
@@ -5001,7 +5001,7 @@ button {
 }
 
 .opd-hero-bg-section {
-  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('OPD consulations.png') !important;
+  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('assets/images/specialities/opd-consultations.png') !important;
   background-repeat: no-repeat !important;
   background-position: right center !important;
   background-size: cover !important;
@@ -5012,7 +5012,7 @@ button {
 }
 
 .ipd-hero-bg-section {
-  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('Inpatient Care.png') !important;
+  background-image: linear-gradient(90deg, #fafbfc 0%, rgba(250, 251, 252, 0.92) 40%, rgba(250, 251, 252, 0.15) 60%, transparent 78%), url('assets/images/specialities/inpatient-care.png') !important;
   background-repeat: no-repeat !important;
   background-position: right center !important;
   background-size: cover !important;
@@ -5883,37 +5883,37 @@ button {
   }
 
   .gyno-hero-bg-section {
-    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('gynecology.png') no-repeat center right / cover !important;
+    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('assets/images/specialities/gynecology.png') no-repeat center right / cover !important;
     padding: 36px 0 32px !important;
     min-height: auto !important;
   }
 
   .maternity-hero-bg-section {
-    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('maternity.png') no-repeat center right / cover !important;
+    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('assets/images/specialities/maternity.png') no-repeat center right / cover !important;
     padding: 36px 0 32px !important;
     min-height: auto !important;
   }
 
   .icu-hero-bg-section {
-    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('ICU.png') no-repeat center right / cover !important;
+    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('assets/images/specialities/icu.png') no-repeat center right / cover !important;
     padding: 36px 0 32px !important;
     min-height: auto !important;
   }
 
   .ayurveda-hero-bg-section {
-    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('ayurveda 2.png.png') no-repeat center right / cover !important;
+    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('assets/images/specialities/ayurveda.png') no-repeat center right / cover !important;
     padding: 36px 0 32px !important;
     min-height: auto !important;
   }
 
   .opd-hero-bg-section {
-    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('OPD consulations.png') no-repeat center right / cover !important;
+    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('assets/images/specialities/opd-consultations.png') no-repeat center right / cover !important;
     padding: 36px 0 32px !important;
     min-height: auto !important;
   }
 
   .ipd-hero-bg-section {
-    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('Inpatient Care.png') no-repeat center right / cover !important;
+    background: linear-gradient(180deg, rgba(250, 251, 252, 0.85) 0%, rgba(250, 251, 252, 0.6) 50%, rgba(250, 251, 252, 0.35) 100%), url('assets/images/specialities/inpatient-care.png') no-repeat center right / cover !important;
     padding: 36px 0 32px !important;
     min-height: auto !important;
   }
