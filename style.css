@@ -2261,7 +2261,7 @@ button {
   }
 
   .hero-section {
-    padding: 16px 0 12px 0;
+    padding: 72px 0 16px 0;
   }
 
   /* 2-Column Side-by-Side Hero Layout matching Reference Mobile Screenshot */
@@ -2682,7 +2682,7 @@ button {
 @media (max-width: 768px) {
   /* Facilities Page Hero Section */
   .about-hero-section {
-    padding: 60px 0 40px;
+    padding: 72px 0 40px;
     min-height: auto;
   }
 
@@ -3025,7 +3025,7 @@ button {
   }
 
   .spec-hero-section {
-    padding: 50px 0 40px;
+    padding: 72px 0 40px;
   }
 }
 
@@ -3427,7 +3427,7 @@ button {
 /* Mobile responsive adjustments for About page */
 @media (max-width: 768px) {
   .about-hero-section {
-    padding: 30px 0 25px;
+    padding: 72px 0 25px;
   }
 
   .about-page-title {
