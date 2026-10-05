@@ -84,18 +84,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // 2. Navbar Scroll Shadow Effect (Optimized Passive Handler)
+  // 2. Navbar Scroll Shadow Effect (rAF Throttled)
   const navbar = document.querySelector('.site-navbar');
   if (navbar) {
     let isScrolled = false;
+    let ticking = false;
     const updateNavbarScroll = () => {
       const scrolled = window.scrollY > 15;
       if (scrolled !== isScrolled) {
         isScrolled = scrolled;
         navbar.classList.toggle('scrolled', isScrolled);
       }
+      ticking = false;
     };
-    window.addEventListener('scroll', updateNavbarScroll, { passive: true });
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateNavbarScroll);
+        ticking = true;
+      }
+    }, { passive: true });
     updateNavbarScroll();
   }
 
@@ -193,14 +200,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 7. Scroll-Triggered Animations for Facilities Page
-  const animatedElements = document.querySelectorAll('.animate-on-scroll, .fac-detail-card, .safety-card, .about-hero-content, .section-eyebrow-wrap, .section-title');
+  // 7. Scroll-Triggered Animations (Optimized IntersectionObserver)
+  const animatedElements = document.querySelectorAll('.animate-on-scroll, .fac-detail-card, .safety-card');
 
   if (animatedElements.length > 0) {
     const observerOptions = {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.1
+      rootMargin: '50px 0px',
+      threshold: 0.05
     };
 
     const animationObserver = new IntersectionObserver((entries, observer) => {
@@ -245,6 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
+    let galleryTicking = false;
     const updateDots = () => {
       if (!dotsContainer) return;
       const dots = dotsContainer.querySelectorAll('.dot-pill');
@@ -261,9 +269,15 @@ document.addEventListener('DOMContentLoaded', () => {
           dot.classList.remove('active');
         }
       });
+      galleryTicking = false;
     };
 
-    galleryTrack.addEventListener('scroll', updateDots, { passive: true });
+    galleryTrack.addEventListener('scroll', () => {
+      if (!galleryTicking) {
+        window.requestAnimationFrame(updateDots);
+        galleryTicking = true;
+      }
+    }, { passive: true });
 
     // Next Button Click
     if (nextBtn) {
