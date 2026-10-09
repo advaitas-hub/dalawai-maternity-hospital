@@ -2702,10 +2702,6 @@ button {
     margin: 0 !important;
   }
 
-  .safety-card > p {
-    display: none !important;
-  }
-
   .safety-card > ul {
     display: flex !important;
     flex-direction: column;
@@ -7291,4 +7287,35 @@ button {
     text-align: center !important;
   }
 }
+@media (min-width: 768px) {
+  .safety-card > p.mobile-text {
+    display: none !important;
+  }
+  .safety-card > p.desktop-text {
+    display: block !important;
+  }
+}
 
+@media (max-width: 767px) {
+  .safety-card > p.desktop-text {
+    display: none !important;
+  }
+  .safety-card > p.mobile-text {
+    display: block !important;
+  }
+  .safety-grid ul {
+    display: none !important;
+  }
+
+  .site-navbar {
+    position: fixed !important;
+    top: 0 !important;
+  }
+  body {
+    padding-top: 72px !important;
+  }
+}
+
+section[id], footer[id], div[id] {
+  scroll-margin-top: 100px; /* Buffers the 72px navbar */
+}

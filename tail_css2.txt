@@ -1,0 +1,200 @@
+7326:   
+7327:   .doctor-showcase-card,
+7328:   .doctor-showcase-card:nth-of-type(2),
+7329:   .doctor-showcase-card:nth-child(even) {
+7330:     display: flex !important;
+7331:     flex-direction: column !important;
+7332:     align-items: center !important;
+7333:     justify-content: center !important;
+7334:     padding: 24px 16px !important;
+7335:     gap: 20px !important;
+7336:     text-align: center !important;
+7337:     border-radius: 24px !important;
+7338:     margin-top: 32px !important;
+7339:     overflow: hidden !important;
+7340:     box-sizing: border-box !important;
+7341:     width: 100% !important;
+7342:   }
+7343:   
+7344:   .doctor-showcase-card:first-child {
+7345:     margin-top: 0 !important;
+7346:   }
+7347: 
+7348:   .doc-blob-col {
+7349:     width: 100% !important;
+7350:     max-width: 260px !important;
+7351:     flex-shrink: 0 !important;
+7352:     margin: 0 auto !important;
+7353:     display: flex !important;
+7354:     align-items: center !important;
+7355:     justify-content: center !important;
+7356:   }
+7357: 
+7358:   .doc-blob-bg {
+7359:     width: 100% !important;
+7360:     height: 100% !important;
+7361:   }
+7362: 
+7363:   .doc-image-frame {
+7364:     width: 100% !important;
+7365:     max-width: 240px !important;
+7366:     aspect-ratio: 1 / 1 !important;
+7367:     border-radius: 50% !important;
+7368:     margin: 0 auto !important;
+7369:     border: 3px solid #ffffff !important;
+7370:   }
+7371: 
+7372:   .doc-image-frame img {
+7373:     width: 100% !important;
+7374:     height: 100% !important;
+7375:     object-fit: cover !important;
+7376:     object-position: center top !important;
+7377:     border-radius: 50% !important;
+7378:   }
+7379: 
+7380:   .doc-info-col {
+7381:     width: 100% !important;
+7382:     padding: 0 !important;
+7383:     margin-top: 8px !important;
+7384:     display: flex !important;
+7385:     flex-direction: column !important;
+7386:     align-items: center !important;
+7387:     text-align: center !important;
+7388:     box-sizing: border-box !important;
+7389:   }
+7390: 
+7391:   .doc-eyebrow {
+7392:     font-size: 0.72rem !important;
+7393:     margin-bottom: 6px !important;
+7394:     text-align: center !important;
+7395:   }
+7396: 
+7397:   .doc-name-title {
+7398:     font-size: 1.6rem !important;
+7399:     text-align: center !important;
+7400:     margin-bottom: 10px !important;
+7401:     line-height: 1.2 !important;
+7402:     width: 100% !important;
+7403:     word-break: break-word !important;
+7404:   }
+7405: 
+7406:   .doc-title-underline {
+7407:     margin: 6px auto 0 auto !important;
+7408:   }
+7409: 
+7410:   .doc-subtitle-row {
+7411:     display: flex !important;
+7412:     align-items: center !important;
+7413:     justify-content: center !important;
+7414:     text-align: center !important;
+7415:     font-size: 0.85rem !important;
+7416:     margin-bottom: 14px !important;
+7417:     flex-wrap: wrap !important;
+7418:     gap: 4px !important;
+7419:     width: 100% !important;
+7420:   }
+7421: 
+7422:   .doc-description {
+7423:     font-size: 0.88rem !important;
+7424:     line-height: 1.6 !important;
+7425:     text-align: center !important;
+7426:     margin-bottom: 20px !important;
+7427:     color: #475569 !important;
+7428:     width: 100% !important;
+7429:   }
+7430: 
+7431:   .doc-features-row {
+7432:     display: flex !important;
+7433:     flex-direction: row !important;
+7434:     flex-wrap: wrap !important;
+7435:     justify-content: center !important;
+7436:     gap: 8px !important;
+7437:     width: 100% !important;
+7438:     margin-bottom: 20px !important;
+7439:   }
+7440: 
+7441:   .doc-feat-item {
+7442:     flex: 1 1 90px !important;
+7443:     max-width: 130px !important;
+7444:     padding: 10px 6px !important;
+7445:     display: flex !important;
+7446:     flex-direction: column !important;
+7447:     text-align: center !important;
+7448:     align-items: center !important;
+7449:     justify-content: center !important;
+7450:     background: rgba(241, 245, 249, 0.75) !important;
+7451:     border-radius: 12px !important;
+7452:   }
+7453: 
+7454:   .doc-feat-icon {
+7455:     margin-bottom: 4px !important;
+7456:   }
+7457: 
+7458:   .doc-feat-label {
+7459:     font-size: 0.7rem !important;
+7460:     text-align: center !important;
+7461:     line-height: 1.25 !important;
+7462:   }
+7463: 
+7464:   .doc-action-row {
+7465:     display: flex !important;
+7466:     flex-direction: column !important;
+7467:     align-items: center !important;
+7468:     gap: 12px !important;
+7469:     width: 100% !important;
+7470:   }
+7471: 
+7472:   .btn-doc-appointment {
+7473:     width: 100% !important;
+7474:     max-width: 260px !important;
+7475:     justify-content: center !important;
+7476:     padding: 12px 20px !important;
+7477:     font-size: 0.9rem !important;
+7478:   }
+7479: 
+7480:   .doc-script-quote {
+7481:     font-size: 1.35rem !important;
+7482:     text-align: center !important;
+7483:   }
+7484: }
+7485: @media (min-width: 768px) {
+7486:   .safety-card > p.mobile-text {
+7487:     display: none !important;
+7488:   }
+7489:   .safety-card > p.desktop-text {
+7490:     display: block !important;
+7491:   }
+7492: }
+7493: 
+7494: @media (max-width: 767px) {
+7495:   .safety-card > p.desktop-text {
+7496:     display: none !important;
+7497:   }
+7498:   .safety-card > p.mobile-text {
+7499:     display: block !important;
+7500:   }
+7501:   .safety-grid ul {
+7502:     display: none !important;
+7503:   }
+7504: 
+7505:   .site-navbar {
+7506:     position: fixed !important;
+7507:     top: 0 !important;
+7508:   }
+7509:   body {
+7510:     padding-top: 72px !important;
+7511:     display: flex !important;
+7512:     flex-direction: column !important;
+7513:   }
+7514:   .site-footer {
+7515:     order: 1 !important;
+7516:   }
+7517:   .appointment-section {
+7518:     order: 2 !important;
+7519:   }
+7520: }
+7521: 
+7522: section[id], footer[id], div[id] {
+7523:   scroll-margin-top: 100px; /* Buffers the 72px navbar */
+7524: }
+7525: 
