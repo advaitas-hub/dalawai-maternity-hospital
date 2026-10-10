@@ -7406,6 +7406,17 @@ button {
     text-align: center !important;
   }
 }
+@media (max-width: 767px) {
+  .safety-card > p.desktop-text {
+    display: none !important;
+  }
+  .safety-card > p.mobile-text {
+    display: block !important;
+  }
+  .safety-card > ul {
+    display: none !important;
+  }
+}
 @media (min-width: 768px) {
   .safety-card > p.mobile-text {
     display: none !important;
