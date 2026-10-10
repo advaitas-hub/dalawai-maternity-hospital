@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (btn.contains(e.target)) isClickOnBtn = true;
         });
 
-        if (!mobileNavDrawer.contains(e.target) && !isClickOnBtn) {
+        if ((!mobileNavDrawer.contains(e.target) || e.target === mobileNavDrawer) && !isClickOnBtn) {
           closeDrawer();
         }
       }
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (btn.contains(e.target)) isClickOnBtn = true;
         });
 
-        if (!mobileNavDrawer.contains(e.target) && !isClickOnBtn) {
+        if ((!mobileNavDrawer.contains(e.target) || e.target === mobileNavDrawer) && !isClickOnBtn) {
           closeDrawer();
         }
       }
@@ -125,6 +125,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // 4. Appointment Form Handling with Smooth Inline Confirmation
+  
+  const dateInput = document.getElementById('prefDate');
+  if (dateInput) {
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
+  }
+
   const bookingForm = document.getElementById('appointmentForm');
   if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {

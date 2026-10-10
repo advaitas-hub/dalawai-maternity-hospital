@@ -2814,10 +2814,6 @@ button {
     margin: 0 !important;
   }
 
-  .safety-card > p {
-    display: none !important;
-  }
-
   .safety-card > ul {
     display: flex !important;
     flex-direction: column;
@@ -7408,6 +7404,14 @@ button {
   .doc-script-quote {
     font-size: 1.35rem !important;
     text-align: center !important;
+  }
+}
+@media (min-width: 768px) {
+  .safety-card > p.mobile-text {
+    display: none !important;
+  }
+  .safety-card > p.desktop-text {
+    display: block !important;
   }
 }
 
