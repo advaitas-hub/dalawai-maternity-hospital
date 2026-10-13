@@ -29,7 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mobileNavDrawer) {
     const closeDrawer = () => {
       mobileNavDrawer.classList.remove('open');
-      mobileMenuBtns.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+      mobileMenuBtns.forEach(btn => {
+        btn.setAttribute('aria-expanded', 'false');
+        btn.classList.remove('open', 'active');
+      });
       document.body.style.overflow = '';
     };
 
@@ -38,6 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
         e.stopPropagation();
         const isOpen = mobileNavDrawer.classList.toggle('open');
         btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        btn.classList.toggle('open', isOpen);
+        btn.classList.toggle('active', isOpen);
         document.body.style.overflow = isOpen ? 'hidden' : '';
       });
     });
@@ -79,15 +84,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // 2. Navbar Scroll Shadow Effect
+  // 2. Navbar Scroll Shadow Effect (rAF Throttled)
   const navbar = document.querySelector('.site-navbar');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  });
+  if (navbar) {
+    let isScrolled = false;
+    let ticking = false;
+    const updateNavbarScroll = () => {
+      const scrolled = window.scrollY > 15;
+      if (scrolled !== isScrolled) {
+        isScrolled = scrolled;
+        navbar.classList.toggle('scrolled', isScrolled);
+      }
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateNavbarScroll);
+        ticking = true;
+      }
+    }, { passive: true });
+    updateNavbarScroll();
+  }
 
   // 3. Smooth Navigation Scroll & Active Section Highlight
   const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
@@ -190,14 +207,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 7. Scroll-Triggered Animations for Facilities Page
-  const animatedElements = document.querySelectorAll('.animate-on-scroll, .fac-detail-card, .safety-card, .about-hero-content, .section-eyebrow-wrap, .section-title');
+  // 7. Scroll-Triggered Animations (Optimized IntersectionObserver)
+  const animatedElements = document.querySelectorAll('.animate-on-scroll, .fac-detail-card, .safety-card');
 
   if (animatedElements.length > 0) {
     const observerOptions = {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.1
+      rootMargin: '50px 0px',
+      threshold: 0.05
     };
 
     const animationObserver = new IntersectionObserver((entries, observer) => {
@@ -242,6 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
+    let galleryTicking = false;
     const updateDots = () => {
       if (!dotsContainer) return;
       const dots = dotsContainer.querySelectorAll('.dot-pill');
@@ -258,9 +276,15 @@ document.addEventListener('DOMContentLoaded', () => {
           dot.classList.remove('active');
         }
       });
+      galleryTicking = false;
     };
 
-    galleryTrack.addEventListener('scroll', updateDots, { passive: true });
+    galleryTrack.addEventListener('scroll', () => {
+      if (!galleryTicking) {
+        window.requestAnimationFrame(updateDots);
+        galleryTicking = true;
+      }
+    }, { passive: true });
 
     // Next Button Click
     if (nextBtn) {
