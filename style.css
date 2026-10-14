@@ -7448,3 +7448,269 @@ button {
 img {
   content-visibility: auto;
 }
+
+/* ==========================================================================
+   HOSPITAL LOCATION & GOOGLE MAPS SECTION
+   ========================================================================== */
+.hospital-location-section {
+  padding: 85px 0 60px;
+  background: linear-gradient(180deg, var(--bg-main, #ffffff) 0%, #faf5f8 50%, #f0fdf4 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.location-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px;
+}
+
+.location-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fde8ef;
+  border: 1px solid #fbcfe8;
+  color: #db2777;
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.location-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.location-subtitle {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.65;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 36px;
+  align-items: stretch;
+}
+
+@media (max-width: 992px) {
+  .location-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.location-info-card {
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.05);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.location-card-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.location-address-box {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.location-pin-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #fde8ef;
+  color: #db2777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.location-address-text h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.location-address-text p {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.location-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .location-features-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.location-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #334155;
+  background: #ffffff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.location-feature-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ecfdf5;
+  color: #059669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.location-actions-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-open-maps {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #db2777 0%, #be185d 100%);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 24px;
+  border-radius: 14px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(219, 39, 119, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-open-maps:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(219, 39, 119, 0.35);
+}
+
+.btn-call-desk {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #ffffff;
+  color: #0f172a !important;
+  border: 1.5px solid #cbd5e1;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 20px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-call-desk:hover {
+  border-color: #059669;
+  color: #059669 !important;
+  background: #f0fdf4;
+}
+
+.location-map-wrapper {
+  position: relative;
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06);
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.location-map-iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+  border: none;
+  display: block;
+}
+
+.location-map-floating-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0f172a;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.location-map-floating-tag .tag-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #059669;
+  animation: pulseDot 2s infinite;
+}
+
+.footer-map-link:hover {
+  color: #db2777 !important;
+  text-decoration: underline !important;
+}
+
