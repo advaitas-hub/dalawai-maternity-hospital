@@ -485,7 +485,7 @@ export function AboutHeroSection() {
               <PhoneCall className="h-4 w-4" />
               Book Appointment Now
             </button>
-            <a href="tel:+919876543210" className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-bold text-white transition hover:bg-white/20">
+            <a href="tel:+919008185309" className="inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-bold text-white transition hover:bg-white/20">
               <MapPin className="h-4 w-4" />
               Dalawai Hospital, Jamkhandi
             </a>
